@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "slots=0": { "model": "covalent:block/bookshelf_chest_poise_0" },
+    "slots=1": { "model": "covalent:block/bookshelf_chest_poise_1" },
+    "slots=2": { "model": "covalent:block/bookshelf_chest_poise_2" },
+    "slots=3": { "model": "covalent:block/bookshelf_chest_poise_3" },
+    "slots=4": { "model": "covalent:block/bookshelf_chest_poise_4" },
+    "slots=5": { "model": "covalent:block/bookshelf_chest_poise_5" },
+    "slots=6": { "model": "covalent:block/bookshelf_chest_poise_6" },
+    "slots=7": { "model": "covalent:block/bookshelf_chest_poise_7" },
+    "slots=8": { "model": "covalent:block/bookshelf_chest_poise_8" },
+    "slots=9": { "model": "covalent:block/bookshelf_chest_poise_9" }
+  }
+}

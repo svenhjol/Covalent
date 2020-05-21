@@ -2,5 +2,9 @@
   "block.covalent.barrel_poise": "Poise Barrel",
   "block.covalent.bookshelf_chest_poise": "Poise Bookshelf Chest",
   "block.covalent.crate_open_poise": "Poise Crate",
-  "block.covalent.crate_sealed_poise": "Poise Sealed Crate"
+  "block.covalent.crate_sealed_poise": "Poise Sealed Crate",
+  "block.covalent.barrel_driftwood": "Driftwood Barrel",
+  "block.covalent.bookshelf_chest_driftwood": "Driftwood Bookshelf Chest",
+  "block.covalent.crate_open_driftwood": "Driftwood Crate",
+  "block.covalent.crate_sealed_driftwood": "Driftwood Sealed Crate"
 }

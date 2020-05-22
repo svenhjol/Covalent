@@ -13,7 +13,7 @@ import svenhjol.meson.helper.ForgeHelper;
 import svenhjol.meson.iface.Module;
 
 @Module(mod = Covalent.MOD_ID, category = CharmCategories.DECORATION,
-    description = "Adds barrels and crates for UPGRADE AQUATIC.")
+    description = "Adds barrels and crates for Upgrade Aquatic.")
 public class UpgradeAquatic extends MesonModule {
     public static CustomBarrelBlock barrelBlock;
     public static CrateOpenBlock crateOpenBlock;

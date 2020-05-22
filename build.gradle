@@ -54,7 +54,7 @@ dependencies {
     compile fg.deobf("vazkii.arl:AutoRegLib:${arl_version}")
     compile fg.deobf("vazkii.quark:Quark:${quark_version}")
     compile fg.deobf("curse.maven:${endergetic_expansion}")
-    compile fg.deobf("curse.maven:${upgrade_aquatic}")
+//    compile fg.deobf("curse.maven:${upgrade_aquatic}") // disabled for now because of runtime problems
 }
 
 repositories {

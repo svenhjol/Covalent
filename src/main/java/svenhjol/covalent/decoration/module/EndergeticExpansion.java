@@ -14,7 +14,8 @@ import svenhjol.meson.iface.Module;
 
 @Module(mod = Covalent.MOD_ID, category = CharmCategories.DECORATION,
     description = "Adds barrels and crates for Endergetic Expansion.")
-public class EndergeticExpansion extends MesonModule {
+public class
+EndergeticExpansion extends MesonModule {
     public static CustomBarrelBlock barrelBlock;
     public static CrateOpenBlock crateOpenBlock;
     public static CrateSealedBlock crateSealedBlock;

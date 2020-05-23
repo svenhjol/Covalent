@@ -9,6 +9,7 @@ import svenhjol.covalent.Covalent;
 import svenhjol.covalent.base.ExtraWoodTypes;
 import svenhjol.meson.MesonModule;
 import svenhjol.meson.enums.IWoodType;
+import svenhjol.meson.helper.ForgeHelper;
 import svenhjol.meson.iface.Module;
 
 @Module(mod = Covalent.MOD_ID, category = CharmCategories.DECORATION,
@@ -32,8 +33,6 @@ public class BuzzierBees extends MesonModule {
 
     @Override
     public boolean shouldRunSetup() {
-        // TODO disabled for now because of runtime issues.
-        // return ForgeHelper.isModLoaded("upgrade_aquatic");
-        return true;
+        return ForgeHelper.isModLoaded("buzzierbees");
     }
 }

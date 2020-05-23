@@ -9,5 +9,6 @@ public enum ExtraWoodTypes implements IWoodType {
     MAPLE,
     POISE,
     ROSEWOOD,
-    WILLOW
+    WILLOW,
+    WISTERIA
 }

@@ -33,8 +33,6 @@ public class UpgradeAquatic extends MesonModule {
 
     @Override
     public boolean shouldRunSetup() {
-        // TODO disabled for now because of runtime issues.
-        // return ForgeHelper.isModLoaded("upgrade_aquatic");
-        return true;
+        return true || ForgeHelper.isModLoaded("upgrade_aquatic");
     }
 }

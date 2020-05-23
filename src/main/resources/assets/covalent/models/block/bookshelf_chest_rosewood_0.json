@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "atmospheric:block/rosewood_planks",
+    "side": "covalent:block/bookshelf_chest_rosewood_0"
+  }
+}

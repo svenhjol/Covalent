@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "slots=0": { "model": "covalent:block/bookshelf_chest_driftwood_0" },
+    "slots=1": { "model": "covalent:block/bookshelf_chest_driftwood_1" },
+    "slots=2": { "model": "covalent:block/bookshelf_chest_driftwood_2" },
+    "slots=3": { "model": "covalent:block/bookshelf_chest_driftwood_3" },
+    "slots=4": { "model": "covalent:block/bookshelf_chest_driftwood_4" },
+    "slots=5": { "model": "covalent:block/bookshelf_chest_driftwood_5" },
+    "slots=6": { "model": "covalent:block/bookshelf_chest_driftwood_6" },
+    "slots=7": { "model": "covalent:block/bookshelf_chest_driftwood_7" },
+    "slots=8": { "model": "covalent:block/bookshelf_chest_driftwood_8" },
+    "slots=9": { "model": "covalent:block/bookshelf_chest_driftwood_9" }
+  }
+}

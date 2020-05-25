@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP", "P P", "PSP"
+  ],
+  "key": {
+    "S": {"item": "atmospheric:rosewood_slab"},
+    "P": {"item": "atmospheric:rosewood_planks"}
+  },
+  "result": {
+    "item": "covalent:barrel_rosewood"
+  },
+  "conditions": [
+    {
+      "type": "meson:module_enabled",
+      "module": "covalent:atmospheric"
+    }
+  ]
+}

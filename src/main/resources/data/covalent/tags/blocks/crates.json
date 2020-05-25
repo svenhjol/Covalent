@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "covalent:crate_open_bamboo",
+    "covalent:crate_open_driftwood",
+    "covalent:crate_open_hive",
+    "covalent:crate_open_maple",
+    "covalent:crate_open_poise",
+    "covalent:crate_open_rosewood",
+    "covalent:crate_open_willow",
+    "covalent:crate_open_wisteria",
+    "covalent:crate_sealed_bamboo",
+    "covalent:crate_sealed_driftwood",
+    "covalent:crate_sealed_hive",
+    "covalent:crate_sealed_maple",
+    "covalent:crate_sealed_poise",
+    "covalent:crate_sealed_rosewood",
+    "covalent:crate_sealed_willow",
+    "covalent:crate_sealed_wisteria"
+  ]
+}

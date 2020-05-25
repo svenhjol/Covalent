@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP", "P P", "PSP"
+  ],
+  "key": {
+    "S": {"item": "bloomful:wisteria_slab"},
+    "P": {"item": "bloomful:wisteria_planks"}
+  },
+  "result": {
+    "item": "covalent:barrel_wisteria"
+  },
+  "conditions": [
+    {
+      "type": "meson:module_enabled",
+      "module": "covalent:bloomful"
+    }
+  ]
+}

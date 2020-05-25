@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IWI", "W W", "IWI"
+  ],
+  "key": {
+    "I": {"tag": "forge:ingots/iron"},
+    "W": {"item": "swampexpansion:willow_planks"}
+  },
+  "result": {
+    "item": "covalent:crate_open_willow"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:crates"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:swamp_expansion"
+        }
+      ]
+    }
+  ]
+}

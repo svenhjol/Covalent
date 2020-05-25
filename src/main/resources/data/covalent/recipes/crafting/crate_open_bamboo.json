@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IWI", "W W", "IWI"
+  ],
+  "key": {
+    "I": {"tag": "forge:ingots/iron"},
+    "W": {"item": "bambooblocks:bamboo_planks"}
+  },
+  "result": {
+    "item": "covalent:crate_open_bamboo"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:crates"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:bamboo_blocks"
+        }
+      ]
+    }
+  ]
+}

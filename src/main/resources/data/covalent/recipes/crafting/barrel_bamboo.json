@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP", "P P", "PSP"
+  ],
+  "key": {
+    "S": {"item": "bambooblocks:bamboo_slab"},
+    "P": {"item": "bambooblocks:bamboo_planks"}
+  },
+  "result": {
+    "item": "covalent:barrel_bamboo"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:all_the_barrels"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:bamboo_blocks"
+        }
+      ]
+    }
+  ]
+}

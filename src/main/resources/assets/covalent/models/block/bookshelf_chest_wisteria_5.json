@@ -1,6 +1,6 @@
 {
   "parent": "covalent:block/bookshelf_chest_wisteria_0",
   "textures": {
-    "side": "covalent:block/bookshelf_chest_wisteria_5"
+    "side": "bloomful:block/wisteria_bookshelf"
   }
 }

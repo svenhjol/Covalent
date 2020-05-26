@@ -1,6 +1,6 @@
 {
   "parent": "covalent:block/bookshelf_chest_driftwood_0",
   "textures": {
-    "side": "covalent:block/bookshelf_chest_driftwood_6"
+    "side": "upgrade_aquatic:block/driftwood_bookshelf"
   }
 }

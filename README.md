@@ -10,3 +10,5 @@
 * Endergetic Expansion
 * Swamp Expansion
 * Upgrade Aquatic
+
+Download on Curseforge [here](https://www.curseforge.com/minecraft/mc-mods/covalent)

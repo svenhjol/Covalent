@@ -1,3 +1,12 @@
 # Covalent
 
-**Covalent** is a mod for Minecraft 1.14+.
+**Covalent** is an add-on mod for [Charm](https://www.curseforge.com/minecraft/mc-mods/charm) that adds wood types for the following mods:
+
+* Atmospheric
+* Autumnity
+* Bamboo Blocks
+* Bloomful
+* Buzzier Bees
+* Endergetic Expansion
+* Swamp Expansion
+* Upgrade Aquatic

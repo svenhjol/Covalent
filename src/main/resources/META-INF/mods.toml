@@ -17,7 +17,7 @@ authors="svenhjol"
 [[dependencies.covalent]]
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[28.2,)" #mandatory
+    versionRange="[31.2,)" #mandatory
     ordering="NONE" # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     side="BOTH" # Side this dependency is applied on - BOTH, CLIENT or SERVER
 

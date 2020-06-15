@@ -15,20 +15,33 @@ import svenhjol.meson.iface.Module;
 @Module(mod = Covalent.MOD_ID, category = CharmCategories.DECORATION,
     description = "Adds barrels and crates for Atmospheric.")
 public class Atmospheric extends MesonModule {
-    public static CustomBarrelBlock barrelBlock;
-    public static CrateOpenBlock crateOpenBlock;
-    public static CrateSealedBlock crateSealedBlock;
-    public static BookshelfChestBlock bookshelfChestBlock;
+    // rosewood types
+    public static CustomBarrelBlock rosewoodBarrelBlock;
+    public static CrateOpenBlock rosewoodCrateOpenBlock;
+    public static CrateSealedBlock rosewoodCrateSealedBlock;
+    public static BookshelfChestBlock rosewoodBookshelfChestBlock;
+
+    // yucca types
+    public static CustomBarrelBlock yuccaBarrelBlock;
+    public static CrateOpenBlock yuccaCrateOpenBlock;
+    public static CrateSealedBlock yuccaCrateSealedBlock;
+    public static BookshelfChestBlock yuccaBookshelfChestBlock;
 
     @Override
     public void init() {
         super.init();
-        IWoodType wood = ExtraWoodTypes.ROSEWOOD;
+        IWoodType rosewood = ExtraWoodTypes.ROSEWOOD;
+        IWoodType yucca = ExtraWoodTypes.YUCCA;
 
-        barrelBlock = new CustomBarrelBlock(this, wood);
-        crateOpenBlock = new CrateOpenBlock(this, wood);
-        crateSealedBlock = new CrateSealedBlock(this, wood);
-        bookshelfChestBlock = new BookshelfChestBlock(this, wood);
+        rosewoodBarrelBlock = new CustomBarrelBlock(this, rosewood);
+        rosewoodCrateOpenBlock = new CrateOpenBlock(this, rosewood);
+        rosewoodCrateSealedBlock = new CrateSealedBlock(this, rosewood);
+        rosewoodBookshelfChestBlock = new BookshelfChestBlock(this, rosewood);
+
+        yuccaBarrelBlock = new CustomBarrelBlock(this, yucca);
+        yuccaCrateOpenBlock = new CrateOpenBlock(this, yucca);
+        yuccaCrateSealedBlock = new CrateSealedBlock(this, yucca);
+        yuccaBookshelfChestBlock = new BookshelfChestBlock(this, yucca);
     }
 
     @Override

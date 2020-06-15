@@ -9,6 +9,7 @@
     "covalent:crate_open_rosewood",
     "covalent:crate_open_willow",
     "covalent:crate_open_wisteria",
+    "covalent:crate_open_yucca",
     "covalent:crate_sealed_bamboo",
     "covalent:crate_sealed_driftwood",
     "covalent:crate_sealed_hive",
@@ -16,6 +17,7 @@
     "covalent:crate_sealed_poise",
     "covalent:crate_sealed_rosewood",
     "covalent:crate_sealed_willow",
-    "covalent:crate_sealed_wisteria"
+    "covalent:crate_sealed_wisteria",
+    "covalent:crate_sealed_yucca"
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP", "P P", "PSP"
+  ],
+  "key": {
+    "S": {"item": "autumnity:maple_slab"},
+    "P": {"item": "autumnity:maple_planks"}
+  },
+  "result": {
+    "item": "covalent:maple_barrel"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:all_the_barrels"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:autumnity"
+        }
+      ]
+    }
+  ]
+}

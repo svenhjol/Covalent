@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "buzzierbees:hive_planks"
+    },
+    "#": {
+      "tag": "forge:bookshelves"
+    }
+  },
+  "result": {
+    "item": "covalent:hive_bookshelf_chest"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:bookshelf_chests"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:buzzierbees"
+        }
+      ]
+    }
+  ]
+}

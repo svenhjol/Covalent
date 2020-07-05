@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "swampexpansion:block/willow_planks",
+    "side": "covalent:block/willow_bookshelf_chest_0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "upgrade_aquatic:block/driftwood_planks",
+    "side": "covalent:block/driftwood_bookshelf_chest_0"
+  }
+}

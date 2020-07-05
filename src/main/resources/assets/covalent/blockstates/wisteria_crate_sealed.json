@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "covalent:block/wisteria_crate_sealed" }
+  }
+}

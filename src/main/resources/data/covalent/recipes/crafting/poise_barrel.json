@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP", "P P", "PSP"
+  ],
+  "key": {
+    "S": {"item": "endergetic:poise_slab"},
+    "P": {"item": "endergetic:poise_planks"}
+  },
+  "result": {
+    "item": "covalent:poise_barrel"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:all_the_barrels"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:endergetic"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "bloomful:block/wisteria_planks",
+    "side": "covalent:block/wisteria_bookshelf_chest_0"
+  }
+}

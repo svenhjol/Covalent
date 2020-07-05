@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/maple_bookshelf_chest_0",
+  "textures": {
+    "side": "autumnity:block/maple_bookshelf"
+  }
+}

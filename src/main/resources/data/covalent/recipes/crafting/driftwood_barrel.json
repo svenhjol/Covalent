@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP", "P P", "PSP"
+  ],
+  "key": {
+    "S": {"item": "upgrade_aquatic:driftwood_slab"},
+    "P": {"item": "upgrade_aquatic:driftwood_planks"}
+  },
+  "result": {
+    "item": "covalent:driftwood_barrel"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:all_the_barrels"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:upgrade_aquatic"
+        }
+      ]
+    }
+  ]
+}

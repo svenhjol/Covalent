@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "endergetic:block/poise_planks",
+    "side": "covalent:block/poise_bookshelf_chest_0"
+  }
+}

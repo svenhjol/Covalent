@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "covalent:bookshelf_chest_bamboo",
-    "covalent:bookshelf_chest_driftwood",
-    "covalent:bookshelf_chest_hive",
-    "covalent:bookshelf_chest_maple",
-    "covalent:bookshelf_chest_poise",
-    "covalent:bookshelf_chest_rosewood",
-    "covalent:bookshelf_chest_willow",
-    "covalent:bookshelf_chest_wisteria",
-    "covalent:bookshelf_chest_yucca"
+    "covalent:rosewood_bookshelf_chest",
+    "covalent:yucca_bookshelf_chest",
+    "covalent:maple_bookshelf_chest",
+    "covalent:bamboo_bookshelf_chest",
+    "covalent:wisteria_bookshelf_chest",
+    "covalent:hive_bookshelf_chest",
+    "covalent:poise_bookshelf_chest",
+    "covalent:willow_bookshelf_chest",
+    "covalent:driftwood_bookshelf_chest"
   ]
 }

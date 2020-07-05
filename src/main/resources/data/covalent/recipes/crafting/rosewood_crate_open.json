@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IWI", "W W", "IWI"
+  ],
+  "key": {
+    "I": {"tag": "forge:ingots/iron"},
+    "W": {"item": "atmospheric:rosewood_planks"}
+  },
+  "result": {
+    "item": "covalent:rosewood_crate_open"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:crates"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:atmospheric"
+        }
+      ]
+    }
+  ]
+}

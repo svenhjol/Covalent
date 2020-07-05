@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "covalent:barrel_bamboo",
-    "covalent:barrel_driftwood",
-    "covalent:barrel_hive",
-    "covalent:barrel_maple",
-    "covalent:barrel_poise",
-    "covalent:barrel_rosewood",
-    "covalent:barrel_willow",
-    "covalent:barrel_wisteria",
-    "covalent:barrel_yucca"
+    "covalent:rosewood_barrel",
+    "covalent:yucca_barrel",
+    "covalent:maple_barrel",
+    "covalent:bamboo_barrel",
+    "covalent:wisteria_barrel",
+    "covalent:hive_barrel",
+    "covalent:poise_barrel",
+    "covalent:willow_barrel",
+    "covalent:driftwood_barrel"
   ]
 }

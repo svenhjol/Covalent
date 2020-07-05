@@ -1,3 +1,46 @@
 {
-  "block.charm.barrel_bamboo": "Bamboo Barrel"
+  "block.covalent.rosewood_barrel": "Rosewood Barrel",
+  "block.covalent.rosewood_bookshelf_chest": "Rosewood Bookshelf Chest",
+  "block.covalent.rosewood_crate_open": "Rosewood Crate",
+  "block.covalent.rosewood_crate_sealed": "Rosewood Sealed Crate",
+
+  "block.covalent.yucca_barrel": "Yucca Barrel",
+  "block.covalent.yucca_bookshelf_chest": "Yucca Bookshelf Chest",
+  "block.covalent.yucca_crate_open": "Yucca Crate",
+  "block.covalent.yucca_crate_sealed": "Yucca Sealed Crate",
+
+  "block.covalent.maple_barrel": "Maple Barrel",
+  "block.covalent.maple_bookshelf_chest": "Maple Bookshelf Chest",
+  "block.covalent.maple_crate_open": "Maple Crate",
+  "block.covalent.maple_crate_sealed": "Maple Sealed Crate",
+
+  "block.covalent.bamboo_barrel": "Bamboo Barrel",
+  "block.covalent.bamboo_bookshelf_chest": "Bamboo Bookshelf Chest",
+  "block.covalent.bamboo_crate_open": "Bamboo Crate",
+  "block.covalent.bamboo_crate_sealed": "Bamboo Sealed Crate",
+
+  "block.covalent.wisteria_barrel": "Wisteria Barrel",
+  "block.covalent.wisteria_bookshelf_chest": "Wisteria Bookshelf Chest",
+  "block.covalent.wisteria_crate_open": "Wisteria Crate",
+  "block.covalent.wisteria_crate_sealed": "Wisteria Sealed Crate",
+
+  "block.covalent.hive_barrel": "Hive Barrel",
+  "block.covalent.hive_bookshelf_chest": "Hive Bookshelf Chest",
+  "block.covalent.hive_crate_open": "Hive Crate",
+  "block.covalent.hive_crate_sealed": "Hive Sealed Crate",
+
+  "block.covalent.poise_barrel": "Poise Barrel",
+  "block.covalent.poise_bookshelf_chest": "Poise Bookshelf Chest",
+  "block.covalent.poise_crate_open": "Poise Crate",
+  "block.covalent.poise_crate_sealed": "Poise Sealed Crate",
+
+  "block.covalent.willow_barrel": "Willow Barrel",
+  "block.covalent.willow_bookshelf_chest": "Willow Bookshelf Chest",
+  "block.covalent.willow_crate_open": "Willow Crate",
+  "block.covalent.willow_crate_sealed": "Willow Sealed Crate",
+
+  "block.covalent.driftwood_barrel": "Driftwood Barrel",
+  "block.covalent.driftwood_bookshelf_chest": "Driftwood Bookshelf Chest",
+  "block.covalent.driftwood_crate_open": "Driftwood Crate",
+  "block.covalent.driftwood_crate_sealed": "Driftwood Sealed Crate"
 }

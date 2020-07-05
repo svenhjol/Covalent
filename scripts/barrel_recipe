@@ -12,8 +12,17 @@
   },
   "conditions": [
     {
-      "type": "meson:module_enabled",
-      "module": "charm:all_the_barrels"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:all_the_barrels"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:NAMESPACE"
+        }
+      ]
     }
   ]
 }

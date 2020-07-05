@@ -143,5 +143,5 @@ copy_replace "crate_sealed_item_model" "${ASSETS}/models/item/${TYPE}_crate_seal
 copy_replace "crate_open_loot_table" "${DATA}/loot_tables/blocks/${TYPE}_crate_open.json"
 copy_replace "crate_open_recipe" "${DATA}/recipes/crafting/${TYPE}_crate_open.json"
 
-add_tags
-add_lang_strings
+#add_tags
+#add_lang_strings

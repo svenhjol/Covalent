@@ -12,8 +12,17 @@
   },
   "conditions": [
     {
-      "type": "meson:module_enabled",
-      "module": "charm:crates"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:crates"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:NAMESPACE"
+        }
+      ]
     }
   ]
 }

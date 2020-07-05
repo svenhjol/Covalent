@@ -18,8 +18,17 @@
   },
   "conditions": [
     {
-      "type": "meson:module_enabled",
-      "module": "charm:bookshelf_chests"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:bookshelf_chests"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:NAMESPACE"
+        }
+      ]
     }
   ]
 }

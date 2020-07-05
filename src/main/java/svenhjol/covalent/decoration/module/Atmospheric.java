@@ -1,12 +1,14 @@
 package svenhjol.covalent.decoration.module;
 
 import svenhjol.charm.base.CharmCategories;
+import svenhjol.charm.base.module.Debug;
 import svenhjol.charm.decoration.block.BookshelfChestBlock;
 import svenhjol.charm.decoration.block.CrateOpenBlock;
 import svenhjol.charm.decoration.block.CrateSealedBlock;
 import svenhjol.charm.decoration.block.CustomBarrelBlock;
 import svenhjol.covalent.Covalent;
 import svenhjol.covalent.base.ExtraChestMaterialTypes;
+import svenhjol.meson.Meson;
 import svenhjol.meson.MesonModule;
 import svenhjol.meson.enums.IChestMaterialType;
 import svenhjol.meson.helper.ForgeHelper;
@@ -46,6 +48,6 @@ public class Atmospheric extends MesonModule {
 
     @Override
     public boolean shouldRunSetup() {
-        return ForgeHelper.isModLoaded("atmospheric");
+        return Meson.isModuleEnabled("charm:debug") || ForgeHelper.isModLoaded("atmospheric");
     }
 }

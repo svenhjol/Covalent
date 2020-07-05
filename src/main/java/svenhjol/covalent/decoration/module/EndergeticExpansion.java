@@ -7,6 +7,7 @@ import svenhjol.charm.decoration.block.CrateSealedBlock;
 import svenhjol.charm.decoration.block.CustomBarrelBlock;
 import svenhjol.covalent.Covalent;
 import svenhjol.covalent.base.ExtraChestMaterialTypes;
+import svenhjol.meson.Meson;
 import svenhjol.meson.MesonModule;
 import svenhjol.meson.enums.IChestMaterialType;
 import svenhjol.meson.helper.ForgeHelper;
@@ -34,6 +35,6 @@ EndergeticExpansion extends MesonModule {
 
     @Override
     public boolean shouldRunSetup() {
-        return ForgeHelper.isModLoaded("endergetic");
+        return Meson.isModuleEnabled("charm:debug") || ForgeHelper.isModLoaded("endergetic");
     }
 }

@@ -7,6 +7,7 @@ import svenhjol.charm.decoration.block.CrateSealedBlock;
 import svenhjol.charm.decoration.block.CustomBarrelBlock;
 import svenhjol.covalent.Covalent;
 import svenhjol.covalent.base.ExtraChestMaterialTypes;
+import svenhjol.meson.Meson;
 import svenhjol.meson.MesonModule;
 import svenhjol.meson.enums.IChestMaterialType;
 import svenhjol.meson.helper.ForgeHelper;
@@ -33,6 +34,6 @@ public class UpgradeAquatic extends MesonModule {
 
     @Override
     public boolean shouldRunSetup() {
-        return ForgeHelper.isModLoaded("upgrade_aquatic");
+        return Meson.isModuleEnabled("charm:debug") || ForgeHelper.isModLoaded("upgrade_aquatic");
     }
 }

@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/bookshelf_chest_willow_0",
-  "textures": {
-    "side": "swampexpansion:block/willow_bookshelf"
-  }
-}

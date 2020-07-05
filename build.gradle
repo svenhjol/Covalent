@@ -46,23 +46,24 @@ minecraft {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
-    compileOnly fg.deobf("mezz.jei:jei-${jei_version}:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-${jei_version}")
+
+    compileOnly fg.deobf("mezz.jei:jei-${jei}:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-${jei}")
 
     compile fg.deobf("svenhjol.charm:Charm:${charm_version}")
 //    compile fg.deobf("svenhjol.strange:Strange:${strange_version}")
-    compile fg.deobf("vazkii.autoreglib:AutoRegLib:${arl_version}")
-    compile fg.deobf("vazkii.quark:Quark:${quark_version}")
-    compile fg.deobf("curse.maven:${quark_oddities}")
-    compile fg.deobf("curse.maven:${abnormals_core}")
-    compile fg.deobf("curse.maven:${endergetic_expansion}")
+//    compile fg.deobf("vazkii.autoreglib:AutoRegLib:${arl_version}")
+//    compile fg.deobf("vazkii.quark:Quark:${quark_version}")
+//    compile fg.deobf("curse.maven:${quark_oddities}")
+//    compile fg.deobf("curse.maven:${abnormals_core}")
+//    compile fg.deobf("curse.maven:${endergetic_expansion}")
 //    compile fg.deobf("curse.maven:${upgrade_aquatic}")
-    compile fg.deobf("curse.maven:${buzzier_bees}")
-    compile fg.deobf("curse.maven:${bamboo_blocks}")
-    compile fg.deobf("curse.maven:${autumnity}")
-    compile fg.deobf("curse.maven:${atmospheric}")
-    compile fg.deobf("curse.maven:${bloomful}")
-    compile fg.deobf("curse.maven:${swamp_expansion}")
+//    compile fg.deobf("curse.maven:${buzzier_bees}")
+//    compile fg.deobf("curse.maven:${bamboo_blocks}")
+//    compile fg.deobf("curse.maven:${autumnity}")
+//    compile fg.deobf("curse.maven:${atmospheric}")
+//    compile fg.deobf("curse.maven:${bloomful}")
+//    compile fg.deobf("curse.maven:${swamp_expansion}")
 }
 
 repositories {

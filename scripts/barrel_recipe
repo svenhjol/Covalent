@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP", "P P", "PSP"
+  ],
+  "key": {
+    "S": {"item": "NAMESPACE:TYPE_slab"},
+    "P": {"item": "NAMESPACE:TYPE_planks"}
+  },
+  "result": {
+    "item": "THISMOD:TYPE_barrel"
+  },
+  "conditions": [
+    {
+      "type": "meson:module_enabled",
+      "module": "charm:all_the_barrels"
+    }
+  ]
+}

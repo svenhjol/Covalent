@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[28,)" # Forge version
+loaderVersion="[32,)" # Forge version
 issueTrackerURL="https://github.com/svenhjol/Covalent/issues"
 displayURL="https://svenhjol.github.io/Charm/"
 #logoFile="examplemod.png"
@@ -17,13 +17,13 @@ authors="svenhjol"
 [[dependencies.covalent]]
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[31.2,)" #mandatory
+    versionRange="[32.0,)" #mandatory
     ordering="NONE" # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     side="BOTH" # Side this dependency is applied on - BOTH, CLIENT or SERVER
 
 [[dependencies.covalent]]
     modId="charm" #mandatory
     mandatory=true #mandatory
-    versionRange="[1.15.2-1.5.9,)" #mandatory
+    versionRange="[1.16.1-1.6.0,)" #mandatory
     ordering="AFTER" # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     side="BOTH" # Side this dependency is applied on - BOTH, CLIENT or SERVER

@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/bookshelf_chest_bamboo_0",
-  "textures": {
-    "side": "bambooblocks:block/bamboo_bookshelf"
-  }
-}

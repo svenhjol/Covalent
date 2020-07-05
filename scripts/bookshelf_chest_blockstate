@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "slots=0": { "model": "THISMOD:block/TYPE_bookshelf_chest_0" },
+    "slots=1": { "model": "THISMOD:block/TYPE_bookshelf_chest_1" },
+    "slots=2": { "model": "THISMOD:block/TYPE_bookshelf_chest_2" },
+    "slots=3": { "model": "THISMOD:block/TYPE_bookshelf_chest_3" },
+    "slots=4": { "model": "THISMOD:block/TYPE_bookshelf_chest_4" },
+    "slots=5": { "model": "THISMOD:block/TYPE_bookshelf_chest_5" },
+    "slots=6": { "model": "THISMOD:block/TYPE_bookshelf_chest_6" },
+    "slots=7": { "model": "THISMOD:block/TYPE_bookshelf_chest_7" },
+    "slots=8": { "model": "THISMOD:block/TYPE_bookshelf_chest_8" },
+    "slots=9": { "model": "THISMOD:block/TYPE_bookshelf_chest_9" }
+  }
+}

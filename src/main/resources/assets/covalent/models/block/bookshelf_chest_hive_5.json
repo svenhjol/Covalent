@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/bookshelf_chest_hive_0",
-  "textures": {
-    "side": "buzzierbees:block/hive_bookshelf"
-  }
-}

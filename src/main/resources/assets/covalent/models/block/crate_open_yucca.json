@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "top": "covalent:block/crate_top_yucca",
-    "side": "covalent:block/crate_side_yucca",
-    "bottom": "covalent:block/crate_top_yucca"
-  }
-}

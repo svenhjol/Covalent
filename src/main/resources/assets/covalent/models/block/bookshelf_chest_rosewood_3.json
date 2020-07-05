@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/bookshelf_chest_rosewood_0",
-  "textures": {
-    "side": "atmospheric:block/rosewood_bookshelf"
-  }
-}

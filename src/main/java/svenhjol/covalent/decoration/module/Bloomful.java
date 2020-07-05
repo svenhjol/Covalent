@@ -6,9 +6,9 @@ import svenhjol.charm.decoration.block.CrateOpenBlock;
 import svenhjol.charm.decoration.block.CrateSealedBlock;
 import svenhjol.charm.decoration.block.CustomBarrelBlock;
 import svenhjol.covalent.Covalent;
-import svenhjol.covalent.base.ExtraWoodTypes;
+import svenhjol.covalent.base.ExtraChestMaterialTypes;
 import svenhjol.meson.MesonModule;
-import svenhjol.meson.enums.IWoodType;
+import svenhjol.meson.enums.IChestMaterialType;
 import svenhjol.meson.helper.ForgeHelper;
 import svenhjol.meson.iface.Module;
 
@@ -23,7 +23,7 @@ public class Bloomful extends MesonModule {
     @Override
     public void init() {
         super.init();
-        IWoodType wood = ExtraWoodTypes.WISTERIA;
+        IChestMaterialType wood = ExtraChestMaterialTypes.WISTERIA;
 
         barrelBlock = new CustomBarrelBlock(this, wood);
         crateOpenBlock = new CrateOpenBlock(this, wood);

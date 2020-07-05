@@ -14,8 +14,8 @@ import svenhjol.meson.helper.ForgeHelper;
 import svenhjol.meson.iface.Module;
 
 @Module(mod = Covalent.MOD_ID, category = CharmCategories.DECORATION,
-    description = "Adds barrels and crates for Swamp Expansion.")
-public class SwampExpansion extends MesonModule {
+    description = "Adds barrels and crates for Buzzier Bees.")
+public class Buzzierbees extends MesonModule {
     public static CustomBarrelBlock barrelBlock;
     public static CrateOpenBlock crateOpenBlock;
     public static CrateSealedBlock crateSealedBlock;
@@ -24,7 +24,7 @@ public class SwampExpansion extends MesonModule {
     @Override
     public void init() {
         super.init();
-        IChestMaterialType wood = ExtraChestMaterialTypes.WILLOW;
+        IChestMaterialType wood = ExtraChestMaterialTypes.HIVE;
 
         barrelBlock = new CustomBarrelBlock(this, wood);
         crateOpenBlock = new CrateOpenBlock(this, wood);
@@ -34,6 +34,6 @@ public class SwampExpansion extends MesonModule {
 
     @Override
     public boolean shouldRunSetup() {
-        return Meson.isModuleEnabled("charm:debug") || ForgeHelper.isModLoaded("swampexpansion");
+        return Meson.isModuleEnabled("charm:debug") || ForgeHelper.isModLoaded("buzzierbees");
     }
 }

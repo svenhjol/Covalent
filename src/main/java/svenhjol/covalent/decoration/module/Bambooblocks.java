@@ -15,7 +15,7 @@ import svenhjol.meson.iface.Module;
 
 @Module(mod = Covalent.MOD_ID, category = CharmCategories.DECORATION,
     description = "Adds barrels and crates for Bamboo Blocks.")
-public class BambooBlocks extends MesonModule {
+public class Bambooblocks extends MesonModule {
     public static CustomBarrelBlock barrelBlock;
     public static CrateOpenBlock crateOpenBlock;
     public static CrateSealedBlock crateSealedBlock;

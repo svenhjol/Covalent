@@ -51,6 +51,10 @@ dependencies {
     runtimeOnly fg.deobf("mezz.jei:jei-${jei}")
 
     compile fg.deobf("svenhjol.charm:Charm:${charm_version}")
+
+    compile fg.deobf("vazkii.autoreglib:AutoRegLib:${arl}")
+    compile fg.deobf("vazkii.quark:Quark:${quark}")
+
 //    compile fg.deobf("svenhjol.strange:Strange:${strange_version}")
 //    compile fg.deobf("vazkii.autoreglib:AutoRegLib:${arl_version}")
 //    compile fg.deobf("vazkii.quark:Quark:${quark_version}")

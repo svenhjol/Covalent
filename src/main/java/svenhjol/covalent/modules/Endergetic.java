@@ -21,11 +21,11 @@ public class Endergetic extends MesonModule {
 
     @Override
     public void init() {
-        IStorageMaterial type = ExtraStorageMaterial.POISE;
+        IStorageMaterial poise = ExtraStorageMaterial.POISE;
 
-        POISE_BARREL = new VariantBarrelBlock(this, type);
-        POISE_CRATE = new CrateBlock(this, type);
-        POISE_BOOKCASE = new BookcaseBlock(this, type);
+        POISE_BARREL = new VariantBarrelBlock(this, poise);
+        POISE_CRATE = new CrateBlock(this, poise);
+        POISE_BOOKCASE = new BookcaseBlock(this, poise);
     }
 
     @Override

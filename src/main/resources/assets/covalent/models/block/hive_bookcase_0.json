@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "buzzier_bees:block/hive_planks",
-    "side": "covalent:block/hive_bookcase_0"
-  }
-}

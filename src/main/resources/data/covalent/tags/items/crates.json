@@ -1,14 +1,13 @@
 {
   "replace": false,
   "values": [
-    "covalent:rosewood_crate",
-    "covalent:yucca_crate",
-    "covalent:maple_crate",
     "covalent:bamboo_crate",
-    "covalent:wisteria_crate",
-    "covalent:hive_crate",
-    "covalent:poise_crate",
-    "covalent:willow_crate",
     "covalent:driftwood_crate",
+    "covalent:maple_crate",
+    "covalent:poise_crate",
+    "covalent:rosewood_crate",
+    "covalent:willow_crate",
+    "covalent:wisteria_crate",
+    "covalent:yucca_crate"
   ]
 }

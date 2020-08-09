@@ -10,7 +10,7 @@ displayName="Covalent"
 description='''
 Extra integration for Charm.
 '''
-authors="svenhjol"
+authors="svenhjol, Coranthes"
 
 [[dependencies.covalent]]
     modId="forge" #mandatory

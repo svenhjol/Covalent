@@ -1,7 +1,7 @@
 package svenhjol.covalent;
 
 import net.minecraftforge.fml.common.Mod;
-import svenhjol.covalent.modules.Endergetic;
+import svenhjol.covalent.modules.*;
 import svenhjol.meson.MesonMod;
 import svenhjol.meson.MesonModule;
 
@@ -19,7 +19,13 @@ public class Covalent extends MesonMod {
     @Override
     protected List<Class<? extends MesonModule>> getModules() {
         return Arrays.asList(
-            Endergetic.class
+            Atmospheric.class,
+            Autumnity.class,
+            BambooBlocks.class,
+            Bloomful.class,
+            Endergetic.class,
+            Swampexpansion.class,
+            UpgradeAquatic.class
         );
     }
 }

@@ -4,8 +4,8 @@
     "PSP", "P P", "PSP"
   ],
   "key": {
-    "S": {"item": "bambooblocks:bamboo_slab"},
-    "P": {"item": "bambooblocks:bamboo_planks"}
+    "S": {"item": "bamboo_blocks:bamboo_slab"},
+    "P": {"item": "bamboo_blocks:bamboo_planks"}
   },
   "result": {
     "item": "covalent:bamboo_barrel"
@@ -20,7 +20,7 @@
         },
         {
           "type": "meson:module_enabled",
-          "module": "covalent:bambooblocks"
+          "module": "covalent:bamboo_blocks"
         }
       ]
     }

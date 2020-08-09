@@ -1,0 +1,6 @@
+{
+  "parent": "THISMOD:block/TYPE_bookcase_0",
+  "textures": {
+    "side": "NAMESPACE:block/TYPE_bookshelf"
+  }
+}

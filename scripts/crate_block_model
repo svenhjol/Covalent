@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "THISMOD:block/TYPE_crate_top",
+    "side": "THISMOD:block/TYPE_crate_side",
+    "bottom": "THISMOD:block/TYPE_crate_top"
+  }
+}

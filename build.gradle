@@ -1,0 +1,121 @@
+buildscript {
+    repositories {
+        maven { url = 'https://files.minecraftforge.net/maven' }
+        jcenter()
+        mavenCentral()
+        maven {url='https://dist.creeper.host/Sponge/maven'}
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+    }
+}
+plugins {
+    id "com.wynprice.cursemaven" version "2.1.1"
+}
+apply plugin: 'net.minecraftforge.gradle'
+
+group = "svenhjol.${mod_id}" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = mod_name
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+version = "${minecraft_version}-${mod_version}.${mod_build_number}"
+
+minecraft {
+    mappings channel: 'snapshot', version: "${forge_mappings}"
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+
+    runs {
+        client = {
+            properties 'forge.logging.console.level': 'debug'
+            properties 'fml.earlyprogresswindow': 'false'
+            workingDirectory project.file('run').canonicalPath
+            source sourceSets.main
+            jvmArgs "-Xmx1500M"
+        }
+        server = {
+            properties 'forge.logging.console.level': 'debug'
+            workingDirectory project.file('run').canonicalPath
+            source sourceSets.main
+        }
+    }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    annotationProcessor 'org.spongepowered:mixin:0.8'
+    annotationProcessor 'com.google.code.gson:gson:2.8.0'
+    annotationProcessor 'com.google.guava:guava:21.0'
+    annotationProcessor 'org.ow2.asm:asm-tree:7.2'
+    annotationProcessor 'org.ow2.asm:asm-commons:7.2'
+    annotationProcessor 'org.ow2.asm:asm-util:7.2'
+
+    compileOnly fg.deobf("mezz.jei:jei-${jei}:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-${jei}")
+
+    compile fg.deobf("svenhjol.charm:Charm:${charm}")
+
+    compile fg.deobf("curse.maven:${abnormals_core}")
+    compile fg.deobf("curse.maven:${endergetic_expansion}")
+//    compile fg.deobf("curse.maven:${upgrade_aquatic}")
+//    compile fg.deobf("curse.maven:${buzzier_bees}")
+//    compile fg.deobf("curse.maven:${bamboo_blocks}")
+//    compile fg.deobf("curse.maven:${autumnity}")
+//    compile fg.deobf("curse.maven:${atmospheric}")
+//    compile fg.deobf("curse.maven:${bloomful}")
+//    compile fg.deobf("curse.maven:${swamp_expansion}")
+
+    // enable in gradle.properties to test quark compat
+    if (compile_quark == "true") {
+        compile fg.deobf("vazkii.autoreglib:AutoRegLib:${arl}")
+        compile fg.deobf("vazkii.quark:Quark:${quark}")
+        compile fg.deobf("curse.maven:${quark_oddities}")
+    }
+}
+
+repositories {
+    maven { // for JEI
+        url "http://dvs1.progwml6.com/files/maven"
+    }
+
+    maven { // for AutoRegLib, Quark and Botania
+        name "blamejared"
+        url "http://maven.blamejared.com/"
+    }
+
+    maven { // for Curseforge mod download
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+
+    maven {
+        // for Mappings
+        name "gigaherz"
+        url "http://dogforce-games.com/maven/"
+    }
+
+    flatDir {
+        // for including local jar files
+        dirs "libs"
+    }
+}
+
+processResources {
+    from(sourceSets.main.resources.srcDirs) {
+        include 'META-INF/mods.toml'
+        expand 'version': mod_version, 'minecraft_version': minecraft_version, 'forge_version': forge_version
+    }
+}
+
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": "${mod_name}",
+            "Specification-Vendor": "svenhjol",
+            "Specification-Version": "1", // We are version 1 of ourselves
+            "Implementation-Title": "${mod_name}",
+            "Implementation-Version": "${mod_version}",
+            "Implementation-Vendor": "svenhjol",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}

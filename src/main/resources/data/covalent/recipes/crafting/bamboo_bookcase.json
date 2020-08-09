@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "bambooblocks:bamboo_planks"
+    },
+    "#": {
+      "tag": "forge:bookshelves"
+    }
+  },
+  "result": {
+    "item": "covalent:bamboo_bookcase"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "meson:module_enabled",
+          "module": "charm:bookcases"
+        },
+        {
+          "type": "meson:module_enabled",
+          "module": "covalent:bambooblocks"
+        }
+      ]
+    }
+  ]
+}

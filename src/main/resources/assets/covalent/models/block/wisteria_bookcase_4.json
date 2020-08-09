@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/wisteria_bookcase_0",
+  "textures": {
+    "side": "bloomful:block/wisteria_bookshelf"
+  }
+}

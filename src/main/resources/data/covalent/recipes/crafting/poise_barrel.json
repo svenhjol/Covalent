@@ -16,7 +16,7 @@
       "values": [
         {
           "type": "meson:module_enabled",
-          "module": "charm:all_the_barrels"
+          "module": "charm:variant_barrels"
         },
         {
           "type": "meson:module_enabled",

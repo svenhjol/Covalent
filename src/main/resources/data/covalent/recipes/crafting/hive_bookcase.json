@@ -7,7 +7,7 @@
   ],
   "key": {
     "X": {
-      "item": "buzzierbees:hive_planks"
+      "item": "buzzier_bees:hive_planks"
     },
     "#": {
       "tag": "forge:bookshelves"
@@ -26,7 +26,7 @@
         },
         {
           "type": "meson:module_enabled",
-          "module": "covalent:buzzierbees"
+          "module": "covalent:buzzier_bees"
         }
       ]
     }

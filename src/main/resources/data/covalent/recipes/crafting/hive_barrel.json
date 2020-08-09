@@ -4,8 +4,8 @@
     "PSP", "P P", "PSP"
   ],
   "key": {
-    "S": {"item": "buzzierbees:hive_slab"},
-    "P": {"item": "buzzierbees:hive_planks"}
+    "S": {"item": "buzzier_bees:hive_slab"},
+    "P": {"item": "buzzier_bees:hive_planks"}
   },
   "result": {
     "item": "covalent:hive_barrel"
@@ -20,7 +20,7 @@
         },
         {
           "type": "meson:module_enabled",
-          "module": "covalent:buzzierbees"
+          "module": "covalent:buzzier_bees"
         }
       ]
     }

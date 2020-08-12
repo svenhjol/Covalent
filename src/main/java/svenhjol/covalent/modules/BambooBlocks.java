@@ -29,8 +29,7 @@ public class BambooBlocks extends MesonModule {
     }
 
     @Override
-    public boolean test() {
-        return Meson.enabled("charm:variant_barrels")
-            && ModHelper.present("bamboo_blocks");
+    public boolean depends() {
+        return ModHelper.present("bamboo_blocks");
     }
 }

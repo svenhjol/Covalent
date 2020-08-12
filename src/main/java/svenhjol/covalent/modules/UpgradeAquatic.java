@@ -29,8 +29,7 @@ public class UpgradeAquatic extends MesonModule {
     }
 
     @Override
-    public boolean test() {
-        return Meson.enabled("charm:variant_barrels")
-            && ModHelper.present("upgrade_aquatic");
+    public boolean depends() {
+        return ModHelper.present("upgrade_aquatic");
     }
 }

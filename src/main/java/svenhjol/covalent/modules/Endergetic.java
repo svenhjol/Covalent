@@ -29,8 +29,7 @@ public class Endergetic extends MesonModule {
     }
 
     @Override
-    public boolean test() {
-        return Meson.enabled("charm:variant_barrels")
-            && ModHelper.present("endergetic");
+    public boolean depends() {
+        return ModHelper.present("endergetic");
     }
 }

@@ -38,8 +38,7 @@ public class Atmospheric extends MesonModule {
     }
 
     @Override
-    public boolean test() {
-        return Meson.enabled("charm:variant_barrels")
-            && ModHelper.present("atmospheric");
+    public boolean depends() {
+        return ModHelper.present("atmospheric");
     }
 }

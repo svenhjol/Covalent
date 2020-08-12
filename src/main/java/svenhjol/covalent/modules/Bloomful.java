@@ -29,8 +29,7 @@ public class Bloomful extends MesonModule {
     }
 
     @Override
-    public boolean test() {
-        return Meson.enabled("charm:variant_barrels")
-            && ModHelper.present("bloomful");
+    public boolean depends() {
+        return ModHelper.present("bloomful");
     }
 }

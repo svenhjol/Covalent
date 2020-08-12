@@ -22,6 +22,6 @@ authors="svenhjol, Coranthes"
 [[dependencies.covalent]]
     modId="charm" #mandatory
     mandatory=true #mandatory
-    versionRange="[1.16.1-2.0.0,)" #mandatory
+    versionRange="[1.16.1-2.0.0-beta.3,)" #mandatory
     ordering="AFTER" # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     side="BOTH" # Side this dependency is applied on - BOTH, CLIENT or SERVER

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "covalent",
+  "version": "${version}",
+
+  "name": "Covalent",
+  "description": "Extra integration for Charm.",
+  "authors": [
+    "svenhjol",
+    "Coranthes"
+  ],
+  "contact": {
+    "homepage": "https://svenhjol.github.io/Charm/",
+    "sources": "https://github.com/svenhjol/Covalent"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "svenhjol.covalent.Covalent"
+    ]
+  },
+  "mixins": [
+    "covalent.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x",
+    "charm": "2.0.*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

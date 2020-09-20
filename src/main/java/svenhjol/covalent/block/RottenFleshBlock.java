@@ -6,13 +6,13 @@ import svenhjol.covalent.module.StorageBlocks;
 import svenhjol.meson.MesonModule;
 import svenhjol.meson.block.MesonBlock;
 
-public class WheatSeedBlock extends MesonBlock {
-    public WheatSeedBlock(MesonModule module) {
-        super(module, "wheat_seed_block", AbstractBlock.Settings.copy(Blocks.HAY_BLOCK));
+public class RottenFleshBlock extends MesonBlock {
+    public RottenFleshBlock(MesonModule module) {
+        super(module, "rotten_flesh_block", AbstractBlock.Settings.copy(Blocks.SLIME_BLOCK));
     }
 
     @Override
     public boolean enabled() {
-        return module.enabled && StorageBlocks.wheatSeeds;
+        return module.enabled && StorageBlocks.rottenflesh;
     }
 }

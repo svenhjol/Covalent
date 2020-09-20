@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "covalent:block/wheat_seed_block_top",
+    "side": "covalent:block/wheat_seed_block_side",
+    "bottom": "covalent:block/wheat_seed_block_bottom"
+  }
+}

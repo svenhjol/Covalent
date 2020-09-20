@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "covalent:rotten_flesh_bundle"
+      "item": "covalent:rotten_flesh_block"
     }
   ],
   "result": {

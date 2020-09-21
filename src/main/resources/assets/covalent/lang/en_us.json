@@ -1,4 +1,6 @@
 {
   "block.covalent.wheat_seed_block": "Wheat Seed Sack",
-  "block.covalent.rotten_flesh_block": "Rotten Flesh Bundle"
+  "block.covalent.rotten_flesh_block": "Rotten Flesh Bundle",
+  "block.covalent.bamboo_block": "Bamboo Bundle",
+  "block.covalent.egg_block": "Egg Crate"
 }

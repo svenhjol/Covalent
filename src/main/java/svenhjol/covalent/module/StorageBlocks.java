@@ -4,6 +4,7 @@ import net.minecraft.util.Identifier;
 import svenhjol.covalent.Covalent;
 import svenhjol.covalent.block.BambooBlock;
 import svenhjol.covalent.block.EggBlock;
+import svenhjol.covalent.block.LanternBlock;
 import svenhjol.covalent.block.RottenFleshBlock;
 import svenhjol.covalent.block.WheatSeedBlock;
 import svenhjol.meson.MesonModule;
@@ -26,6 +27,9 @@ public class StorageBlocks extends MesonModule {
     public static boolean bamboo = true;
     @Config(name = "Egg Crate")
     public static boolean egg= true;
+    @Config(name = "Glass Lantern")
+    public static boolean goldnugget= true;
+
 
     @Override
     public void register() {
@@ -33,7 +37,7 @@ public class StorageBlocks extends MesonModule {
         STORAGE_BLOCKS.add(new RottenFleshBlock(this));
         STORAGE_BLOCKS.add(new BambooBlock(this));
         STORAGE_BLOCKS.add(new EggBlock(this));
-
+        STORAGE_BLOCKS.add(new LanternBlock(this));
     }
 
     @Override
@@ -51,10 +55,14 @@ public class StorageBlocks extends MesonModule {
                     if (!egg) {
                         recipes.add(new Identifier(Covalent.MOD_ID, "storage_blocks/egg_block_from_egg"));
                         recipes.add(new Identifier(Covalent.MOD_ID, "storage_blocks/egg_from_egg_block"));
+                        if (!egg) {
+                            recipes.add(new Identifier(Covalent.MOD_ID, "storage_blocks/lantern_block_from_gold_nugget"));
 
             }
             return recipes;
         }
+        return recipes;
+    }
         return recipes;
     }
         return recipes;

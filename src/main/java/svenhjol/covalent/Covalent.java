@@ -1,6 +1,7 @@
 package svenhjol.covalent;
 
 import svenhjol.covalent.module.StorageBlocks;
+import svenhjol.covalent.module.VariantLanterns;
 import svenhjol.meson.MesonMod;
 import svenhjol.meson.MesonModule;
 
@@ -18,7 +19,8 @@ public class Covalent extends MesonMod {
     @Override
     protected List<Class<? extends MesonModule>> getModules() {
         return Arrays.asList(
-            StorageBlocks.class
+            StorageBlocks.class,
+            VariantLanterns.class
         );
     }
 }

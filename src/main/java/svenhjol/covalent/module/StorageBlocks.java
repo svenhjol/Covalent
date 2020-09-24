@@ -6,6 +6,7 @@ import svenhjol.covalent.block.BambooBlock;
 import svenhjol.covalent.block.EggBlock;
 import svenhjol.covalent.block.RottenFleshBlock;
 import svenhjol.covalent.block.WheatSeedBlock;
+import svenhjol.covalent.block.CyanDyeBlock;
 import svenhjol.meson.MesonModule;
 import svenhjol.meson.block.MesonBlock;
 import svenhjol.meson.iface.Config;
@@ -21,6 +22,7 @@ public class StorageBlocks extends MesonModule {
     public static RottenFleshBlock ROTTEN_FLESH_BLOCK;
     public static BambooBlock BAMBOO_BLOCK;
     public static EggBlock EGG_BLOCK;
+    public static CyanDyeBlock CYAN_DYE_BLOCK;
 
     public static List<MesonBlock> STORAGE_BLOCKS = new ArrayList<>();
 
@@ -36,16 +38,21 @@ public class StorageBlocks extends MesonModule {
     @Config(name = "Egg crate")
     public static boolean egg = true;
 
+    @Config(name = "Jar of Cyan Dye")
+    public static boolean cyanDye = true;
+
     @Override
     public void register() {
         WHEAT_SEED_BLOCK = new WheatSeedBlock(this);
         ROTTEN_FLESH_BLOCK = new RottenFleshBlock(this);
         BAMBOO_BLOCK = new BambooBlock(this);
         EGG_BLOCK = new EggBlock(this);
+        CYAN_DYE_BLOCK = new CyanDyeBlock(this);
 
         STORAGE_BLOCKS.addAll(Arrays.asList(
             WHEAT_SEED_BLOCK,
             ROTTEN_FLESH_BLOCK,
+            CYAN_DYE_BLOCK,
             BAMBOO_BLOCK,
             EGG_BLOCK
         ));
@@ -72,6 +79,11 @@ public class StorageBlocks extends MesonModule {
         if (!egg) {
             recipes.add(new Identifier(Covalent.MOD_ID, "storage_blocks/egg_block_from_egg"));
             recipes.add(new Identifier(Covalent.MOD_ID, "storage_blocks/eggs_from_egg_block"));
+        }
+
+        if (!cyanDye) {
+            recipes.add(new Identifier(Covalent.MOD_ID, "storage_blocks/cyan_dye_block_from_cyan_dye"));
+            recipes.add(new Identifier(Covalent.MOD_ID, "storage_blocks/cyan_dye_from_cyan_dye_block"));
         }
 
         return recipes;

@@ -3,6 +3,6 @@
   "textures": {
     "top": "covalent:block/egg_block_top",
     "side": "covalent:block/egg_block_side",
-    "bottom": "covalent:block/egg_block_bottom"
+    "bottom": "covalent:block/egg_block_top"
   }
 }

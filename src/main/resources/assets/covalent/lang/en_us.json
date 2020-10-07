@@ -4,5 +4,8 @@
   "block.covalent.bamboo_block": "Bamboo Bundle",
   "block.covalent.egg_block": "Egg Crate",
   "block.covalent.lantern_block": "Glass Lantern",
-  "block.covalent.cyan_dye_block": "Jar of Cyan Dye"
+  "block.covalent.cyan_dye_block": "Jar of Cyan Dye",
+  "block.covalent.carrot_block": "Carrot Crate",
+  "block.covalent.potato_block": "Potato Crate",
+  "block.covalent.beetroot_block": "Beetroot Crate                                         "
 }

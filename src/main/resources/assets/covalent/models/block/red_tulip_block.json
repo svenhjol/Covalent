@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "top": "covalent:block/red_tulip_top",
-    "side": "covalent:block/red_tulip_side",
-    "bottom": "covalent:block/red_tulip_bottom"
-  }
-}

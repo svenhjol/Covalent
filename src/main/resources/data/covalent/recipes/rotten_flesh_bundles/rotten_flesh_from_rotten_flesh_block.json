@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "covalent:rotten_flesh_bundle"
+    }
+  ],
+  "result": {
+    "item": "minecraft:rotten_flesh",
+    "count": 9
+  }
+}

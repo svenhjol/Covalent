@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "covalent:wheat_seed_sack"
+    }
+  ],
+  "result": {
+    "item": "minecraft:wheat_seeds",
+    "count": 9
+  }
+}

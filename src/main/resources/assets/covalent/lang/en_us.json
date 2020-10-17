@@ -1,10 +1,9 @@
 {
-  "block.covalent.wheat_seed_block": "Wheat Seed Sack",
-  "block.covalent.rotten_flesh_block": "Rotten Flesh Bundle",
-  "block.covalent.bamboo_block": "Bamboo Bundle",
-  "block.covalent.egg_block": "Egg Crate",
-  "block.covalent.lantern_block": "Glass Lantern",
-  "block.covalent.carrot_block": "Carrot Crate",
-  "block.covalent.potato_block": "Potato Crate",
-  "block.covalent.beetroot_block": "Beetroot Crate                                         "
+  "block.covalent.bamboo_bundle": "Bamboo Bundle",
+  "block.covalent.beetroot_crate": "Beetroot Crate",
+  "block.covalent.carrot_crate": "Carrot Crate",
+  "block.covalent.egg_crate": "Egg Crate",
+  "block.covalent.potato_crate": "Potato Crate",
+  "block.covalent.rotten_flesh_bundle": "Rotten Flesh Bundle",
+  "block.covalent.wheat_seed_sack": "Wheat Seed Sack"
 }

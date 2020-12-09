@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "charm",
+  "id": "covalent",
   "version": "${version}",
 
   "name": "Covalent",

@@ -2,7 +2,8 @@ package svenhjol.covalent;
 
 import net.fabricmc.api.ModInitializer;
 import svenhjol.charm.base.handler.ModuleHandler;
-import svenhjol.covalent.module.TerrestriaIntegration;
+import svenhjol.covalent.endergetic.EndergeticExpansion;
+import svenhjol.covalent.terrestria.Terrestria;
 
 import java.util.Arrays;
 
@@ -12,7 +13,8 @@ public class Covalent implements ModInitializer {
     @Override
     public void onInitialize() {
         ModuleHandler.INSTANCE.registerFabricMod(MOD_ID, Arrays.asList(
-            TerrestriaIntegration.class
+            EndergeticExpansion.class,
+            Terrestria.class
         ));
     }
 }

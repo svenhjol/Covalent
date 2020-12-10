@@ -144,3 +144,5 @@ copy_replace "crate_recipe" "${DATA}/recipes/${NAMESPACE}/${TYPE}_crate.json"
 
 add_tags
 add_lang_strings
+
+echo "Done!"

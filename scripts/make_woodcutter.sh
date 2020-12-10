@@ -44,3 +44,5 @@ copy_replace() {
 
 # woodcutter recipes
 copy_replace "woodcutter_boat" "${DATA}/recipes/${NAMESPACE}/${TYPE}_boat_from_woodcutting.json"
+
+echo "Done!"

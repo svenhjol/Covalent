@@ -4,7 +4,7 @@
     "IWI", "W W", "IWI"
   ],
   "key": {
-    "I": {"tag": "forge:ingots/iron"},
+    "I": {"item": "minecraft:iron_ingot"},
     "W": {"item": "NAMESPACE:TYPE_planks"}
   },
   "result": {

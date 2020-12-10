@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "covalent:rosewood_barrel",
+    "covalent:yucca_barrel",
+    "covalent:maple_barrel",
+    "covalent:bamboo_barrel",
+    "covalent:wisteria_barrel",
+    "covalent:poise_barrel",
+    "covalent:willow_barrel",
+    "covalent:driftwood_barrel"
+  ]
+}

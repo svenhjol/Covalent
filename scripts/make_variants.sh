@@ -91,7 +91,7 @@ add_tags() {
   done
 
   # crates
-  for f in "${DATA}/${CONTAINER}/tags/blocks/crates.json" "${DATA}/${CONTAINER}/tags/items/crates.json"
+  for f in "${DATAROOT}/${CONTAINER}/tags/blocks/crates.json" "${DATAROOT}/${CONTAINER}/tags/items/crates.json"
   do
     if [ -e "$f" ]; then
       remove_last_entry "${f}" "]" "}"

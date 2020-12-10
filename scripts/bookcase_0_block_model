@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "NAMESPACE:block/TYPE_planks",
+    "side": "THISMOD:block/TYPE_bookcase_0"
+  }
+}

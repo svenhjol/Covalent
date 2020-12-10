@@ -58,8 +58,10 @@ add_lang_strings() {
 }
 
 add_tags() {
+  CONTAINER=$1
+
   # barrels
-  for f in "${DATAROOT}/forge/tags/blocks/barrels.json" "${DATAROOT}/forge/tags/items/barrels.json"
+  for f in "${DATAROOT}/${CONTAINER}/tags/blocks/barrels.json" "${DATAROOT}/${CONTAINER}/tags/items/barrels.json"
   do
     if [ -e "$f" ]; then
       remove_last_entry "${f}" "]" "}"
@@ -74,7 +76,7 @@ add_tags() {
   done
 
   # bookshelves
-  for f in "${DATAROOT}/forge/tags/blocks/bookshelves.json" "${DATAROOT}/forge/tags/items/bookshelves.json"
+  for f in "${DATAROOT}/${CONTAINER}/tags/blocks/bookshelves.json" "${DATAROOT}/${CONTAINER}/tags/items/bookshelves.json"
   do
     if [ -e "$f" ]; then
       remove_last_entry "${f}" "]" "}"
@@ -89,7 +91,7 @@ add_tags() {
   done
 
   # crates
-  for f in "${DATA}/tags/blocks/crates.json" "${DATA}/tags/items/crates.json"
+  for f in "${DATA}/${CONTAINER}tags/blocks/crates.json" "${DATA}/${CONTAINER}tags/items/crates.json"
   do
     if [ -e "$f" ]; then
       remove_last_entry "${f}" "]" "}"
@@ -142,7 +144,8 @@ copy_replace "crate_item_model" "${ASSETS}/models/item/${TYPE}_crate.json"
 copy_replace "crate_loot_table" "${DATA}/loot_tables/blocks/${TYPE}_crate.json"
 copy_replace "crate_recipe" "${DATA}/recipes/${NAMESPACE}/${TYPE}_crate.json"
 
-add_tags
+add_tags "charm"
+add_tags "forge"
 add_lang_strings
 
 echo "Done!"

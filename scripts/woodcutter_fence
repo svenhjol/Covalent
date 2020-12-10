@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:woodcutting",
+  "ingredient": {
+    "item": "NAMESPACE:TYPE_planks"
+  },
+  "result": "NAMESPACE:TYPE_fence",
+  "count": 1
+}

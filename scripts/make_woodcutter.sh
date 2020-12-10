@@ -44,5 +44,12 @@ copy_replace() {
 
 # woodcutter recipes
 copy_replace "woodcutter_boat" "${DATA}/recipes/${NAMESPACE}/${TYPE}_boat_from_woodcutting.json"
+copy_replace "woodcutter_button" "${DATA}/recipes/${NAMESPACE}/${TYPE}_button_from_woodcutting.json"
+copy_replace "woodcutter_door" "${DATA}/recipes/${NAMESPACE}/${TYPE}_door_from_woodcutting.json"
+copy_replace "woodcutter_fence" "${DATA}/recipes/${NAMESPACE}/${TYPE}_fence_from_woodcutting.json"
+copy_replace "woodcutter_fence_gate" "${DATA}/recipes/${NAMESPACE}/${TYPE}_fence_gate_from_woodcutting.json"
+copy_replace "woodcutter_sign" "${DATA}/recipes/${NAMESPACE}/${TYPE}_sign_from_woodcutting.json"
+copy_replace "woodcutter_slab" "${DATA}/recipes/${NAMESPACE}/${TYPE}_slab_from_woodcutting.json"
+copy_replace "woodcutter_stairs" "${DATA}/recipes/${NAMESPACE}/${TYPE}_stairs_from_woodcutting.json"
 
 echo "Done!"

@@ -8,7 +8,7 @@ import svenhjol.charm.block.VariantBarrelBlock;
 import svenhjol.covalent.Covalent;
 
 @Module(mod = Covalent.MOD_ID, description = "Endergetic Expansion integration")
-public class EndergeticExpansion extends CharmModule {
+public class Endergetic extends CharmModule {
     public static VariantBarrelBlock POISE_BARREL;
 
     @Override

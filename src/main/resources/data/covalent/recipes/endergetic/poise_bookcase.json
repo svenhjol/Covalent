@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "endergetic:poise_planks"
+    },
+    "#": {
+      "item": "NAMEPSACE:poise_bookshelf"
+    }
+  },
+  "result": {
+    "item": "covalent:poise_bookcase"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "charm:module_enabled",
+          "module": "charm:bookcases"
+        },
+        {
+          "type": "charm:module_enabled",
+          "module": "covalent:endergetic"
+        }
+      ]
+    }
+  ]
+}

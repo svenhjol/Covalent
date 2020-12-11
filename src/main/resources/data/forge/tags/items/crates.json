@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "covalent:poise_crate"
+    "covalent:poise_crate",
+    "covalent:maple_crate",
+    "covalent:yucca_crate",
+    "covalent:rosewood_crate"
   ]
 }

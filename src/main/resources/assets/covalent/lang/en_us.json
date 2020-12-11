@@ -1,5 +1,17 @@
 {
   "block.covalent.poise_barrel": "Poise Barrel",
   "block.covalent.poise_bookcase": "Poise Bookcase",
-  "block.covalent.poise_crate": "Poise Crate"
+  "block.covalent.poise_crate": "Poise Crate",
+
+  "block.covalent.maple_barrel": "Maple Barrel",
+  "block.covalent.maple_bookcase": "Maple Bookcase",
+  "block.covalent.maple_crate": "Maple Crate",
+
+  "block.covalent.yucca_barrel": "Yucca Barrel",
+  "block.covalent.yucca_bookcase": "Yucca Bookcase",
+  "block.covalent.yucca_crate": "Yucca Crate",
+
+  "block.covalent.rosewood_barrel": "Rosewood Barrel",
+  "block.covalent.rosewood_bookcase": "Rosewood Bookcase",
+  "block.covalent.rosewood_crate": "Rosewood Crate"
 }

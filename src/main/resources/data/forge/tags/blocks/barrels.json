@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "covalent:poise_barrel"
+    "covalent:poise_barrel",
+    "covalent:maple_barrel",
+    "covalent:yucca_barrel",
+    "covalent:rosewood_barrel"
   ]
 }

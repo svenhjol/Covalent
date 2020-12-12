@@ -13,5 +13,9 @@
 
   "block.covalent.rosewood_barrel": "Rosewood Barrel",
   "block.covalent.rosewood_bookcase": "Rosewood Bookcase",
-  "block.covalent.rosewood_crate": "Rosewood Crate"
+  "block.covalent.rosewood_crate": "Rosewood Crate",
+
+  "block.covalent.japanese_maple_barrel": "Japanese_maple Barrel",
+  "block.covalent.japanese_maple_bookcase": "Japanese_maple Bookcase",
+  "block.covalent.japanese_maple_crate": "Japanese_maple Crate"
 }

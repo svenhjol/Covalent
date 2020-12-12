@@ -1,9 +1,11 @@
 package svenhjol.covalent.atmospheric;
+
 import svenhjol.charm.base.enums.IVariantMaterial;
 
-
 public enum AtmosphericMaterial implements IVariantMaterial {
-    ROSEWOOD;
-    public static IVariantMaterial YUCCA;
-
+    YUCCA;
+    public static IVariantMaterial ROSEWOOD;
 }
+
+
+

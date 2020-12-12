@@ -2,6 +2,7 @@ package svenhjol.covalent;
 import svenhjol.covalent.atmospheric.Atmospheric;
 import net.fabricmc.api.ModInitializer;
 import svenhjol.charm.base.handler.ModuleHandler;
+import svenhjol.covalent.autumnity.Autumnity;
 import svenhjol.covalent.endergetic.Endergetic;
 import svenhjol.covalent.terrestria.Terrestria;
 
@@ -15,7 +16,8 @@ public class Covalent implements ModInitializer {
         ModuleHandler.INSTANCE.registerFabricMod(MOD_ID, Arrays.asList(
             Endergetic.class,
             Terrestria.class,
-            Atmospheric.class
+            Atmospheric.class,
+            Autumnity.class
         ));
     }
 }

@@ -5,6 +5,17 @@
     "covalent:maple_bookcase",
     "covalent:rosewood_bookcase",
     "covalent:yucca_bookcase",
-    "covalent:japanese_maple_bookcase"
+    "covalent:japanese_maple_bookcase",
+    "covalent:cherry_bookcase",
+    "covalent:dead_bookcase",
+    "covalent:fir_bookcase",
+    "covalent:hellbark_bookcase",
+    "covalent:jacaranda_bookcase",
+    "covalent:magic_bookcase",
+    "covalent:mahogany_bookcase",
+    "covalent:palm_bookcase",
+    "covalent:redwood_bookcase",
+    "covalent:umbran_bookcase",
+    "covalent:willow_bookcase"
   ]
 }

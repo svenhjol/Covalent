@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/umbran_bookcase_0",
+  "textures": {
+    "side": "biomesoplenty:block/umbran_bookshelf"
+  }
+}

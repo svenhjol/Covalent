@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP", "P P", "PSP"
+  ],
+  "key": {
+    "S": {"item": "biomesoplenty:cherry_slab"},
+    "P": {"item": "biomesoplenty:cherry_planks"}
+  },
+  "result": {
+    "item": "covalent:cherry_barrel"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "charm:module_enabled",
+          "module": "charm:variant_barrels"
+        },
+        {
+          "type": "charm:module_enabled",
+          "module": "covalent:biomesoplenty"
+        }
+      ]
+    }
+  ]
+}

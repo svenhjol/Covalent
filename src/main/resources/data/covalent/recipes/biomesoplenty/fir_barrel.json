@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP", "P P", "PSP"
+  ],
+  "key": {
+    "S": {"item": "biomesoplenty:fir_slab"},
+    "P": {"item": "biomesoplenty:fir_planks"}
+  },
+  "result": {
+    "item": "covalent:fir_barrel"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "charm:module_enabled",
+          "module": "charm:variant_barrels"
+        },
+        {
+          "type": "charm:module_enabled",
+          "module": "covalent:biomesoplenty"
+        }
+      ]
+    }
+  ]
+}

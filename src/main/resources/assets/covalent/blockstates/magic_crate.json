@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "covalent:block/magic_crate" }
+  }
+}

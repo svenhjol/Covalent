@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "biomesoplenty:block/umbran_planks",
+    "side": "covalent:block/umbran_bookcase_0"
+  }
+}

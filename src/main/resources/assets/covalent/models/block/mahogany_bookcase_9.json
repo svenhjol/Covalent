@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/mahogany_bookcase_0",
+  "textures": {
+    "side": "biomesoplenty:block/mahogany_bookshelf"
+  }
+}

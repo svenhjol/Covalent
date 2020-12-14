@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "biomesoplenty:umbran_planks"
+    },
+    "#": {
+      "item": "NAMEPSACE:umbran_bookshelf"
+    }
+  },
+  "result": {
+    "item": "covalent:umbran_bookcase"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "charm:module_enabled",
+          "module": "charm:bookcases"
+        },
+        {
+          "type": "charm:module_enabled",
+          "module": "covalent:biomesoplenty"
+        }
+      ]
+    }
+  ]
+}

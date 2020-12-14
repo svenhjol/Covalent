@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/jacaranda_bookcase_0",
+  "textures": {
+    "side": "biomesoplenty:block/jacaranda_bookshelf"
+  }
+}

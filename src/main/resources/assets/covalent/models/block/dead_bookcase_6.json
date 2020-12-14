@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/dead_bookcase_0",
+  "textures": {
+    "side": "biomesoplenty:block/dead_bookshelf"
+  }
+}

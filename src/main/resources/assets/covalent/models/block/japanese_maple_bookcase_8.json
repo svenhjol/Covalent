@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/japanese_maple_bookcase_0",
+  "textures": {
+    "side": "terrestria:block/japanese_maple_bookshelf"
+  }
+}

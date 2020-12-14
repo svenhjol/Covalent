@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "slots=0": { "model": "covalent:block/redwood_bookcase_0" },
+    "slots=1": { "model": "covalent:block/redwood_bookcase_1" },
+    "slots=2": { "model": "covalent:block/redwood_bookcase_1" },
+    "slots=3": { "model": "covalent:block/redwood_bookcase_2" },
+    "slots=4": { "model": "covalent:block/redwood_bookcase_2" },
+    "slots=5": { "model": "covalent:block/redwood_bookcase_3" },
+    "slots=6": { "model": "covalent:block/redwood_bookcase_3" },
+    "slots=7": { "model": "covalent:block/redwood_bookcase_4" },
+    "slots=8": { "model": "covalent:block/redwood_bookcase_4" },
+    "slots=9": { "model": "covalent:block/redwood_bookcase_5" },
+    "slots=10": { "model": "covalent:block/redwood_bookcase_5" },
+    "slots=11": { "model": "covalent:block/redwood_bookcase_6" },
+    "slots=12": { "model": "covalent:block/redwood_bookcase_6" },
+    "slots=13": { "model": "covalent:block/redwood_bookcase_7" },
+    "slots=14": { "model": "covalent:block/redwood_bookcase_7" },
+    "slots=15": { "model": "covalent:block/redwood_bookcase_8" },
+    "slots=16": { "model": "covalent:block/redwood_bookcase_8" },
+    "slots=17": { "model": "covalent:block/redwood_bookcase_9" },
+    "slots=18": { "model": "covalent:block/redwood_bookcase_9" }
+  }
+}

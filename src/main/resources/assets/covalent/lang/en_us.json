@@ -17,5 +17,49 @@
 
   "block.covalent.japanese_maple_barrel": "Japanese_maple Barrel",
   "block.covalent.japanese_maple_bookcase": "Japanese_maple Bookcase",
-  "block.covalent.japanese_maple_crate": "Japanese_maple Crate"
+  "block.covalent.japanese_maple_crate": "Japanese_maple Crate",
+
+  "block.covalent.cherry_barrel": "Cherry Barrel",
+  "block.covalent.cherry_bookcase": "Cherry Bookcase",
+  "block.covalent.cherry_crate": "Cherry Crate",
+
+  "block.covalent.dead_barrel": "Dead Barrel",
+  "block.covalent.dead_bookcase": "Dead Bookcase",
+  "block.covalent.dead_crate": "Dead Crate",
+
+  "block.covalent.fir_barrel": "Fir Barrel",
+  "block.covalent.fir_bookcase": "Fir Bookcase",
+  "block.covalent.fir_crate": "Fir Crate",
+
+  "block.covalent.hellbark_barrel": "Hellbark Barrel",
+  "block.covalent.hellbark_bookcase": "Hellbark Bookcase",
+  "block.covalent.hellbark_crate": "Hellbark Crate",
+
+  "block.covalent.jacaranda_barrel": "Jacaranda Barrel",
+  "block.covalent.jacaranda_bookcase": "Jacaranda Bookcase",
+  "block.covalent.jacaranda_crate": "Jacaranda Crate",
+
+  "block.covalent.magic_barrel": "Magic Barrel",
+  "block.covalent.magic_bookcase": "Magic Bookcase",
+  "block.covalent.magic_crate": "Magic Crate",
+
+  "block.covalent.mahogany_barrel": "Mahogany Barrel",
+  "block.covalent.mahogany_bookcase": "Mahogany Bookcase",
+  "block.covalent.mahogany_crate": "Mahogany Crate",
+
+  "block.covalent.palm_barrel": "Palm Barrel",
+  "block.covalent.palm_bookcase": "Palm Bookcase",
+  "block.covalent.palm_crate": "Palm Crate",
+
+  "block.covalent.redwood_barrel": "Redwood Barrel",
+  "block.covalent.redwood_bookcase": "Redwood Bookcase",
+  "block.covalent.redwood_crate": "Redwood Crate",
+
+  "block.covalent.umbran_barrel": "Umbran Barrel",
+  "block.covalent.umbran_bookcase": "Umbran Bookcase",
+  "block.covalent.umbran_crate": "Umbran Crate",
+
+  "block.covalent.willow_barrel": "Willow Barrel",
+  "block.covalent.willow_bookcase": "Willow Bookcase",
+  "block.covalent.willow_crate": "Willow Crate"
 }

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP", "P P", "PSP"
+  ],
+  "key": {
+    "S": {"item": "biomesoplenty:mahogany_slab"},
+    "P": {"item": "biomesoplenty:mahogany_planks"}
+  },
+  "result": {
+    "item": "covalent:mahogany_barrel"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "charm:module_enabled",
+          "module": "charm:variant_barrels"
+        },
+        {
+          "type": "charm:module_enabled",
+          "module": "covalent:biomesoplenty"
+        }
+      ]
+    }
+  ]
+}

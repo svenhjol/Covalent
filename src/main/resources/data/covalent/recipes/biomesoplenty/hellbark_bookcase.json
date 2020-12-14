@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "biomesoplenty:hellbark_planks"
+    },
+    "#": {
+      "item": "NAMEPSACE:hellbark_bookshelf"
+    }
+  },
+  "result": {
+    "item": "covalent:hellbark_bookcase"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "charm:module_enabled",
+          "module": "charm:bookcases"
+        },
+        {
+          "type": "charm:module_enabled",
+          "module": "covalent:biomesoplenty"
+        }
+      ]
+    }
+  ]
+}

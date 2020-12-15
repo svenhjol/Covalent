@@ -40,7 +40,21 @@ public class Biomesoplenty extends CharmModule {
     public static BookcaseBlock MAHOGANY_BOOKCASE;
     public static CrateBlock MAHOGANY_CRATE;
 
+    public static VariantBarrelBlock PALM_BARREL;
+    public static BookcaseBlock PALM_BOOKCASE;
+    public static CrateBlock PALM_CRATE;
 
+    public static VariantBarrelBlock REDWOOD_BARREL;
+    public static BookcaseBlock REDWOOD_BOOKCASE;
+    public static CrateBlock REDWOOD_CRATE;
+
+    public static VariantBarrelBlock UMBRAN_BARREL;
+    public static BookcaseBlock UMBRAN_BOOKCASE;
+    public static CrateBlock UMBRAN_CRATE;
+
+    public static VariantBarrelBlock WILLOW_BARREL;
+    public static BookcaseBlock WILLOW_BOOKCASE;
+    public static CrateBlock WILLOW_CRATE;
 
     @Override
     public void register() {
@@ -83,6 +97,22 @@ public class Biomesoplenty extends CharmModule {
         MAHOGANY_BARREL = new VariantBarrelBlock(this, mahogany);
         MAHOGANY_BOOKCASE = new BookcaseBlock(this, mahogany);
         MAHOGANY_CRATE = new CrateBlock(this, mahogany);
+
+        PALM_BARREL = new VariantBarrelBlock(this, palm);
+        PALM_BOOKCASE = new BookcaseBlock(this, palm);
+        PALM_CRATE = new CrateBlock(this, palm);
+
+        REDWOOD_BARREL = new VariantBarrelBlock(this, redwood);
+        REDWOOD_BOOKCASE = new BookcaseBlock(this, redwood);
+        REDWOOD_CRATE = new CrateBlock(this, redwood);
+
+        UMBRAN_BARREL = new VariantBarrelBlock(this, umbran);
+        UMBRAN_BOOKCASE = new BookcaseBlock(this, umbran);
+        UMBRAN_CRATE = new CrateBlock(this, umbran);
+
+        WILLOW_BARREL = new VariantBarrelBlock(this, willow);
+        WILLOW_BOOKCASE = new BookcaseBlock(this, willow);
+        WILLOW_CRATE = new CrateBlock(this, willow);
 
     }
 

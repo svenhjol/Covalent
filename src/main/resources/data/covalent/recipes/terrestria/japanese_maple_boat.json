@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:woodcutting",
-  "ingredient": {
-    "item": "terrestria:japanese_maple_planks"
-  },
-  "result": "terrestria:japanese_maple_boat",
-  "count": 1
-}

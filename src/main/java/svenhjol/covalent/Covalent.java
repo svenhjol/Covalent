@@ -1,10 +1,7 @@
 package svenhjol.covalent;
-import svenhjol.covalent.atmospheric.Atmospheric;
+import svenhjol.charm.Charm;
+import svenhjol.charm.base.CharmLoader;
 import net.fabricmc.api.ModInitializer;
-import svenhjol.charm.base.handler.ModuleHandler;
-import svenhjol.covalent.autumnity.Autumnity;
-import svenhjol.covalent.biomesoplenty.Biomesoplenty;
-import svenhjol.covalent.endergetic.Endergetic;
 import svenhjol.covalent.terrestria.Terrestria;
 
 import java.util.Arrays;
@@ -14,12 +11,10 @@ public class Covalent implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModuleHandler.INSTANCE.registerFabricMod(MOD_ID, Arrays.asList(
-            Endergetic.class,
-            Terrestria.class,
-            Atmospheric.class,
-            Autumnity.class,
-            Biomesoplenty.class
+        Charm.runFirst();
+
+        new CharmLoader(MOD_ID, Arrays.asList(
+            Terrestria.class
         ));
     }
 }

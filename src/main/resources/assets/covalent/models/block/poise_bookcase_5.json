@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/poise_bookcase_0",
-  "textures": {
-    "side": "endergetic:block/poise_bookshelf"
-  }
-}

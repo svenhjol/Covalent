@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/yucca_bookcase_0",
-  "textures": {
-    "side": "atmospheric:block/yucca_bookshelf"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/hellbark_bookcase_0",
-  "textures": {
-    "side": "biomesoplenty:block/hellbark_bookshelf"
-  }
-}

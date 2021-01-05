@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/cherry_bookcase_0",
-  "textures": {
-    "side": "biomesoplenty:block/cherry_bookshelf"
-  }
-}

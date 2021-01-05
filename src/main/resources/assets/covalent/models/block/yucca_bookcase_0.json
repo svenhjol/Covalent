@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "atmospheric:block/yucca_planks",
-    "side": "covalent:block/yucca_bookcase_0"
-  }
-}

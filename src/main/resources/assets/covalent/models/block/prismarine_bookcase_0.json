@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "coranthemum:block/prismarine_planks",
+    "side": "covalent:block/prismarine_bookcase_0"
+  }
+}

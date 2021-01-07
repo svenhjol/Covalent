@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "coranthemum:prismarine_planks"
+    },
+    "#": {
+      "item": "NAMEPSACE:prismarine_bookshelf"
+    }
+  },
+  "result": {
+    "item": "covalent:prismarine_bookcase"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "charm:module_enabled",
+          "module": "charm:bookcases"
+        },
+        {
+          "type": "charm:module_enabled",
+          "module": "covalent:coranthemum"
+        }
+      ]
+    }
+  ]
+}

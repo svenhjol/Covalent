@@ -1,6 +1,10 @@
 {
     "block.covalent.japanese_maple_barrel": "Japanese_maple Barrel",
-  "block.covalent.japanese_maple_bookcase": "Japanese_maple Bookcase",
-  "block.covalent.japanese_maple_crate": "Japanese_maple Crate"
+    "block.covalent.japanese_maple_bookcase": "Japanese_maple Bookcase",
+    "block.covalent.japanese_maple_crate": "Japanese_maple Crate",
+    "block.covalent.aquatic_lantern": "Aquatic_lantern",
 
+  "block.covalent.prismarine_barrel": "Prismarine Barrel",
+  "block.covalent.prismarine_bookcase": "Prismarine Bookcase",
+  "block.covalent.prismarine_crate": "Prismarine Crate"
 }

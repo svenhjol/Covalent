@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "hanging=false": { "model": "covalent:block/aquatic_lantern" },
+    "hanging=true": { "model": "covalent:block/aquatic_lantern" }
+  }
+}

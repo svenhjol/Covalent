@@ -1,6 +1,6 @@
 {
   "parent": "covalent:block/fir_bookcase_0",
   "textures": {
-    "side": "biomesoplenty:block/fir_bookshelf"
+    "side": "terrestria:block/fir_bookshelf"
   }
 }

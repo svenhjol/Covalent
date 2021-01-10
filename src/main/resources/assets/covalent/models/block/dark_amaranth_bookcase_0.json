@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "terrestria:block/dark_amaranth_planks",
+    "side": "covalent:block/dark_amaranth_bookcase_0"
+  }
+}

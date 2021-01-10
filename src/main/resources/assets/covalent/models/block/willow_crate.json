@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "covalent:block/willow_crate_top",
+    "side": "covalent:block/willow_crate_side",
+    "bottom": "covalent:block/willow_crate_top"
+  }
+}

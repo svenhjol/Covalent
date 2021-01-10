@@ -1,10 +1,70 @@
 {
-    "block.covalent.japanese_maple_barrel": "Japanese_maple Barrel",
-    "block.covalent.japanese_maple_bookcase": "Japanese_maple Bookcase",
-    "block.covalent.japanese_maple_crate": "Japanese_maple Crate",
-    "block.covalent.aquatic_lantern": "Aquatic_lantern",
+  "block.covalent.japanese_maple_barrel": "Japanese_maple Barrel",
+  "block.covalent.japanese_maple_bookcase": "Japanese_maple Bookcase",
+  "block.covalent.japanese_maple_crate": "Japanese_maple Crate",
+  "block.covalent.aquatic_lantern": "Aquatic_lantern",
 
   "block.covalent.prismarine_barrel": "Prismarine Barrel",
   "block.covalent.prismarine_bookcase": "Prismarine Bookcase",
-  "block.covalent.prismarine_crate": "Prismarine Crate"
+  "block.covalent.prismarine_crate": "Prismarine Crate",
+
+  "block.covalent.japanese_maple_barrel": "Japanese_maple Barrel",
+  "block.covalent.japanese_maple_bookcase": "Japanese_maple Bookcase",
+  "block.covalent.japanese_maple_crate": "Japanese_maple Crate",
+
+  "block.covalent.cherry_oak_barrel": "Cherry_oak Barrel",
+  "block.covalent.cherry_oak_bookcase": "Cherry_oak Bookcase",
+  "block.covalent.cherry_oak_crate": "Cherry_oak Crate",
+
+  "block.covalent.dark_amaranth_barrel": "Dark_amaranth Barrel",
+  "block.covalent.dark_amaranth_bookcase": "Dark_amaranth Bookcase",
+  "block.covalent.dark_amaranth_crate": "Dark_amaranth Crate",
+
+  "block.covalent.fir_barrel": "Fir Barrel",
+  "block.covalent.fir_bookcase": "Fir Bookcase",
+  "block.covalent.fir_crate": "Fir Crate",
+
+  "block.covalent.palm_barrel": "Palm Barrel",
+  "block.covalent.palm_bookcase": "Palm Bookcase",
+  "block.covalent.palm_crate": "Palm Crate",
+
+  "block.covalent.prismarine_barrel": "Prismarine Barrel",
+  "block.covalent.prismarine_bookcase": "Prismarine Bookcase",
+  "block.covalent.prismarine_crate": "Prismarine Crate",
+
+  "block.covalent.purpur_barrel": "Purpur Barrel",
+  "block.covalent.purpur_bookcase": "Purpur Bookcase",
+  "block.covalent.purpur_crate": "Purpur Crate",
+
+  "block.covalent.hemlock_barrel": "Hemlock Barrel",
+  "block.covalent.hemlock_bookcase": "Hemlock Bookcase",
+  "block.covalent.hemlock_crate": "Hemlock Crate",
+
+  "block.covalent.redwood_barrel": "Redwood Barrel",
+  "block.covalent.redwood_bookcase": "Redwood Bookcase",
+  "block.covalent.redwood_crate": "Redwood Crate",
+
+  "block.covalent.rubber_barrel": "Rubber Barrel",
+  "block.covalent.rubber_bookcase": "Rubber Bookcase",
+  "block.covalent.rubber_crate": "Rubber Crate",
+
+  "block.covalent.yucca_palm_barrel": "Yucca_palm Barrel",
+  "block.covalent.yucca_palm_bookcase": "Yucca_palm Bookcase",
+  "block.covalent.yucca_palm_crate": "Yucca_palm Crate",
+
+  "block.covalent.sakura_barrel": "Sakura Barrel",
+  "block.covalent.sakura_bookcase": "Sakura Bookcase",
+  "block.covalent.sakura_crate": "Sakura Crate",
+
+  "block.covalent.willow_barrel": "Willow Barrel",
+  "block.covalent.willow_bookcase": "Willow Bookcase",
+  "block.covalent.willow_crate": "Willow Crate",
+
+  "block.covalent.cypress_barrel": "Cypress Barrel",
+  "block.covalent.cypress_bookcase": "Cypress Bookcase",
+  "block.covalent.cypress_crate": "Cypress Crate",
+
+  "block.covalent.rainbow_eucalyptus_barrel": "Rainbow_eucalyptus Barrel",
+  "block.covalent.rainbow_eucalyptus_bookcase": "Rainbow_eucalyptus Bookcase",
+  "block.covalent.rainbow_eucalyptus_crate": "Rainbow_eucalyptus Crate"
 }

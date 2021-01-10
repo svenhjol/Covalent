@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "terrestria:rubber_planks"
+    },
+    "#": {
+      "item": "NAMEPSACE:rubber_bookshelf"
+    }
+  },
+  "result": {
+    "item": "covalent:rubber_bookcase"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "charm:module_enabled",
+          "module": "charm:bookcases"
+        },
+        {
+          "type": "charm:module_enabled",
+          "module": "covalent:terrestria"
+        }
+      ]
+    }
+  ]
+}

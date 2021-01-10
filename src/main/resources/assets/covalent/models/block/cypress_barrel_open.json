@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "top": "covalent:block/cypress_barrel_top_open",
+        "side": "covalent:block/cypress_barrel_side",
+        "bottom": "covalent:block/cypress_barrel_bottom"
+    }
+}

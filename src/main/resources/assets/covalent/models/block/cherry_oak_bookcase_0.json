@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "terrestria:block/cherry_oak_planks",
+    "side": "covalent:block/cherry_oak_bookcase_0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/redwood_bookcase_0",
+  "textures": {
+    "side": "terrestria:block/redwood_bookshelf"
+  }
+}

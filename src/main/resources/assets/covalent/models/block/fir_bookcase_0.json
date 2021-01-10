@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_column",
   "textures": {
-    "end": "biomesoplenty:block/fir_planks",
+    "end": "terrestria:block/fir_planks",
     "side": "covalent:block/fir_bookcase_0"
   }
 }

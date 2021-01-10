@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "terrestria:block/rainbow_eucalyptus_planks",
+    "side": "covalent:block/rainbow_eucalyptus_bookcase_0"
+  }
+}

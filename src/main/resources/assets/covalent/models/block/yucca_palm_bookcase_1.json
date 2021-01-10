@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/yucca_palm_bookcase_0",
+  "textures": {
+    "side": "terrestria:block/yucca_palm_bookshelf"
+  }
+}

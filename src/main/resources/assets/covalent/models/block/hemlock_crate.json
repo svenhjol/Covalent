@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "covalent:block/hemlock_crate_top",
+    "side": "covalent:block/hemlock_crate_side",
+    "bottom": "covalent:block/hemlock_crate_top"
+  }
+}

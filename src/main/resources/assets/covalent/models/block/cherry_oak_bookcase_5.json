@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/cherry_oak_bookcase_0",
+  "textures": {
+    "side": "terrestria:block/cherry_oak_bookshelf"
+  }
+}

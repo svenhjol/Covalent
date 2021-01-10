@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/rubber_bookcase_0",
+  "textures": {
+    "side": "terrestria:block/rubber_bookshelf"
+  }
+}

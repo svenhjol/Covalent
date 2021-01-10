@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IWI", "W W", "IWI"
+  ],
+  "key": {
+    "I": {"item": "minecraft:iron_ingot"},
+    "W": {"item": "terrestria:dark_amaranth_planks"}
+  },
+  "result": {
+    "item": "covalent:dark_amaranth_crate"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "charm:module_enabled",
+          "module": "charm:crates"
+        },
+        {
+          "type": "charm:module_enabled",
+          "module": "covalent:terrestria"
+        }
+      ]
+    }
+  ]
+}

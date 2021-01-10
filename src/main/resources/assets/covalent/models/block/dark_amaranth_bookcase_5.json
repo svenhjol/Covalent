@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/dark_amaranth_bookcase_0",
+  "textures": {
+    "side": "terrestria:block/dark_amaranth_bookshelf"
+  }
+}

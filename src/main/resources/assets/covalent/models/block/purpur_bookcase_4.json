@@ -1,0 +1,6 @@
+{
+  "parent": "covalent:block/purpur_bookcase_0",
+  "textures": {
+    "side": "coranthemum:block/purpur_bookshelf"
+  }
+}

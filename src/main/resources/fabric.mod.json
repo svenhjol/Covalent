@@ -27,8 +27,8 @@
   },
 
   "depends": {
-    "charm": ">=2.1.7",
-    "fabricloader": ">=0.7.4",
+    "charm": ">=2.3.0",
+    "fabricloader": ">=0.8.0",
     "fabric": "*",
     "minecraft": "1.16.x",
     "fabric-key-binding-api-v1": "*"

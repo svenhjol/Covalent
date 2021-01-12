@@ -23,6 +23,5 @@
         "module": "covalent:barrels"
       }
     ]
-  },
-  "variants": "material"
+  }
 }

@@ -5,6 +5,5 @@
       "end": "MOD:block/VARIANT_planks",
       "side": "MOD:block/VARIANT_bookcase"
     }
-  },
-  "variants": "material"
+  }
 }

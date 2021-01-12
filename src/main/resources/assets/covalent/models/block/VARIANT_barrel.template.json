@@ -6,6 +6,5 @@
       "side": "covalent:block/VARIANT_barrel_side",
       "bottom": "covalent:block/VARIANT_barrel_bottom"
     }
-  },
-  "variants": "material"
+  }
 }

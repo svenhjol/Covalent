@@ -5,6 +5,5 @@
         "model": "covalent:block/VARIANT_crate"
       }
     }
-  },
-  "variants": "material"
+  }
 }

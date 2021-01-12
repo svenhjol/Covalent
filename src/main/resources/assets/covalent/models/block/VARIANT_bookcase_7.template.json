@@ -4,6 +4,5 @@
     "textures": {
       "side": "MOD:block/VARIANT_bookcase"
     }
-  },
-  "variants": "material"
+  }
 }

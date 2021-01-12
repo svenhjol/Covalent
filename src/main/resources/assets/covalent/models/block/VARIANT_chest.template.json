@@ -3,6 +3,5 @@
     "textures": {
       "particle": "covalent:block/VARIANT_planks"
     }
-  },
-  "variants": "material"
+  }
 }

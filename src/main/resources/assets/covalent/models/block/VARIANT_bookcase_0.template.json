@@ -1,0 +1,10 @@
+{
+  "template": {
+    "parent": "block/cube_column",
+    "textures": {
+      "end": "covalent:block/VARIANT_planks",
+      "side": "covalent:block/VARIANT_bookcase"
+    }
+  },
+  "variants": "material"
+}

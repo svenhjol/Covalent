@@ -1,0 +1,11 @@
+{
+  "template": {
+    "parent": "block/cube_bottom_top",
+    "textures": {
+      "top": "covalent:block/VARIANT_crate_top",
+      "side": "covalent:block/VARIANT_crate_side",
+      "bottom": "covalent:block/VARIANT_crate_top"
+    }
+  },
+  "variants": "material"
+}

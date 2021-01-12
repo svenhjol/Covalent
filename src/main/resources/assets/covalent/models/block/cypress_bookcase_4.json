@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/cypress_bookcase_0",
-  "textures": {
-    "side": "terrestria:block/cypress_bookshelf"
-  }
-}

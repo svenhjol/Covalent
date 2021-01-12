@@ -1,8 +1,0 @@
-{
-    "parent": "block/cube_bottom_top",
-    "textures": {
-        "top": "covalent:block/prismarine_barrel_top",
-        "side": "covalent:block/prismarine_barrel_side",
-        "bottom": "covalent:block/prismarine_barrel_bottom"
-    }
-}

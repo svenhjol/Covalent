@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/hemlock_bookcase_0",
-  "textures": {
-    "side": "terrestria:block/hemlock_bookshelf"
-  }
-}

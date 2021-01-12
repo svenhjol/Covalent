@@ -20,6 +20,7 @@ public class Covalent implements ModInitializer {
             AquaticLanterns.class,
             CovalentBarrels.class,
             CovalentBookcases.class,
+            CovalentBookshelves.class,
             CovalentChests.class,
             CovalentCrates.class
         ));

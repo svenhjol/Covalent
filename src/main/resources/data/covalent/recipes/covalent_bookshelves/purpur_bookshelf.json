@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###", "BBB", "###"
+  ],
+  "key": {
+    "#": {"item": "minecraft:purpur_block"},
+    "B": {"item": "minecraft:book"}
+  },
+  "result": {
+    "item": "covalent:purpur_bookshelf"
+  }
+}

@@ -13,7 +13,7 @@
                 "source": "block_entity"
               }
             ],
-            "name": "charm:VARIANT_bookcase"
+            "name": "covalent:VARIANT_bookcase"
           }
         ],
         "conditions": [

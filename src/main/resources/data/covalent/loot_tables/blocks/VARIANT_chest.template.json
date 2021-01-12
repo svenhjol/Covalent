@@ -13,7 +13,7 @@
                 "source": "block_entity"
               }
             ],
-            "name": "charm:VARIANT_chest"
+            "name": "covalent:VARIANT_chest"
           }
         ],
         "conditions": [

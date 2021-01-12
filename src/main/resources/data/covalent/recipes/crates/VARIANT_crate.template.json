@@ -11,16 +11,16 @@
         "item": "minecraft:iron_ingot"
       },
       "W": {
-        "item": "minecraft:VARIANT_planks"
+        "item": "covalent:VARIANT_planks"
       }
     },
     "result": {
-      "item": "charm:VARIANT_crate"
+      "item": "covalent:VARIANT_crate"
     },
     "conditions": [
       {
         "type": "charm:module_enabled",
-        "module": "charm:crates"
+        "module": "covalent:crates"
       }
     ]
   },

@@ -8,19 +8,19 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:VARIANT_planks"
+        "item": "covalent:VARIANT_planks"
       },
       "X": {
-        "item": "charm:VARIANT_bookshelf"
+        "item": "covalent:VARIANT_bookshelf"
       }
     },
     "result": {
-      "item": "charm:VARIANT_bookcase"
+      "item": "covalent:VARIANT_bookcase"
     },
     "conditions": [
       {
         "type": "charm:module_enabled",
-        "module": "charm:bookcases"
+        "module": "covalent:bookcases"
       }
     ]
   },

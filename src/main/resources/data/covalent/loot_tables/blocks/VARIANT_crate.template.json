@@ -43,7 +43,7 @@
                 ]
               }
             ],
-            "name": "charm:VARIANT_crate"
+            "name": "covalent:VARIANT_crate"
           }
         ]
       }

@@ -8,10 +8,10 @@
     ],
     "key": {
       "#": {
-        "item": "covalent:VARIANT_planks"
+        "item": "MOD:VARIANT_planks"
       },
       "X": {
-        "item": "covalent:VARIANT_bookshelf"
+        "item": "MOD:VARIANT_bookshelf"
       }
     },
     "result": {

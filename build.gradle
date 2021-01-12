@@ -70,17 +70,20 @@ processResources {
 	filesMatching("**/*.template.json") {
 		JsonBuilder json = new JsonBuilder(new JsonSlurper().parseText(it.file.text))
 		String template = new JsonBuilder(json.content.template).toPrettyString()
-		def v = json.content.variants
-		Iterable<String> variants
-		if (v instanceof String) variants = file("${sourceSets.main.resources.srcDirs[0]}/META-INF/${v}.variants").readLines().findAll { !it.isEmpty() }
-		else variants = v
-		File dir = it.relativePath.parent.getFile(file("$buildDir/resources/main"))
-		dir.mkdirs()
-		String name = it.name.replace(".template.json", ".json")
-		for (variant in variants) {
-			def file = new File(dir, name.replace("VARIANT", variant))
-			file.createNewFile()
-			file.text = template.replace("VARIANT", variant)
+
+		Iterable<String> integration = file("${sourceSets.main.resources.srcDirs[0]}/META-INF/integration").readLines().findAll { !it.isEmpty() }
+		for (mod in integration) {
+			Iterable<String> variants = file("${sourceSets.main.resources.srcDirs[0]}/META-INF/${mod}.variants").readLines().findAll { !it.isEmpty() }
+			File dir = it.relativePath.parent.getFile(file("$buildDir/resources/main"))
+			dir.mkdirs()
+			String name = it.name.replace(".template.json", ".json")
+			for (variant in variants) {
+				def file = new File(dir, name.replace("VARIANT", variant))
+				file.createNewFile()
+				file.text = template.replace("VARIANT", variant)
+				file.text = file.text.replace("MOD", mod)
+			}
+			it.exclude()
 		}
 		it.exclude()
 	}

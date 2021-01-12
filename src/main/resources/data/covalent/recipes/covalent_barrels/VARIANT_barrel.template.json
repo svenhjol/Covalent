@@ -8,10 +8,10 @@
     ],
     "key": {
       "S": {
-        "item": "covalent:VARIANT_slab"
+        "item": "MOD:VARIANT_slab"
       },
       "P": {
-        "item": "covalent:VARIANT_planks"
+        "item": "MOD:VARIANT_planks"
       }
     },
     "result": {

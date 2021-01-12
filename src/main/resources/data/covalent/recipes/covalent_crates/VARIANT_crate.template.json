@@ -11,7 +11,7 @@
         "item": "minecraft:iron_ingot"
       },
       "W": {
-        "item": "covalent:VARIANT_planks"
+        "item": "MOD:VARIANT_planks"
       }
     },
     "result": {

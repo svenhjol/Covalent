@@ -2,7 +2,7 @@
   "template": {
     "parent": "covalent:block/VARIANT_bookcase_0",
     "textures": {
-      "side": "covalent:block/VARIANT_bookcase"
+      "side": "MOD:block/VARIANT_bookcase"
     }
   },
   "variants": "material"

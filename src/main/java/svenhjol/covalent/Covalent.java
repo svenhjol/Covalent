@@ -16,10 +16,10 @@ public class Covalent implements ModInitializer {
 
         new CharmLoader(MOD_ID, Arrays.asList(
             AquaticLanterns.class,
-            Barrels.class,
-            Bookcases.class,
-            Chests.class,
-            Crates.class
+            CovalentBarrels.class,
+            CovalentBookcases.class,
+            CovalentChests.class,
+            CovalentCrates.class
         ));
     }
 }

@@ -21,8 +21,8 @@ import svenhjol.covalent.integration.WildExplorer;
 import java.util.HashMap;
 import java.util.Map;
 
-@Module(mod = Covalent.MOD_ID, client = ChestsClient.class, description = "Chests for all supported Minecraft mods.")
-public class Chests extends CharmModule {
+@Module(mod = Covalent.MOD_ID, client = ChestsClient.class, description = "Chests for all supported Minecraft integration.")
+public class CovalentChests extends CharmModule {
     public static final Identifier NORMAL_ID = new Identifier("covalent_chest");
     public static final Identifier TRAPPED_ID = new Identifier(Covalent.MOD_ID, "covalent_trapped_chest");
 
@@ -37,26 +37,26 @@ public class Chests extends CharmModule {
 
         // coranthemum
         for (Coranthemum.Materials material : Coranthemum.Materials.values()) {
-            Chests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Coranthemum.MOD_ID, material));
-            Chests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Coranthemum.MOD_ID, material));
+            CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Coranthemum.MOD_ID, material));
+            CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Coranthemum.MOD_ID, material));
         }
 
         // terrestria
         for (Terrestria.Materials material : Terrestria.Materials.values()) {
-            Chests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Terrestria.MOD_ID, material));
-            Chests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Terrestria.MOD_ID, material));
+            CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Terrestria.MOD_ID, material));
+            CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Terrestria.MOD_ID, material));
         }
 
         // traverse
         for (Traverse.Materials material : Traverse.Materials.values()) {
-            Chests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Traverse.MOD_ID, material));
-            Chests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Traverse.MOD_ID, material));
+            CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Traverse.MOD_ID, material));
+            CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Traverse.MOD_ID, material));
         }
 
         // wild_explorer
         for (WildExplorer.Materials material : WildExplorer.Materials.values()) {
-            Chests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, WildExplorer.MOD_ID, material));
-            Chests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, WildExplorer.MOD_ID, material));
+            CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, WildExplorer.MOD_ID, material));
+            CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, WildExplorer.MOD_ID, material));
         }
 
         // register covalent block entities

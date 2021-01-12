@@ -16,7 +16,7 @@ import svenhjol.charm.event.TextureStitchCallback;
 import svenhjol.charm.render.VariantChestBlockEntityRenderer;
 import svenhjol.covalent.blockentity.CovalentChestBlockEntity;
 import svenhjol.covalent.blockentity.CovalentTrappedChestBlockEntity;
-import svenhjol.covalent.module.Chests;
+import svenhjol.covalent.module.CovalentChests;
 
 import java.util.Set;
 
@@ -30,8 +30,8 @@ public class ChestsClient extends CharmClientModule {
 
     @Override
     public void register() {
-        BlockEntityRendererRegistry.INSTANCE.register(Chests.NORMAL_BLOCK_ENTITY, VariantChestBlockEntityRenderer::new);
-        BlockEntityRendererRegistry.INSTANCE.register(Chests.TRAPPED_BLOCK_ENTITY, VariantChestBlockEntityRenderer::new);
+        BlockEntityRendererRegistry.INSTANCE.register(CovalentChests.NORMAL_BLOCK_ENTITY, VariantChestBlockEntityRenderer::new);
+        BlockEntityRendererRegistry.INSTANCE.register(CovalentChests.TRAPPED_BLOCK_ENTITY, VariantChestBlockEntityRenderer::new);
 
         TextureStitchCallback.EVENT.register(this::handleTextureStitch);
         BlockItemRenderCallback.EVENT.register(this::handleBlockItemRender);
@@ -39,7 +39,7 @@ public class ChestsClient extends CharmClientModule {
 
     private void handleTextureStitch(SpriteAtlasTexture atlas, Set<Identifier> textures) {
         if (atlas.getId().toString().equals("minecraft:textures/atlas/chest.png")) {
-            Chests.NORMAL_CHEST_BLOCKS.keySet().forEach(type -> {
+            CovalentChests.NORMAL_CHEST_BLOCKS.keySet().forEach(type -> {
                 addChestTexture(textures, type, ChestType.LEFT);
                 addChestTexture(textures, type, ChestType.RIGHT);
                 addChestTexture(textures, type, ChestType.SINGLE);

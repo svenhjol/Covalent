@@ -14,6 +14,8 @@ public class Covalent implements ModInitializer {
     public void onInitialize() {
         Charm.runFirst();
 
+        CovalentIntegration.init();
+
         new CharmLoader(MOD_ID, Arrays.asList(
             AquaticLanterns.class,
             CovalentBarrels.class,

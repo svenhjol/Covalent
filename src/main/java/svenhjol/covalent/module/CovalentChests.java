@@ -8,17 +8,17 @@ import svenhjol.charm.base.enums.IVariantMaterial;
 import svenhjol.charm.base.handler.RegistryHandler;
 import svenhjol.charm.base.iface.Module;
 import svenhjol.covalent.Covalent;
+import svenhjol.covalent.CovalentIntegration;
 import svenhjol.covalent.block.CovalentChestBlock;
 import svenhjol.covalent.block.CovalentTrappedChestBlock;
 import svenhjol.covalent.blockentity.CovalentChestBlockEntity;
 import svenhjol.covalent.blockentity.CovalentTrappedChestBlockEntity;
 import svenhjol.covalent.client.ChestsClient;
 import svenhjol.covalent.integration.Coranthemum;
-import svenhjol.covalent.integration.Terrestria;
-import svenhjol.covalent.integration.Traverse;
-import svenhjol.covalent.integration.WildExplorer;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Module(mod = Covalent.MOD_ID, client = ChestsClient.class, description = "Chests for all supported Minecraft integration.")
@@ -35,32 +35,27 @@ public class CovalentChests extends CharmModule {
     @Override
     public void register() {
 
-        // coranthemum
-        for (Coranthemum.Materials material : Coranthemum.Materials.values()) {
-            CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Coranthemum.MOD_ID, material));
-            CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Coranthemum.MOD_ID, material));
-        }
-
-        // terrestria
-        for (Terrestria.Materials material : Terrestria.Materials.values()) {
-            CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Terrestria.MOD_ID, material));
-            CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Terrestria.MOD_ID, material));
-        }
-
-        // traverse
-        for (Traverse.Materials material : Traverse.Materials.values()) {
-            CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Traverse.MOD_ID, material));
-            CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Traverse.MOD_ID, material));
-        }
-
-        // wild_explorer
-        for (WildExplorer.Materials material : WildExplorer.Materials.values()) {
-            CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, WildExplorer.MOD_ID, material));
-            CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, WildExplorer.MOD_ID, material));
-        }
+        // iterate all integrations and create chest blocks
+        CovalentIntegration.MODS.forEach((mod, materials) -> {
+            for (IVariantMaterial material : materials) {
+                CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Coranthemum.MOD_ID, material));
+                CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Coranthemum.MOD_ID, material));
+            }
+        });
 
         // register covalent block entities
         NORMAL_BLOCK_ENTITY = RegistryHandler.blockEntity(NORMAL_ID, CovalentChestBlockEntity::new, NORMAL_CHEST_BLOCKS.values().toArray(new Block[0]));
         TRAPPED_BLOCK_ENTITY = RegistryHandler.blockEntity(TRAPPED_ID, CovalentTrappedChestBlockEntity::new, TRAPPED_CHEST_BLOCKS.values().toArray(new Block[0]));
+    }
+
+    @Override
+    public List<Identifier> getRecipesToRemove() {
+        List<Identifier> recipes = new ArrayList<>();
+
+        for (IVariantMaterial material : CovalentIntegration.getMaterialsToRemove()) {
+            recipes.add(new Identifier(Covalent.MOD_ID, "covalent_chests/" + material.asString() + "_chest"));
+        }
+
+        return recipes;
     }
 }

@@ -1,39 +1,36 @@
 package svenhjol.covalent.module;
 
+import net.minecraft.util.Identifier;
 import svenhjol.charm.base.CharmModule;
+import svenhjol.charm.base.enums.IVariantMaterial;
 import svenhjol.charm.base.iface.Module;
 import svenhjol.charm.block.BookcaseBlock;
 import svenhjol.charm.module.Bookcases;
 import svenhjol.covalent.Covalent;
-import svenhjol.covalent.integration.Coranthemum;
-import svenhjol.covalent.integration.Terrestria;
-import svenhjol.covalent.integration.Traverse;
-import svenhjol.covalent.integration.WildExplorer;
+import svenhjol.covalent.CovalentIntegration;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Module(mod = Covalent.MOD_ID, description = "Bookcases for all supported Minecraft integration.")
 public class CovalentBookcases extends CharmModule {
     @Override
     public void register() {
+        CovalentIntegration.MODS.forEach((mod, materials) -> {
+            for (IVariantMaterial material : materials) {
+                Bookcases.BOOKCASE_BLOCKS.put(material, new BookcaseBlock(this, material, mod));
+            }
+        });
+    }
 
-        // coranthemum
-        for (Coranthemum.Materials material : Coranthemum.Materials.values()) {
-            Bookcases.BOOKCASE_BLOCKS.put(material, new BookcaseBlock(this, material, Coranthemum.MOD_ID));
+    @Override
+    public List<Identifier> getRecipesToRemove() {
+        List<Identifier> recipes = new ArrayList<>();
+
+        for (IVariantMaterial material : CovalentIntegration.getMaterialsToRemove()) {
+            recipes.add(new Identifier(Covalent.MOD_ID, "covalent_bookcases/" + material.asString() + "_bookcase"));
         }
 
-        // terrestria
-        for (Terrestria.Materials material : Terrestria.Materials.values()) {
-            Bookcases.BOOKCASE_BLOCKS.put(material, new BookcaseBlock(this, material, Terrestria.MOD_ID));
-        }
-
-        // traverse
-        for (Traverse.Materials material : Traverse.Materials.values()) {
-            Bookcases.BOOKCASE_BLOCKS.put(material, new BookcaseBlock(this, material, Traverse.MOD_ID));
-        }
-
-        // wild_explorer
-        for (WildExplorer.Materials material : WildExplorer.Materials.values()) {
-            Bookcases.BOOKCASE_BLOCKS.put(material, new BookcaseBlock(this, material, WildExplorer.MOD_ID));
-        }
-
+        return recipes;
     }
 }

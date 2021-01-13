@@ -55,16 +55,11 @@ repositories {
 processResources {
 	inputs.property "version", project.version
 
-	from(sourceSets.main.resources.srcDirs) {
-		include "fabric.mod.json"
+	filesMatching("fabric.mod.json") {
 		expand "version": project.version
 	}
 
-	from(sourceSets.main.resources.srcDirs) {
-		exclude "fabric.mod.json"
-	}
-
-	exclude("META-INF/*.variants")
+	exclude("META-INF/*.materials")
 
 	//expand resource templates
 	filesMatching("**/*.template.json") {

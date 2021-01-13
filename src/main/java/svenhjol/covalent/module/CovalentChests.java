@@ -14,7 +14,6 @@ import svenhjol.covalent.block.CovalentTrappedChestBlock;
 import svenhjol.covalent.blockentity.CovalentChestBlockEntity;
 import svenhjol.covalent.blockentity.CovalentTrappedChestBlockEntity;
 import svenhjol.covalent.client.ChestsClient;
-import svenhjol.covalent.integration.Coranthemum;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -38,8 +37,8 @@ public class CovalentChests extends CharmModule {
         // iterate all integrations and create chest blocks
         CovalentIntegration.MODS.forEach((mod, materials) -> {
             for (IVariantMaterial material : materials) {
-                CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, Coranthemum.MOD_ID, material));
-                CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, Coranthemum.MOD_ID, material));
+                CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, material, mod));
+                CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, material, mod));
             }
         });
 

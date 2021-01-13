@@ -1,6 +1,10 @@
+import groovy.json.JsonBuilder
+import groovy.json.JsonSlurper
+
 plugins {
 	id 'fabric-loom' version '0.5-SNAPSHOT'
 	id 'maven-publish'
+	id "com.wynprice.cursemaven" version "2.1.1"
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -35,6 +39,17 @@ dependencies {
 	include "com.moandjiezana.toml:toml4j:${project.toml4j_version}"
 	include "com.electronwill.night-config:core:${project.tomlnc_version}"
 	include "com.electronwill.night-config:toml:${project.tomlnc_version}"
+
+//	modImplementation "curse.maven:${project.terrestria_version}"
+}
+
+repositories {
+	maven {
+		url "https://www.cursemaven.com"
+		content {
+			includeGroup "curse.maven"
+		}
+	}
 }
 
 processResources {
@@ -47,6 +62,30 @@ processResources {
 
 	from(sourceSets.main.resources.srcDirs) {
 		exclude "fabric.mod.json"
+	}
+
+	exclude("META-INF/*.variants")
+
+	//expand resource templates
+	filesMatching("**/*.template.json") {
+		JsonBuilder json = new JsonBuilder(new JsonSlurper().parseText(it.file.text))
+		String template = new JsonBuilder(json.content.template).toPrettyString()
+
+		Iterable<String> integration = file("${sourceSets.main.resources.srcDirs[0]}/META-INF/integration").readLines().findAll { !it.isEmpty() }
+		for (mod in integration) {
+			Iterable<String> variants = file("${sourceSets.main.resources.srcDirs[0]}/META-INF/${mod}.materials").readLines().findAll { !it.isEmpty() }
+			File dir = it.relativePath.parent.getFile(file("$buildDir/resources/main"))
+			dir.mkdirs()
+			String name = it.name.replace(".template.json", ".json")
+			for (variant in variants) {
+				def file = new File(dir, name.replace("VARIANT", variant))
+				if (!file.exists()) file.createNewFile()
+				file.text = template.replace("VARIANT", variant)
+				file.text = file.text.replace("MOD", mod)
+			}
+			it.exclude()
+		}
+		it.exclude()
 	}
 }
 

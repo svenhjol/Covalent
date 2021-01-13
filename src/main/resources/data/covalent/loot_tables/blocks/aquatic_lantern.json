@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "charm:aquatic_lantern"
+          "name": "covalent:aquatic_lantern"
         }
       ],
       "conditions": [

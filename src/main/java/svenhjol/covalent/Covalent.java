@@ -1,12 +1,9 @@
 package svenhjol.covalent;
+
+import net.fabricmc.api.ModInitializer;
 import svenhjol.charm.Charm;
 import svenhjol.charm.base.CharmLoader;
-import net.fabricmc.api.ModInitializer;
-import svenhjol.covalent.terrestria.Terrestria;
-import svenhjol.covalent.traverse.Traverse;
-import svenhjol.covalent.wild_explorer.WildExplorer;
-import svenhjol.covalent.module.AquaticLantern;
-import svenhjol.covalent.coranthemum.Coranthemum;
+import svenhjol.covalent.module.*;
 
 import java.util.Arrays;
 
@@ -17,12 +14,15 @@ public class Covalent implements ModInitializer {
     public void onInitialize() {
         Charm.runFirst();
 
+        CovalentIntegration.init();
+
         new CharmLoader(MOD_ID, Arrays.asList(
-            Terrestria.class,
-            Traverse.class,
-            WildExplorer.class,
-            AquaticLantern.class,
-            Coranthemum.class
+            AquaticLanterns.class,
+            CovalentBarrels.class,
+            CovalentBookcases.class,
+            CovalentBookshelves.class,
+            CovalentChests.class,
+            CovalentCrates.class
         ));
     }
 }

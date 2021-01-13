@@ -1,0 +1,9 @@
+{
+  "template": {
+    "parent": "block/cube_column",
+    "textures": {
+      "end": "MOD:block/VARIANT_planks",
+      "side": "covalent:block/VARIANT_bookshelf"
+    }
+  }
+}

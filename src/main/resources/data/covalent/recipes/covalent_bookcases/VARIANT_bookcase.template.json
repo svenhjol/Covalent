@@ -1,0 +1,27 @@
+{
+  "template": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "MOD:VARIANT_planks"
+      },
+      "X": {
+        "item": "MOD:VARIANT_bookshelf"
+      }
+    },
+    "result": {
+      "item": "covalent:VARIANT_bookcase"
+    },
+    "conditions": [
+      {
+        "type": "charm:module_enabled",
+        "module": "covalent:bookcases"
+      }
+    ]
+  }
+}

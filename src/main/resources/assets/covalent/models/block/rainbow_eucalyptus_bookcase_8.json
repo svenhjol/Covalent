@@ -1,6 +1,0 @@
-{
-  "parent": "covalent:block/rainbow_eucalyptus_bookcase_0",
-  "textures": {
-    "side": "terrestria:block/rainbow_eucalyptus_bookshelf"
-  }
-}

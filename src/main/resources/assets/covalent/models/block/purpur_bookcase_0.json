@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_column",
   "textures": {
-    "end": "coranthemum:block/purpur_planks",
+    "end": "minecraft:block/prismarine",
     "side": "covalent:block/purpur_bookcase_0"
   }
 }

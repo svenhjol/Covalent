@@ -1,0 +1,22 @@
+{
+  "template": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "covalent:VARIANT_chest"
+      },
+      {
+        "item": "minecraft:tripwire_hook"
+      }
+    ],
+    "result": {
+      "item": "covalent:VARIANT_trapped_chest"
+    },
+    "conditions": [
+      {
+        "type": "charm:module_enabled",
+        "module": "covalent:chests"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "template": {
+    "variants": {
+      "": {
+        "model": "covalent:block/VARIANT_chest"
+      }
+    }
+  }
+}

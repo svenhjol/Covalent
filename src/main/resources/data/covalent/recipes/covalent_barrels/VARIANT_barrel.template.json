@@ -1,0 +1,27 @@
+{
+  "template": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "PSP",
+      "P P",
+      "PSP"
+    ],
+    "key": {
+      "S": {
+        "item": "MOD:VARIANT_slab"
+      },
+      "P": {
+        "item": "MOD:VARIANT_planks"
+      }
+    },
+    "result": {
+      "item": "covalent:VARIANT_barrel"
+    },
+    "conditions": [
+      {
+        "type": "charm:module_enabled",
+        "module": "covalent:barrels"
+      }
+    ]
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "top": "covalent:block/redwood_crate_top",
-    "side": "covalent:block/redwood_crate_side",
-    "bottom": "covalent:block/redwood_crate_top"
-  }
-}

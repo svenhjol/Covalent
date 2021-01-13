@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "terrestria:block/japanese_maple_planks",
-    "side": "covalent:block/japanese_maple_bookcase_0"
-  }
-}

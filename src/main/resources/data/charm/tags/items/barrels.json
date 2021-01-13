@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "covalent:prismarine_barrel",
+    "covalent:purpur_barrel",
+    "covalent:cypress_barrel",
+    "covalent:hemlock_barrel",
+    "covalent:rainbow_eucalyptus_barrel",
+    "covalent:redwood_barrel",
+    "covalent:sakura_barrel",
+    "covalent:willow_barrel",
+    "covalent:yucca_palm_barrel",
+    "covalent:fir_barrel",
+    "covalent:cherry_oak_barrel",
+    "covalent:dark_amaranth_barrel",
+    "covalent:palm_barrel"
+  ]
+}

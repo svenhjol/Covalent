@@ -1,0 +1,8 @@
+{
+  "template": {
+    "parent": "covalent:block/VARIANT_bookcase_0",
+    "textures": {
+      "side": "covalent:block/VARIANT_bookshelf"
+    }
+  }
+}

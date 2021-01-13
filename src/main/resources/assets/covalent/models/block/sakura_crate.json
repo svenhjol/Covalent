@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "top": "covalent:block/sakura_crate_top",
-    "side": "covalent:block/sakura_crate_side",
-    "bottom": "covalent:block/sakura_crate_top"
-  }
-}

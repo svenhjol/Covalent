@@ -1,5 +1,6 @@
 {
   "template": {
     "parent": "covalent:block/VARIANT_bookcase_0"
-  }
+  },
+  "variants": "charm_integration"
 }

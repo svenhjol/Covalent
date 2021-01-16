@@ -1,0 +1,6 @@
+{
+  "template": {
+    "parent": "MOD:block/VARIANT_wall_inventory"
+  },
+  "variants": "slabs_stairs_walls"
+}

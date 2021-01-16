@@ -6,5 +6,6 @@
       "side": "covalent:block/VARIANT_crate_side",
       "bottom": "covalent:block/VARIANT_crate_top"
     }
-  }
+  },
+  "variants": "charm_integration"
 }

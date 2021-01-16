@@ -1,5 +1,6 @@
 {
   "template": {
     "parent": "covalent:block/VARIANT_barrel"
-  }
+  },
+  "variants": "charm_integration"
 }

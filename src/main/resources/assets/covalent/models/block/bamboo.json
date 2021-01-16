@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "covalent:block/bamboo_top",
+    "side": "covalent:block/bamboo_side"
+  }
+}

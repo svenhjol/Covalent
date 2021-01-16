@@ -1,5 +1,6 @@
 {
   "template": {
     "parent": "item/chest"
-  }
+  },
+  "variants": "charm_integration"
 }

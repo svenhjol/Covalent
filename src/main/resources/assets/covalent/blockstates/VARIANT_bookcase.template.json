@@ -59,5 +59,6 @@
         "model": "covalent:block/VARIANT_bookcase_9"
       }
     }
-  }
+  },
+  "variants": "charm_integration"
 }

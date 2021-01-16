@@ -1,0 +1,9 @@
+{
+  "template": {
+    "parent": "block/template_wall_side",
+    "textures": {
+      "wall": "MOD:block/VARIANT"
+    }
+  },
+  "variants": "slabs_stairs_walls"
+}

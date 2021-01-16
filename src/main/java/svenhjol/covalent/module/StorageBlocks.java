@@ -5,18 +5,20 @@ import svenhjol.charm.base.CharmModule;
 import svenhjol.charm.base.iface.Config;
 import svenhjol.charm.base.iface.Module;
 import svenhjol.covalent.Covalent;
-import svenhjol.covalent.block.BambooBundleBlock;
-import svenhjol.covalent.block.RottenFleshBundleBlock;
-import svenhjol.covalent.block.WheatSeedSackBlock;
+import svenhjol.covalent.block.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Module(mod = Covalent.MOD_ID, description = "Storage blocks.")
 public class StorageBlocks extends CharmModule {
-    public static BambooBundleBlock BAMBOO_BUNDLE;
-    public static RottenFleshBundleBlock ROTTEN_FLESH_BUNDLE;
-    public static WheatSeedSackBlock WHEAT_SEED_SACK;
+    public static BambooBlock BAMBOO;
+    public static BambooSlabBlock BAMBOO_SLAB;
+    public static BambooStairsBlock BAMBOO_STAIRS;
+    public static BambooWallBlock BAMBOO_WALL;
+    public static RottenFleshBlock ROTTEN_FLESH;
+    public static WheatSeedsBlock WHEAT_SEEDS;
 
     @Config(name = "Bamboo bundle", description = "If true, adds bamboo storage blocks.")
     public static boolean bamboo = true;
@@ -29,18 +31,33 @@ public class StorageBlocks extends CharmModule {
 
     @Override
     public void register() {
-        BAMBOO_BUNDLE = new BambooBundleBlock(this);
-        ROTTEN_FLESH_BUNDLE = new RottenFleshBundleBlock(this);
-        WHEAT_SEED_SACK = new WheatSeedSackBlock(this);
+        BAMBOO = new BambooBlock(this);
+        BAMBOO_SLAB = new BambooSlabBlock(this);
+        BAMBOO_STAIRS = new BambooStairsBlock(this);
+        BAMBOO_WALL = new BambooWallBlock(this);
+        ROTTEN_FLESH = new RottenFleshBlock(this);
+        WHEAT_SEEDS = new WheatSeedsBlock(this);
     }
 
     @Override
     public List<Identifier> getRecipesToRemove() {
         List<Identifier> remove = new ArrayList<>();
+        String prefix = "storage_blocks";
 
-        if (!bamboo) remove.add(new Identifier(Covalent.MOD_ID, "storage_blocks/bamboo_bundle"));
-        if (!rottenFlesh) remove.add(new Identifier(Covalent.MOD_ID, "storage_blocks/rotten_flesh_bundle"));
-        if (!wheatSeeds) remove.add(new Identifier(Covalent.MOD_ID, "storage_blocks/wheat_seed_sack"));
+        if (!bamboo) {
+            remove.addAll(Arrays.asList(
+                new Identifier(Covalent.MOD_ID, prefix + "/bamboo"),
+                new Identifier(Covalent.MOD_ID, prefix + "/bamboo_slab"),
+                new Identifier(Covalent.MOD_ID, prefix + "/bamboo_stairs"),
+                new Identifier(Covalent.MOD_ID, prefix + "/bamboo_wall")
+            ));
+        }
+
+        if (!rottenFlesh)
+            remove.add(new Identifier(Covalent.MOD_ID, prefix + "/rotten_flesh"));
+
+        if (!wheatSeeds)
+            remove.add(new Identifier(Covalent.MOD_ID, prefix + "/wheat_seeds"));
 
         return remove;
     }

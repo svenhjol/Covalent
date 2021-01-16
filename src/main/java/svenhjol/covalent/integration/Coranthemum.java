@@ -7,6 +7,7 @@ public class Coranthemum {
 
     public enum Materials implements IVariantMaterial {
         PRISMARINE,
-        PURPUR
+        PURPUR,
+        BAMBOO
     }
 }

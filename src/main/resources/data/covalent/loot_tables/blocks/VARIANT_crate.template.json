@@ -48,5 +48,6 @@
         ]
       }
     ]
-  }
+  },
+  "variants": "crates"
 }

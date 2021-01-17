@@ -6,5 +6,5 @@
       }
     }
   },
-  "variants": "charm_integration"
+  "variants": "crates"
 }

@@ -23,5 +23,6 @@
         "module": "covalent:crates"
       }
     ]
-  }
+  },
+  "variants": "crates"
 }

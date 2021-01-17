@@ -20,5 +20,6 @@
         "module": "covalent:chests"
       }
     ]
-  }
+  },
+  "variants": "chests"
 }

@@ -2,5 +2,5 @@
   "template": {
     "parent": "covalent:block/VARIANT_bookshelf"
   },
-  "variants": "charm_integration"
+  "variants": "bookshelves"
 }

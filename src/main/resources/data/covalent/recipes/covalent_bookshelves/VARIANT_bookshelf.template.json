@@ -1,13 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###", "BBB", "###"
-  ],
-  "key": {
-    "#": {"item": "MOD:VARIANT_planks"},
-    "B": {"item": "minecraft:book"}
+  "template": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "###", "BBB", "###"
+    ],
+    "key": {
+      "#": {"item": "MOD:VARIANT_planks"},
+      "B": {"item": "minecraft:book"}
+    },
+    "result": {
+      "item": "covalent:VARIANT_bookshelf"
+    }
   },
-  "result": {
-    "item": "covalent:VARIANT_bookshelf"
-  }
+  "variants": "bookshelves"
 }

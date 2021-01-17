@@ -7,5 +7,5 @@
       "bottom": "covalent:block/VARIANT_crate_top"
     }
   },
-  "variants": "charm_integration"
+  "variants": "crates"
 }

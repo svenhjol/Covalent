@@ -2,5 +2,5 @@
   "template": {
     "parent": "covalent:block/VARIANT_crate"
   },
-  "variants": "charm_integration"
+  "variants": "crates"
 }

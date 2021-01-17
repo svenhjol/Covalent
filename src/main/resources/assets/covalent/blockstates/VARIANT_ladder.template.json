@@ -1,0 +1,22 @@
+{
+  "template": {
+    "variants": {
+      "facing=east": {
+        "model": "MOD:block/VARIANT_ladder",
+        "y": 90
+      },
+      "facing=north": {
+        "model": "MOD:block/VARIANT_ladder"
+      },
+      "facing=south": {
+        "model": "MOD:block/VARIANT_ladder",
+        "y": 180
+      },
+      "facing=west": {
+        "model": "MOD:block/VARIANT_ladder",
+        "y": 270
+      }
+    }
+  },
+  "variants": "ladders"
+}

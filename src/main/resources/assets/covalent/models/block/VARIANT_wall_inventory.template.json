@@ -5,5 +5,5 @@
       "wall": "MOD:block/VARIANT"
     }
   },
-  "variants": "slabs_stairs_walls"
+  "variants": "nonblocks"
 }

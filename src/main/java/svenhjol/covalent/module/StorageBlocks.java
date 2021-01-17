@@ -14,8 +14,11 @@ import java.util.List;
 @Module(mod = Covalent.MOD_ID, description = "Storage blocks.")
 public class StorageBlocks extends CharmModule {
     public static BambooBlock BAMBOO;
+    public static BambooDoorBlock BAMBOO_DOOR;
+    public static BambooLadderBlock BAMBOO_LADDER;
     public static BambooSlabBlock BAMBOO_SLAB;
     public static BambooStairsBlock BAMBOO_STAIRS;
+    public static BambooTrapdoorBlock BAMBOO_TRAPDOOR;
     public static BambooWallBlock BAMBOO_WALL;
     public static RottenFleshBlock ROTTEN_FLESH;
     public static WheatSeedsBlock WHEAT_SEEDS;
@@ -31,11 +34,19 @@ public class StorageBlocks extends CharmModule {
 
     @Override
     public void register() {
+        // bamboo
         BAMBOO = new BambooBlock(this);
+        BAMBOO_DOOR = new BambooDoorBlock(this);
+        BAMBOO_LADDER = new BambooLadderBlock(this);
         BAMBOO_SLAB = new BambooSlabBlock(this);
         BAMBOO_STAIRS = new BambooStairsBlock(this);
+        BAMBOO_TRAPDOOR = new BambooTrapdoorBlock(this);
         BAMBOO_WALL = new BambooWallBlock(this);
+
+        // rotten flesh
         ROTTEN_FLESH = new RottenFleshBlock(this);
+
+        // wheat
         WHEAT_SEEDS = new WheatSeedsBlock(this);
     }
 
@@ -47,8 +58,11 @@ public class StorageBlocks extends CharmModule {
         if (!bamboo) {
             remove.addAll(Arrays.asList(
                 new Identifier(Covalent.MOD_ID, prefix + "/bamboo"),
+                new Identifier(Covalent.MOD_ID, prefix + "/bamboo_door"),
+                new Identifier(Covalent.MOD_ID, prefix + "/bamboo_ladder"),
                 new Identifier(Covalent.MOD_ID, prefix + "/bamboo_slab"),
                 new Identifier(Covalent.MOD_ID, prefix + "/bamboo_stairs"),
+                new Identifier(Covalent.MOD_ID, prefix + "/bamboo_trapdoor"),
                 new Identifier(Covalent.MOD_ID, prefix + "/bamboo_wall")
             ));
         }

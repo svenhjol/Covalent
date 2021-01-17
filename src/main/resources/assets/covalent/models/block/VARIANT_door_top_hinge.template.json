@@ -1,0 +1,10 @@
+{
+  "template": {
+    "parent": "minecraft:block/door_top_rh",
+    "textures": {
+      "top": "MOD:block/VARIANT_door_top",
+      "bottom": "MOD:block/VARIANT_door_bottom"
+    }
+  },
+  "variants": "nonblocks"
+}

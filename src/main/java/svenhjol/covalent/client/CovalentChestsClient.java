@@ -20,11 +20,11 @@ import svenhjol.covalent.module.CovalentChests;
 
 import java.util.Set;
 
-public class ChestsClient extends CharmClientModule {
+public class CovalentChestsClient extends CharmClientModule {
     private final CovalentChestBlockEntity CACHED_NORMAL_CHEST = new CovalentChestBlockEntity();
     private final CovalentTrappedChestBlockEntity CACHED_TRAPPED_CHEST = new CovalentTrappedChestBlockEntity();
 
-    public ChestsClient(CharmModule module) {
+    public CovalentChestsClient(CharmModule module) {
         super(module);
     }
 

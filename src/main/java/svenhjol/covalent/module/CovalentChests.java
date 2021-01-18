@@ -13,17 +13,17 @@ import svenhjol.covalent.block.CovalentChestBlock;
 import svenhjol.covalent.block.CovalentTrappedChestBlock;
 import svenhjol.covalent.blockentity.CovalentChestBlockEntity;
 import svenhjol.covalent.blockentity.CovalentTrappedChestBlockEntity;
-import svenhjol.covalent.client.ChestsClient;
+import svenhjol.covalent.client.CovalentChestsClient;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Module(mod = Covalent.MOD_ID, client = ChestsClient.class, description = "Chests for all supported Minecraft integration.")
+@Module(mod = Covalent.MOD_ID, client = CovalentChestsClient.class, description = "Chests for all supported Minecraft integration.")
 public class CovalentChests extends CharmModule {
-    public static final Identifier NORMAL_ID = new Identifier("covalent_chest");
-    public static final Identifier TRAPPED_ID = new Identifier(Covalent.MOD_ID, "covalent_trapped_chest");
+    public static final Identifier NORMAL_ID = new Identifier(Covalent.MOD_ID, "chest");
+    public static final Identifier TRAPPED_ID = new Identifier(Covalent.MOD_ID, "trapped_chest");
 
     public static final Map<IVariantMaterial, CovalentChestBlock> NORMAL_CHEST_BLOCKS = new HashMap<>();
     public static final Map<IVariantMaterial, CovalentTrappedChestBlock> TRAPPED_CHEST_BLOCKS = new HashMap<>();

@@ -1,9 +1,34 @@
 package svenhjol.covalent.integration;
 
 import svenhjol.charm.base.enums.IVariantMaterial;
+import svenhjol.covalent.iface.ICovalentIntegration;
 
-public class BetterEnd {
-    public static final String MOD_ID = "better-end";
+public class BetterEnd implements ICovalentIntegration {
+
+    @Override
+    public String getModId() {
+        return "better-end";
+    }
+
+    @Override
+    public IVariantMaterial[] getMaterials() {
+        return Materials.values();
+    }
+
+    @Override
+    public boolean doBarrels() {
+        return false;
+    }
+
+    @Override
+    public boolean doBookshelves() {
+        return false;
+    }
+
+    @Override
+    public boolean doChests() {
+        return false;
+    }
 
     public enum Materials implements IVariantMaterial {
         MOSSY_GLOWSHROOM,

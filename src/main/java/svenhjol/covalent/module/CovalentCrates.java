@@ -17,9 +17,11 @@ public class CovalentCrates extends CharmModule {
 
     @Override
     public void register() {
-        CovalentIntegration.MODS.forEach((mod, materials) -> {
-            for (IVariantMaterial material : materials) {
-                Crates.CRATE_BLOCKS.put(material, new CrateBlock(this, material, mod));
+        CovalentIntegration.MODS.forEach(mod -> {
+            if (mod.doCrates()) {
+                for (IVariantMaterial material : mod.getMaterials()) {
+                    Crates.CRATE_BLOCKS.put(material, new CrateBlock(this, material, mod.getModId()));
+                }
             }
         });
     }

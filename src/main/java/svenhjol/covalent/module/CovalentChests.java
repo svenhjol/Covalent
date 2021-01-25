@@ -35,10 +35,12 @@ public class CovalentChests extends CharmModule {
     public void register() {
 
         // iterate all integrations and create chest blocks
-        CovalentIntegration.MODS.forEach((mod, materials) -> {
-            for (IVariantMaterial material : materials) {
-                CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, material, mod));
-                CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, material, mod));
+        CovalentIntegration.MODS.forEach(mod -> {
+            if (mod.doChests()) {
+                for (IVariantMaterial material : mod.getMaterials()) {
+                    CovalentChests.NORMAL_CHEST_BLOCKS.put(material, new CovalentChestBlock(this, material, mod.getModId()));
+                    CovalentChests.TRAPPED_CHEST_BLOCKS.put(material, new CovalentTrappedChestBlock(this, material, mod.getModId()));
+                }
             }
         });
 

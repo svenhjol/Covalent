@@ -16,9 +16,11 @@ import java.util.List;
 public class CovalentBookshelves extends CharmModule {
     @Override
     public void register() {
-        CovalentIntegration.MODS.forEach((mod, materials) -> {
-            for (IVariantMaterial material : materials) {
-                VariantBookshelves.BOOKSHELF_BLOCKS.put(material, new VariantBookshelfBlock(this, material, mod));
+        CovalentIntegration.MODS.forEach(mod -> {
+            if (mod.doBookshelves()) {
+                for (IVariantMaterial material : mod.getMaterials()) {
+                    VariantBookshelves.BOOKSHELF_BLOCKS.put(material, new VariantBookshelfBlock(this, material, mod.getModId()));
+                }
             }
         });
     }

@@ -1,9 +1,19 @@
 package svenhjol.covalent.integration;
 
 import svenhjol.charm.base.enums.IVariantMaterial;
+import svenhjol.covalent.iface.ICovalentIntegration;
 
-public class Terrestria {
-    public static final String MOD_ID = "terrestria";
+public class Terrestria implements ICovalentIntegration {
+
+    @Override
+    public String getModId() {
+        return "terrestria";
+    }
+
+    @Override
+    public IVariantMaterial[] getMaterials() {
+        return Materials.values();
+    }
 
     public enum Materials implements IVariantMaterial {
         CYPRESS,

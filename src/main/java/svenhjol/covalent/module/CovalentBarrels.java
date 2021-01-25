@@ -16,9 +16,11 @@ import java.util.List;
 public class CovalentBarrels extends CharmModule {
     @Override
     public void register() {
-        CovalentIntegration.MODS.forEach((mod, materials) -> {
-            for (IVariantMaterial material : materials) {
-                VariantBarrels.BARREL_BLOCKS.put(material, new VariantBarrelBlock(this, material, mod));
+        CovalentIntegration.MODS.forEach(mod -> {
+            if (mod.doBarrels()) {
+                for (IVariantMaterial material : mod.getMaterials()) {
+                    VariantBarrels.BARREL_BLOCKS.put(material, new VariantBarrelBlock(this, material, mod.getModId()));
+                }
             }
         });
     }

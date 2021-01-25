@@ -2,29 +2,30 @@ package svenhjol.covalent;
 
 import svenhjol.charm.base.enums.IVariantMaterial;
 import svenhjol.charm.base.helper.ModHelper;
-import svenhjol.covalent.integration.*;
+import svenhjol.covalent.iface.ICovalentIntegration;
 import svenhjol.covalent.integration.Covalent;
+import svenhjol.covalent.integration.*;
 
 import java.util.*;
 
 public class CovalentIntegration {
-    public static Map<String, IVariantMaterial[]> MODS = new HashMap<>();
+    public static List<ICovalentIntegration> MODS = new ArrayList<>();
 
     public static void init() {
-        MODS.put(Covalent.MOD_ID, Covalent.Materials.values());
-        MODS.put(Coranthemum.MOD_ID, Coranthemum.Materials.values());
-        MODS.put(Terrestria.MOD_ID, Terrestria.Materials.values());
-        MODS.put(Traverse.MOD_ID, Traverse.Materials.values());
-        MODS.put(WildExplorer.MOD_ID, WildExplorer.Materials.values());
-        MODS.put(BetterEnd.MOD_ID, BetterEnd.Materials.values());
+        MODS.add(new Covalent());
+        MODS.add(new Coranthemum());
+        MODS.add(new Terrestria());
+        MODS.add(new Traverse());
+        MODS.add(new WildExplorer());
+        MODS.add(new BetterEnd());
     }
 
     public static List<IVariantMaterial> getMaterialsToRemove() {
         List<IVariantMaterial> materialsToRemove = new ArrayList<>();
 
-        CovalentIntegration.MODS.forEach((mod, materials) -> {
-            if (!ModHelper.isLoaded(mod))
-                materialsToRemove.addAll(Arrays.asList(materials));
+        CovalentIntegration.MODS.forEach(mod -> {
+            if (!ModHelper.isLoaded(mod.getModId()))
+                materialsToRemove.addAll(Arrays.asList(mod.getMaterials()));
         });
 
         return materialsToRemove;

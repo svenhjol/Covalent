@@ -4,8 +4,8 @@
     "PSP", "P P", "PSP"
   ],
   "key": {
-    "S": {"item": "coranthemum:prismarine_slab"},
-    "P": {"item": "coranthemum:prismarine_planks"}
+    "S": {"item": "minecraft:prismarine_slab"},
+    "P": {"item": "minecraft:prismarine"}
   },
   "result": {
     "item": "covalent:prismarine_barrel"

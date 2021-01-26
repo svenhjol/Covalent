@@ -80,8 +80,7 @@ processResources {
 			def file = new File(dir, name.replace("VARIANT", s[1]))
 			if (!file.exists()) {
 				file.createNewFile()
-				file.text = template.replace("VARIANT", s[1])
-				file.text = file.text.replace("MOD", s[0])
+				file.text = template.replace("VARIANT", s[1]).replace("MOD", s[0])
 			}
 		}
 		it.exclude()

@@ -4,8 +4,8 @@
     "PSP", "P P", "PSP"
   ],
   "key": {
-    "S": {"item": "coranthemum:purpur_slab"},
-    "P": {"item": "coranthemum:purpur_planks"}
+    "S": {"item": "minecraft:purpur_slab"},
+    "P": {"item": "minecraft:purpur_block"}
   },
   "result": {
     "item": "covalent:purpur_barrel"

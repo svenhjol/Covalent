@@ -7,7 +7,7 @@ public class BetterEnd implements ICovalentIntegration {
 
     @Override
     public String getModId() {
-        return "better-end";
+        return "betterend";
     }
 
     @Override

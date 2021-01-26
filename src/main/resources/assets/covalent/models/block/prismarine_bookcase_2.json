@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "minecraft:block/prismarine",
+    "side": "covalent:block/prismarine_bookcase_2"
+  }
+}

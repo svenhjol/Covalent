@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "minecraft:block/purpur_block",
-    "side": "covalent:block/purpur_bookcase_1"
-  }
-}

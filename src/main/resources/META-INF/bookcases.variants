@@ -1,29 +1,31 @@
-coranthemum:prismarine
-coranthemum:purpur
+MOD:VARIANT:SUFFIX
 
-covalent:bamboo
+minecraft:prismarine:
+minecraft:purpur:_block
 
-terrestria:cypress
-terrestria:hemlock
-terrestria:japanese_maple
-terrestria:rainbow_eucalyptus
-terrestria:redwood
-terrestria:rubber
-terrestria:sakura
-terrestria:willow
-terrestria:yucca_palm
+covalent:bamboo:_planks
 
-traverse:fir
+terrestria:cypress:_planks
+terrestria:hemlock:_planks
+terrestria:japanese_maple:_planks
+terrestria:rainbow_eucalyptus:_planks
+terrestria:redwood:_planks
+terrestria:rubber:_planks
+terrestria:sakura:_planks
+terrestria:willow:_planks
+terrestria:yucca_palm:_planks
 
-wild_explorer:cherry_oak
-wild_explorer:dark_amaranth
-wild_explorer:palm
+traverse:fir:_planks
 
-better_end:dragon_tree
-better_end:end_lotus
-better_end:helix_tree
-better_end:lacugrove
-better_end:mossy_glowshroom
-better_end:pythadendron
-better_end:tenanea
-better_end:umbrella_tree
+wild_explorer:cherry_oak:_planks
+wild_explorer:dark_amaranth:_planks
+wild_explorer:palm:_planks
+
+better_end:dragon_tree:_planks
+better_end:end_lotus:_planks
+better_end:helix_tree:_planks
+better_end:lacugrove:_planks
+better_end:mossy_glowshroom:_planks
+better_end:pythadendron:_planks
+better_end:tenanea:_planks
+better_end:umbrella_tree:_planks

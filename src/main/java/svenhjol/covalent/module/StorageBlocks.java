@@ -16,6 +16,7 @@ public class StorageBlocks extends CharmModule {
     public static BambooBlock BAMBOO;
     public static BambooDoorBlock BAMBOO_DOOR;
     public static BambooLadderBlock BAMBOO_LADDER;
+    public static BambooPlanksBlock BAMBOO_PLANKS;
     public static BambooSlabBlock BAMBOO_SLAB;
     public static BambooStairsBlock BAMBOO_STAIRS;
     public static BambooTrapdoorBlock BAMBOO_TRAPDOOR;
@@ -38,6 +39,7 @@ public class StorageBlocks extends CharmModule {
         BAMBOO = new BambooBlock(this);
         BAMBOO_DOOR = new BambooDoorBlock(this);
         BAMBOO_LADDER = new BambooLadderBlock(this);
+        BAMBOO_PLANKS = new BambooPlanksBlock(this);
         BAMBOO_SLAB = new BambooSlabBlock(this);
         BAMBOO_STAIRS = new BambooStairsBlock(this);
         BAMBOO_TRAPDOOR = new BambooTrapdoorBlock(this);
@@ -60,6 +62,7 @@ public class StorageBlocks extends CharmModule {
                 new Identifier(Covalent.MOD_ID, prefix + "/bamboo"),
                 new Identifier(Covalent.MOD_ID, prefix + "/bamboo_door"),
                 new Identifier(Covalent.MOD_ID, prefix + "/bamboo_ladder"),
+                new Identifier(Covalent.MOD_ID, prefix + "/bamboo_planks"),
                 new Identifier(Covalent.MOD_ID, prefix + "/bamboo_slab"),
                 new Identifier(Covalent.MOD_ID, prefix + "/bamboo_stairs"),
                 new Identifier(Covalent.MOD_ID, prefix + "/bamboo_trapdoor"),

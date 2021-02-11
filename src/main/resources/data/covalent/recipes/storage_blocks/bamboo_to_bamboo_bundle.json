@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB", "BBB", "BBB"
+  ],
+  "key": {
+    "B": {"item": "minecraft:bamboo"}
+  },
+  "result": {
+    "item": "covalent:bamboo"
+  }
+}

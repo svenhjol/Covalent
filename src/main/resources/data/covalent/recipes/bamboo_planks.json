@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "covalent:bamboo"
+  },
+  "result": "covalent:bamboo_planks",
+  "experience": 0.35,
+  "cookingtime": 200
+}

@@ -1,0 +1,20 @@
+{
+  "template": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "MOD:VARIANTSUFFIX"
+      }
+    },
+    "result": {
+      "item": "covalent:VARIANT_stairs",
+      "count": 4
+    }
+  },
+  "variants": "nonblocks"
+}

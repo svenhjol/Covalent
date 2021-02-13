@@ -1,0 +1,18 @@
+{
+  "template": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "MOD:VARIANTSUFFIX"
+      }
+    },
+    "result": {
+      "item": "covalent:VARIANT_slab",
+      "count": 6
+    }
+  },
+  "variants": "nonblocks"
+}

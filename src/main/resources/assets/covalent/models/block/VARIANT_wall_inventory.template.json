@@ -2,7 +2,7 @@
   "template": {
     "parent": "block/wall_inventory",
     "textures": {
-      "wall": "MOD:block/VARIANT"
+      "wall": "MOD:block/VARIANTSUFFIX"
     }
   },
   "variants": "nonblocks"

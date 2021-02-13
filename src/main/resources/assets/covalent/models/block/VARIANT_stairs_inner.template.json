@@ -2,9 +2,9 @@
   "template": {
     "parent": "block/inner_stairs",
     "textures": {
-      "bottom": "MOD:block/VARIANT",
-      "top": "MOD:block/VARIANT",
-      "side": "MOD:block/VARIANT"
+      "bottom": "MOD:block/VARIANTSUFFIX",
+      "top": "MOD:block/VARIANTSUFFIX",
+      "side": "MOD:block/VARIANTSUFFIX"
     }
   },
   "variants": "nonblocks"

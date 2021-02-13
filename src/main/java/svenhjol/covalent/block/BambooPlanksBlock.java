@@ -18,6 +18,6 @@ public class BambooPlanksBlock extends CharmBlock {
 
     @Override
     public boolean enabled() {
-        return super.enabled() && StorageBlocks.bamboo;
+        return super.enabled() && StorageBlocks.bamboo_planks;
     }
 }

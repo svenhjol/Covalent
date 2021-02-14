@@ -2,17 +2,18 @@
   "template": {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-      "###",
-      "###"
+      "BB",
+      "BB",
+      "BB"
     ],
     "key": {
-      "#": {
+      "B": {
         "item": "MOD:VARIANTSUFFIX"
       }
     },
     "result": {
-      "item": "covalent:VARIANT_wall",
-      "count": 6
+      "item": "covalent:VARIANT_door",
+      "count": 3
     }
   },
   "variants": "nonblocks"

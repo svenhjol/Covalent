@@ -20,7 +20,8 @@ public class StorageBlocks extends CharmModule {
     public static BambooSlabBlock BAMBOO_SLAB;
     public static BambooStairsBlock BAMBOO_STAIRS;
     public static BambooTrapdoorBlock BAMBOO_TRAPDOOR;
-    public static BambooWallBlock BAMBOO_WALL;
+    public static BambooFenceBlock BAMBOO_FENCE;
+    public static BambooFenceGateBlock BAMBOO_FENCE_GATE;
     public static RottenFleshBlock ROTTEN_FLESH;
     public static WheatSeedsBlock WHEAT_SEEDS;
 
@@ -44,7 +45,8 @@ public class StorageBlocks extends CharmModule {
         BAMBOO_SLAB = new BambooSlabBlock(this);
         BAMBOO_STAIRS = new BambooStairsBlock(this);
         BAMBOO_TRAPDOOR = new BambooTrapdoorBlock(this);
-        BAMBOO_WALL = new BambooWallBlock(this);
+        BAMBOO_FENCE = new BambooFenceBlock(this);
+        BAMBOO_FENCE_GATE = new BambooFenceGateBlock(this);
 
         // rotten flesh
         ROTTEN_FLESH = new RottenFleshBlock(this);

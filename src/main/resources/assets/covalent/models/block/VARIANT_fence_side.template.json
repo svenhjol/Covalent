@@ -1,0 +1,9 @@
+{
+  "template": {
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "covalent:block/VARIANTSUFFIX"
+  }
+},
+  "variants": "nonblocks"
+}

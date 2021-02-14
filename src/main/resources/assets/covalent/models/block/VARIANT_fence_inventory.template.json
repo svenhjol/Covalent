@@ -1,0 +1,9 @@
+{
+  "template": {
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "covalent:block/VARIANTSUFFIX"
+  }
+},
+  "variants": "nonblocks"
+}

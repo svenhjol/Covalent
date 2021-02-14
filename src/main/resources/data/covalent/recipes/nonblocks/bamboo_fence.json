@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "#S#"
+    ],
+    "key": {
+        "#": {
+            "item": "covalent:bamboo_planks"
+        },
+        "S": {
+            "item": "minecraft:bamboo"
+        }
+    },
+    "result": {
+        "item": "covalent:bamboo_fence",
+        "count": 6
+    }
+}

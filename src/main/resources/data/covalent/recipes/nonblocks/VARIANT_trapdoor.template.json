@@ -1,4 +1,5 @@
 {
+  "template": {
     "type": "minecraft:crafting_shaped",
     "pattern": [
       "BBB",
@@ -6,11 +7,13 @@
     ],
     "key": {
       "B": {
-        "item": "covalent:bamboo_planks"
+        "item": "covalent:bamboo_slabs"
       }
     },
     "result": {
-      "item": "covalent:bamboo_wall",
-      "count": 6
+      "item": "covalent:bamboo_trapdoor",
+      "count": 1
     }
+  },
+  "variants": "nonblocks"
 }

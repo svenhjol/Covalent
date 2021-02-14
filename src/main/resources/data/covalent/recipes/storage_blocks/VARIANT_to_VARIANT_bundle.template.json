@@ -3,17 +3,17 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
       "BBB",
+      "BBB",
       "BBB"
     ],
     "key": {
       "B": {
-        "item": "covalent:bamboo_slab"
+        "item": "minecraft:VARIANT"
       }
     },
     "result": {
-      "item": "covalent:bamboo_trapdoor",
-      "count": 1
+      "item": "MOD:VARIANT_bundle"
     }
   },
-  "variants": "nonblocks"
+  "variants": "storage"
 }

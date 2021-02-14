@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "particle": "covalent:block/wheat_seeds_side",
-    "top": "covalent:block/wheat_seeds_top",
-    "bottom": "covalent:block/wheat_seeds_bottom",
-    "side": "covalent:block/wheat_seeds_side"
-  }
-}

@@ -7,7 +7,7 @@ import svenhjol.covalent.module.StorageBlocks;
 
 public class BambooBlock extends CharmBlock {
     public BambooBlock(CharmModule module) {
-        super(module, "bamboo", Settings.copy(Blocks.HAY_BLOCK));
+        super(module, "bamboo_bundle", Settings.copy(Blocks.HAY_BLOCK));
     }
 
     @Override

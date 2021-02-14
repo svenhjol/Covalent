@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "covalent:block/rotten_flesh_top",
-    "side": "covalent:block/rotten_flesh_side"
-  }
-}

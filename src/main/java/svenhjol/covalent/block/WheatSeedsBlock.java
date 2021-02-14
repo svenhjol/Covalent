@@ -7,7 +7,7 @@ import svenhjol.covalent.module.StorageBlocks;
 
 public class WheatSeedsBlock extends CharmBlock {
     public WheatSeedsBlock(CharmModule module) {
-        super(module, "wheat_seeds", Settings.copy(Blocks.HAY_BLOCK));
+        super(module, "wheat_seeds_bundle", Settings.copy(Blocks.HAY_BLOCK));
     }
 
     @Override

@@ -11,7 +11,7 @@
         "y": 270,
         "model": "covalent:block/VARIANT_fence_gate_open"
       },
-      "facing=east,inVARIANT_fence_gate_wall=true,open=false": {
+      "facing=east,in_wall=true,open=false": {
         "uvlock": true,
         "y": 270,
         "model": "covalent:block/VARIANT_fence_gate_wall"

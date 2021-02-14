@@ -1,6 +1,6 @@
-        MOD:VARIANT
+MOD:VARIANT
 
-covalent:bamboo
-covalent:rotten_flesh
-covalent:wheat_seeds
+covalent:bamboo_bundle
+covalent:rotten_flesh_bundle
+covalent:wheat_seeds_bundle
 covalent:bamboo_planks

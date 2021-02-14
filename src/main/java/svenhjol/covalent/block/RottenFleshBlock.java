@@ -7,7 +7,7 @@ import svenhjol.covalent.module.StorageBlocks;
 
 public class RottenFleshBlock extends CharmBlock {
     public RottenFleshBlock(CharmModule module) {
-        super(module, "rotten_flesh", Settings.copy(Blocks.SLIME_BLOCK));
+        super(module, "rotten_flesh_bundle", Settings.copy(Blocks.SLIME_BLOCK));
     }
 
     @Override

@@ -32,7 +32,6 @@ public class StorageBlocks extends CharmModule {
 
     @Config(name = "Wheat Seed sack", description = "If true, adds wheat seed storage blocks.")
     public static boolean wheatSeeds = true;
-    public static boolean bamboo_planks;
 
     @Override
     public void register() {

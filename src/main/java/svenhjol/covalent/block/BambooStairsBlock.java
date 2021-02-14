@@ -9,7 +9,7 @@ public class BambooStairsBlock extends StairsBlock implements ICharmBlock {
     private final CharmModule module;
 
     public BambooStairsBlock(CharmModule module) {
-        super(StorageBlocks.BAMBOO.getDefaultState(), Settings.copy(StorageBlocks.BAMBOO));
+        super(StorageBlocks.BAMBOO_PLANKS.getDefaultState(), Settings.copy(StorageBlocks.BAMBOO_PLANKS));
         this.register(module, "bamboo_stairs");
         this.module = module;
     }

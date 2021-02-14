@@ -1,6 +1,9 @@
 package svenhjol.covalent.block;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.block.DoorBlock;
+import net.minecraft.block.Material;
+import net.minecraft.sound.BlockSoundGroup;
 import svenhjol.charm.base.CharmModule;
 import svenhjol.charm.base.block.ICharmBlock;
 import svenhjol.covalent.module.StorageBlocks;
@@ -9,7 +12,7 @@ public class BambooDoorBlock extends DoorBlock implements ICharmBlock {
     private final CharmModule module;
 
     public BambooDoorBlock(CharmModule module) {
-        super(Settings.copy(StorageBlocks.BAMBOO));
+        super(Settings.of(Material.WOOD, StorageBlocks.BAMBOO_PLANKS.getDefaultMaterialColor()).strength(3.0F).sounds(BlockSoundGroup.WOOD).nonOpaque());
 
         this.module = module;
         this.register(module, "bamboo_door");

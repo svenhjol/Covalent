@@ -1,5 +1,6 @@
 package svenhjol.covalent.block;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.block.LadderBlock;
 import svenhjol.charm.base.CharmModule;
 import svenhjol.charm.base.block.ICharmBlock;
@@ -9,7 +10,7 @@ public class BambooLadderBlock extends LadderBlock implements ICharmBlock {
     private final CharmModule module;
 
     public BambooLadderBlock(CharmModule module) {
-        super(Settings.copy(StorageBlocks.BAMBOO));
+        super(Settings.copy(Blocks.LADDER));
 
         this.module = module;
         this.register(module, "bamboo_ladder");

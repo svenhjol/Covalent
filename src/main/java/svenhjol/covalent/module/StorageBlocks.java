@@ -6,12 +6,13 @@ import svenhjol.charm.base.iface.Config;
 import svenhjol.charm.base.iface.Module;
 import svenhjol.covalent.Covalent;
 import svenhjol.covalent.block.*;
+import svenhjol.covalent.client.StorageBlocksClient;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Module(mod = Covalent.MOD_ID, description = "Storage blocks.")
+@Module(mod = Covalent.MOD_ID, client = StorageBlocksClient.class, description = "Storage blocks.")
 public class StorageBlocks extends CharmModule {
     public static BambooBlock BAMBOO;
     public static BambooDoorBlock BAMBOO_DOOR;
@@ -39,9 +40,9 @@ public class StorageBlocks extends CharmModule {
     public void register() {
         // bamboo
         BAMBOO = new BambooBlock(this);
+        BAMBOO_PLANKS = new BambooPlanksBlock(this);
         BAMBOO_DOOR = new BambooDoorBlock(this);
         BAMBOO_LADDER = new BambooLadderBlock(this);
-        BAMBOO_PLANKS = new BambooPlanksBlock(this);
         BAMBOO_SLAB = new BambooSlabBlock(this);
         BAMBOO_STAIRS = new BambooStairsBlock(this);
         BAMBOO_TRAPDOOR = new BambooTrapdoorBlock(this);

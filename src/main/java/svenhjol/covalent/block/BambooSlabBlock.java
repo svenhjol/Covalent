@@ -9,7 +9,7 @@ public class BambooSlabBlock extends SlabBlock implements ICharmBlock {
     private final CharmModule module;
 
     public BambooSlabBlock(CharmModule module) {
-        super(Settings.copy(StorageBlocks.BAMBOO));
+        super(Settings.copy(StorageBlocks.BAMBOO_PLANKS));
         this.register(module, "bamboo_slab");
         this.module = module;
     }

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "covalent:bamboo"
+    "item": "covalent:bamboo_bundle"
   },
   "result": "covalent:bamboo_planks",
   "experience": 0.35,

@@ -8,11 +8,11 @@
     ],
     "key": {
       "B": {
-        "item": "minecraft:VARIANT"
+        "item": "MOD:VARIANT"
       }
     },
     "result": {
-      "item": "MOD:VARIANT_bundle"
+      "item": "covalent:VARIANT_bundle"
     }
   },
   "variants": "storage"

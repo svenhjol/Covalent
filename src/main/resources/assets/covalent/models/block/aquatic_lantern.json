@@ -1,12 +1,12 @@
 {
 	"textures": {
-		"0": "covalent:block/aquatic_lantern/aquatic_lantern_light",
+		"0": "covalent:block/aquatic_lantern/aquatic_light",
 		"1": "covalent:block/aquatic_lantern/aquatic_lantern_5",
 		"2": "covalent:block/aquatic_lantern/aquatic_lantern_4",
 		"3": "covalent:block/aquatic_lantern/aquatic_lantern_3",
 		"4": "covalent:block/aquatic_lantern/aquatic_lantern_2",
 		"5": "covalent:block/aquatic_lantern/aquatic_lantern_1",
-		"particle": "covalent:block/aquatic_lantern/aquatic_lantern_light"
+		"particle": "covalent:block/aquatic_lantern/aquatic_lantern_2"
 	},
 	"elements": [
 		{

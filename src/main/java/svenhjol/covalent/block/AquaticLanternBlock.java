@@ -4,14 +4,13 @@ package svenhjol.covalent.block;
 import net.minecraft.block.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import svenhjol.charm.base.CharmModule;
 import svenhjol.charm.block.BaseLanternBlock;
 
 public class AquaticLanternBlock extends BaseLanternBlock {
     private static final VoxelShape STANDING_SHAPE = Block.createCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 11.0D, 11.0D);
-    private static final VoxelShape HANGING_SHAPE = Block.createCuboidShape(5.0D, 1.0D, 5.0D, 11.0D, 12.0D, 11.0D);
+    private static final VoxelShape HANGING_SHAPE = Block.createCuboidShape(5.0D, 4.0D, 5.0D, 11.0D, 15.0D, 11.0D);
 
     public AquaticLanternBlock(CharmModule module, String name) {
         super(module, name, AbstractBlock.Settings.copy(Blocks.LANTERN));

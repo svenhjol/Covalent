@@ -5,7 +5,7 @@
       "###", "BBB", "###"
     ],
     "key": {
-      "#": {"item": "MOD:VARIANT_planks"},
+      "#": {"item": "MOD:VARIANTSUFFIX"},
       "B": {"item": "minecraft:book"}
     },
     "result": {

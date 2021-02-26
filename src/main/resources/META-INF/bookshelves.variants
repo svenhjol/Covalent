@@ -1,22 +1,22 @@
-MOD:VARIANT
+MOD:VARIANT:SUFFIX
 
-coranthemum:prismarine
-coranthemum:purpur
+minecraft:prismarine:
+minecraft:purpur:_block
 
-covalent:bamboo
+covalent:bamboo:_planks
 
-terrestria:cypress
-terrestria:hemlock
-terrestria:japanese_maple
-terrestria:rainbow_eucalyptus
-terrestria:redwood
-terrestria:rubber
-terrestria:sakura
-terrestria:willow
-terrestria:yucca_palm
+terrestria:cypress:_planks
+terrestria:hemlock:_planks
+terrestria:japanese_maple:_planks
+terrestria:rainbow_eucalyptus:_planks
+terrestria:redwood:_planks
+terrestria:rubber:_planks
+terrestria:sakura:_planks
+terrestria:willow:_planks
+terrestria:yucca_palm:_planks
 
-traverse:fir
+traverse:fir:_planks
 
-wild_explorer:cherry_oak
-wild_explorer:dark_amaranth
-wild_explorer:palm
+wild_explorer:cherry_oak:_planks
+wild_explorer:dark_amaranth:_planks
+wild_explorer:palm:_planks

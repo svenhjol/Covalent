@@ -8,10 +8,10 @@
     ],
     "key": {
       "#": {
-        "item": "MOD:VARIANT_planks"
+        "item": "MOD:VARIANTSUFFIX"
       },
       "X": {
-        "item": "MOD:VARIANT_bookshelf"
+        "item": "SHELVE:VARIANT_bookshelf"
       }
     },
     "result": {

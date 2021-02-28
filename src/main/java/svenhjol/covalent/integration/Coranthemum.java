@@ -16,7 +16,5 @@ public class Coranthemum implements ICovalentIntegration {
     }
 
     public enum Materials implements IVariantMaterial {
-        PRISMARINE,
-        PURPUR
     }
 }

@@ -16,6 +16,8 @@ public class Covalent implements ICovalentIntegration {
     }
 
     public enum Materials implements IVariantMaterial {
-        BAMBOO
+        BAMBOO,
+        PRISMARINE,
+        PURPUR
     }
 }

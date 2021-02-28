@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "covalent:block/refined_obsidian",
+    "top": "covalent:block/refined_obsidian",
+    "side": "covalent:block/refined_obsidian"
+  }
+}

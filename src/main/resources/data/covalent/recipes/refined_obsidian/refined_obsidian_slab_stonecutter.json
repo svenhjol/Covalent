@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "covalent:refined_obsidian"
+  },
+  "result": "covalent:refined_obsidian_slab",
+  "count": 1
+}

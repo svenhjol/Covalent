@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "covalent:bamboo_slab"
+    "covalent:bamboo_slab",
+    "covalent:refined_obsidian_slab"
   ]
 }

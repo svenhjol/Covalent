@@ -22,6 +22,8 @@ public class Covalent implements ModInitializer {
             CovalentBookcases.class,
             CovalentBookshelves.class,
             CovalentChests.class,
+            RefinedObsidian.class,
+            SmoothGlowstone.class,
             StorageBlocks.class,
             PrismarineChains.class
         ));

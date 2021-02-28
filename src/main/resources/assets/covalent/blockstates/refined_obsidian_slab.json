@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "covalent:block/refined_obsidian_slab" },
+    "type=top": { "model": "covalent:block/refined_obsidian_slab_top" },
+    "type=double": { "model": "covalent:block/refined_obsidian" }
+  }
+}

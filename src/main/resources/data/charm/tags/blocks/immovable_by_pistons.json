@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "covalent:refined_obsidian",
+    "covalent:refined_obsidian_slab",
+    "covalent:refined_obsidian_stairs",
+    "covalent:refined_obsidian_wall"
+  ]
+}

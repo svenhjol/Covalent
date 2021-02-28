@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "covalent:refined_obsidian"
+    }
+  },
+  "result": {
+    "item": "covalent:refined_obsidian_wall",
+    "count": 6
+  }
+}

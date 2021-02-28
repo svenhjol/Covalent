@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "covalent:bamboo_stairs"
+    "covalent:bamboo_stairs",
+    "covalent:refined_obsidian_stairs"
   ]
 }

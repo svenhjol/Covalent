@@ -1,6 +1,0 @@
-{
-  "template": {
-    "parent": "covalent:block/VARIANT_crate"
-  },
-  "variants": "crates"
-}

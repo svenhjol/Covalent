@@ -2,7 +2,6 @@ package svenhjol.covalent.block;
 
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.Material;
-import net.minecraft.block.WallBlock;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import svenhjol.charm.base.CharmModule;
@@ -13,7 +12,7 @@ public class BambooFenceGateBlock extends FenceGateBlock implements ICharmBlock 
     private final CharmModule module;
 
     public BambooFenceGateBlock(CharmModule module) {
-        super(Settings.of(Material.WOOD, StorageBlocks.BAMBOO_PLANKS.getDefaultMaterialColor()).strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD));
+        super(Settings.of(Material.WOOD, StorageBlocks.BAMBOO_PLANKS.getDefaultMapColor()).strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD));
         this.register(module, "bamboo_fence_gate");
         this.module = module;
     }

@@ -14,6 +14,4 @@ public interface ICovalentIntegration {
     default boolean doBookshelves() { return true; }
 
     default boolean doChests() { return true; }
-
-    default boolean doCrates() { return true; }
 }

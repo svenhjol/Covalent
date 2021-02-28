@@ -2,10 +2,12 @@ package svenhjol.covalent.client;
 
 import net.fabricmc.fabric.api.client.rendereregistry.v1.BlockEntityRendererRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.enums.ChestType;
 import net.minecraft.client.texture.SpriteAtlasTexture;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
 import svenhjol.charm.base.CharmClientModule;
 import svenhjol.charm.base.CharmModule;
 import svenhjol.charm.base.enums.IVariantMaterial;
@@ -21,8 +23,8 @@ import svenhjol.covalent.module.CovalentChests;
 import java.util.Set;
 
 public class CovalentChestsClient extends CharmClientModule {
-    private final CovalentChestBlockEntity CACHED_NORMAL_CHEST = new CovalentChestBlockEntity();
-    private final CovalentTrappedChestBlockEntity CACHED_TRAPPED_CHEST = new CovalentTrappedChestBlockEntity();
+    private final CovalentChestBlockEntity CACHED_NORMAL_CHEST = new CovalentChestBlockEntity(BlockPos.ORIGIN, Blocks.CHEST.getDefaultState());
+    private final CovalentTrappedChestBlockEntity CACHED_TRAPPED_CHEST = new CovalentTrappedChestBlockEntity(BlockPos.ORIGIN, Blocks.TRAPPED_CHEST.getDefaultState());
 
     public CovalentChestsClient(CharmModule module) {
         super(module);

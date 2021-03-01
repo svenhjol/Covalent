@@ -1,7 +1,7 @@
 MOD:SHELVE:VARIANT:SUFFIX
 
-minecraft:covalent:prismarine:
-minecraft:covalent:purpur:_block
+minecraft:prismarine:
+minecraft:purpur:_block
 
 covalent:covalent:bamboo:_planks
 

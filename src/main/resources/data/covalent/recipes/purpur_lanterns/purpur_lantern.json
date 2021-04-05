@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP", "PTP", "PPP"
+  ],
+  "key": {
+    "P": {"item": "minecraft:popped_chorus_fruit"},
+    "T": {"item": "minecraft:torch"}
+  },
+  "result": {
+    "item": "covalent:purpur_lantern"
+  }
+}

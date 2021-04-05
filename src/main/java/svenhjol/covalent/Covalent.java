@@ -24,6 +24,7 @@ public class Covalent implements ModInitializer {
             CovalentChests.class,
             CovalentCrates.class,
             StorageBlocks.class,
+            PurpurLanterns.class,
             PrismarineChains.class
         ));
     }

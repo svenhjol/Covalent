@@ -17,16 +17,14 @@ public class Covalent implements ModInitializer {
         CovalentIntegration.init();
 
         new CharmLoader(MOD_ID, Arrays.asList(
-            AquaticLanterns.class,
+            Lanterns.class,
             CovalentBarrels.class,
             CovalentBookcases.class,
             CovalentBookshelves.class,
             CovalentChests.class,
             CovalentCrates.class,
             StorageBlocks.class,
-            PurpurChains.class,
-            PurpurLanterns.class,
-            PrismarineChains.class
+            Chains.class
         ));
     }
 }

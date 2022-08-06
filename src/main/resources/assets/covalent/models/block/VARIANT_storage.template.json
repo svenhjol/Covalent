@@ -1,0 +1,10 @@
+{
+  "template": {
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+      "end": "covalent:block/VARIANT_storage_top",
+      "side": "covalent:block/VARIANT_storage_side"
+    }
+  },
+  "variants": "storage"
+}

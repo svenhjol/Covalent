@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "covalent",
+  "version": "${version}",
+
+  "name": "Covalent",
+  "description": "Extra things.",
+  "authors": [
+    "Coranthes",
+    "svenhjol"
+  ],
+  "contact": {
+    "homepage": "https://svenhjol.github.io/Charm",
+    "sources": "https://github.com/svenhjol/Charm",
+    "issues": "https://github.com/svenhjol/Charm/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/covalent/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "svenhjol.covalent.Covalent"
+    ],
+    "client": [
+      "svenhjol.covalent.CovalentClient"
+    ]
+  },
+  "mixins": [
+  ],
+  "accessWidener": "covalent.accesswidener",
+
+  "depends": {
+    "charm": ">=4.2.0",
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.2",
+    "fabric-key-binding-api-v1": "*",
+    "java": ">=17"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

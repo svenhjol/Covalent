@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "hanging=false": { "model": "covalent:block/purpur_lantern" },
+    "hanging=true": { "model": "covalent:block/purpur_lantern_hanging" }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "template": {
+    "parent": "block/cube_column",
+    "textures": {
+      "end": "MOD:block/VARIANTSUFFIX",
+      "side": "covalent:block/VARIANT_bookcase_0"
+    }
+  },
+  "variants": "bookcases"
+}

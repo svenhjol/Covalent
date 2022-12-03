@@ -1,0 +1,11 @@
+{
+  "template": {
+    "parent": "block/slab",
+    "textures": {
+      "bottom": "MOD:block/VARIANTSUFFIX",
+      "top": "MOD:block/VARIANTSUFFIX",
+      "side": "MOD:block/VARIANTSUFFIX"
+    }
+  },
+  "variants": "nonblocks"
+}

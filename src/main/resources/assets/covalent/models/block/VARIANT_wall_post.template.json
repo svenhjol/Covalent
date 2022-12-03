@@ -1,0 +1,9 @@
+{
+  "template": {
+    "parent": "block/template_wall_post",
+    "textures": {
+      "wall": "MOD:block/VARIANTSUFFIX"
+    }
+  },
+  "variants": "nonblocks"
+}

@@ -1,0 +1,8 @@
+{
+  "template": {
+    "variants": {
+      "": { "model": "MOD:block/VARIANT" }
+    }
+  },
+  "variants": "blocks"
+}

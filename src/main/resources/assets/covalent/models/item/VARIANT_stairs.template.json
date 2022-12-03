@@ -1,0 +1,6 @@
+{
+  "template": {
+    "parent": "MOD:block/VARIANT_stairs"
+  },
+  "variants": "nonblocks"
+}

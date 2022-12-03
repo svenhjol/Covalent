@@ -1,0 +1,6 @@
+{
+  "template": {
+    "parent": "covalent:block/VARIANT_bookshelf"
+  },
+  "variants": "bookshelves"
+}

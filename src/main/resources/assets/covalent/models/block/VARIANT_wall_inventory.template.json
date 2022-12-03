@@ -1,0 +1,9 @@
+{
+  "template": {
+    "parent": "block/wall_inventory",
+    "textures": {
+      "wall": "MOD:block/VARIANTSUFFIX"
+    }
+  },
+  "variants": "nonblocks"
+}

@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.0-SNAPSHOT'
+    id 'fabric-loom' version '1.2-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -10,3 +10,30 @@ apply from: "https://charmony.work/gradle/fabric-include-modmenu.build.gradle"
 apply from: "https://charmony.work/gradle/fabric-include-charm.build.gradle"
 apply from: "https://charmony.work/gradle/fabric-bundle-charmony-api.build.gradle"
 apply from: "https://charmony.work/gradle/fabric-bundle-charmony.build.gradle"
+
+// Modrinth maven support.
+repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+    maven { url 'https://jitpack.io' }                // Required for Dawn API
+    maven { url 'https://maven.terraformersmc.com/' } // Required for Mod Menu and Terraform APIs
+    maven { url 'https://maven.shedaniel.me/' }       // Required for Cloth Config
+    maven { url 'https://maven.ryanliptak.com/' }     // Required for AppleSkin
+    maven { url 'https://maven.minecraftforge.net/' } // Required for TerraBlender
+    maven { url 'https://www.cursemaven.com' }        // Required for Columns
+}
+
+dependencies {
+    modApi "com.github.DawnTeamMC:DawnAPI:5.0.0"
+    modRuntimeOnly "com.terraformersmc:biolith:1.0.0-alpha.8"
+    modRuntimeOnly "maven.modrinth:promenade:v4.1.1"
+}

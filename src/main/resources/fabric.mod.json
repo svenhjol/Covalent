@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "covalent",
+  "version": "${mod_version}",
+
+  "name": "Covalent",
+  "description": "Charm integration with other mods.",
+  "authors": [
+    "svenhjol"
+  ],
+  "icon": "icon.png",
+
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "svenhjol.covalent.fabric.Initializer"
+    ],
+    "client": [
+      "svenhjol.covalent.fabric.ClientInitializer"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=17"
+  },
+
+  "custom": {
+    "modmenu": {
+      "parent": "charm",
+      "update_checker": true
+    }
+  }
+}

@@ -18,15 +18,15 @@ public class Terrestria extends CommonFeature implements
         IVariantChiseledBookshelfProvider,
         IVariantLadderProvider
 {
-    static final Rubber RUBBER = new Rubber();
-    static final Willow WILLOW = new Willow();
     static final Cypress CYPRESS = new Cypress();
-    static final Sakura SAKURA = new Sakura();
     static final Hemlock HEMLOCK = new Hemlock();
-    static final Redwood REDWOOD = new Redwood();
-    static final YuccaPalm YUCCA_PALM = new YuccaPalm();
     static final JapaneseMaple JAPANESE_MAPLE = new JapaneseMaple();
     static final RainbowEucalyptus RAINBOW_EUCALYPTUS = new RainbowEucalyptus();
+    static final Redwood REDWOOD = new Redwood();
+    static final Rubber RUBBER = new Rubber();
+    static final Sakura SAKURA = new Sakura();
+    static final Willow WILLOW = new Willow();
+    static final YuccaPalm YUCCA_PALM = new YuccaPalm();
     static final List<IVariantMaterial> TYPES = new ArrayList<>();
 
     @Override
@@ -46,32 +46,32 @@ public class Terrestria extends CommonFeature implements
 
         var registry = mod().registry();
 
-        RUBBER.blockSetType = registry.blockSetType(RUBBER);
-        RUBBER.woodType = registry.woodType(RUBBER.getSerializedName(), RUBBER);
-
-        WILLOW.blockSetType = registry.blockSetType(WILLOW);
-        WILLOW.woodType = registry.woodType(WILLOW.getSerializedName(), WILLOW);
-
         CYPRESS.blockSetType = registry.blockSetType(CYPRESS);
         CYPRESS.woodType = registry.woodType(CYPRESS.getSerializedName(), CYPRESS);
 
-        SAKURA.blockSetType = registry.blockSetType(SAKURA);
-        SAKURA.woodType = registry.woodType(SAKURA.getSerializedName(), SAKURA);
-        
         HEMLOCK.blockSetType = registry.blockSetType(HEMLOCK);
         HEMLOCK.woodType = registry.woodType(HEMLOCK.getSerializedName(), HEMLOCK);
-
-        REDWOOD.blockSetType = registry.blockSetType(REDWOOD);
-        REDWOOD.woodType = registry.woodType(REDWOOD.getSerializedName(), REDWOOD);
-
-        YUCCA_PALM.blockSetType = registry.blockSetType(YUCCA_PALM);
-        YUCCA_PALM.woodType = registry.woodType(YUCCA_PALM.getSerializedName(), YUCCA_PALM);
 
         JAPANESE_MAPLE.blockSetType = registry.blockSetType(JAPANESE_MAPLE);
         JAPANESE_MAPLE.woodType = registry.woodType(JAPANESE_MAPLE.getSerializedName(), JAPANESE_MAPLE);
 
         RAINBOW_EUCALYPTUS.blockSetType = registry.blockSetType(RAINBOW_EUCALYPTUS);
         RAINBOW_EUCALYPTUS.woodType = registry.woodType(RAINBOW_EUCALYPTUS.getSerializedName(), RAINBOW_EUCALYPTUS);
+
+        REDWOOD.blockSetType = registry.blockSetType(REDWOOD);
+        REDWOOD.woodType = registry.woodType(REDWOOD.getSerializedName(), REDWOOD);
+
+        RUBBER.blockSetType = registry.blockSetType(RUBBER);
+        RUBBER.woodType = registry.woodType(RUBBER.getSerializedName(), RUBBER);
+
+        SAKURA.blockSetType = registry.blockSetType(SAKURA);
+        SAKURA.woodType = registry.woodType(SAKURA.getSerializedName(), SAKURA);
+
+        WILLOW.blockSetType = registry.blockSetType(WILLOW);
+        WILLOW.woodType = registry.woodType(WILLOW.getSerializedName(), WILLOW);
+
+        YUCCA_PALM.blockSetType = registry.blockSetType(YUCCA_PALM);
+        YUCCA_PALM.woodType = registry.woodType(YUCCA_PALM.getSerializedName(), YUCCA_PALM);
 
         TYPES.addAll(List.of(RUBBER, WILLOW, CYPRESS, SAKURA, HEMLOCK, REDWOOD, YUCCA_PALM, JAPANESE_MAPLE, RAINBOW_EUCALYPTUS));
 

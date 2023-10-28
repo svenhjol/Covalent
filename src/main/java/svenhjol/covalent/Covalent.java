@@ -1,20 +1,23 @@
 package svenhjol.covalent;
 
-import svenhjol.charmony.base.DefaultMod;
+import svenhjol.charmony.common.CommonFeature;
+import svenhjol.charmony.common.CommonMod;
+import svenhjol.covalent.feature.bumblezone.Bumblezone;
 
-public class Covalent extends DefaultMod {
-    public static final String MOD_ID = "covalent";
-    private static Covalent instance;
+import java.util.List;
 
-    public static Covalent instance() {
-        if (instance == null) {
-            instance = new Covalent();
-        }
-        return instance;
-    }
+public class Covalent extends CommonMod {
+    public static final String ID = "covalent";
 
     @Override
     public String modId() {
-        return MOD_ID;
+        return ID;
+    }
+
+    @Override
+    public List<Class<? extends CommonFeature>> features() {
+        return List.of(
+            Bumblezone.class
+        );
     }
 }

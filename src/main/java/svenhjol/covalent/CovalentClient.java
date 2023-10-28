@@ -1,20 +1,18 @@
 package svenhjol.covalent;
 
-import svenhjol.charmony.base.DefaultClientMod;
+import svenhjol.charmony.client.ClientFeature;
+import svenhjol.charmony.client.ClientMod;
 
-public class CovalentClient extends DefaultClientMod {
-    public static final String MOD_ID = "covalent";
-    private static CovalentClient instance;
+import java.util.List;
 
-    public static CovalentClient instance() {
-        if (instance == null) {
-            instance = new CovalentClient();
-        }
-        return instance;
+public class CovalentClient extends ClientMod {
+    @Override
+    public String modId() {
+        return Covalent.ID;
     }
 
     @Override
-    public String modId() {
-        return MOD_ID;
+    public List<Class<? extends ClientFeature>> features() {
+        return List.of();
     }
 }

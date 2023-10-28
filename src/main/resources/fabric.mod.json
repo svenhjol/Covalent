@@ -18,6 +18,9 @@
     ],
     "client": [
       "svenhjol.covalent.fabric.ClientInitializer"
+    ],
+    "modmenu": [
+      "svenhjol.covalent.integration.modmenu.CovalentModMenuPlugin"
     ]
   },
   "depends": {

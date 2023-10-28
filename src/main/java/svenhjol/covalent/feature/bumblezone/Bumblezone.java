@@ -7,24 +7,25 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import svenhjol.charmony.annotation.Feature;
-import svenhjol.charmony.base.CharmonyFeature;
+import svenhjol.charmony.common.CommonFeature;
 import svenhjol.charmony.helper.ConfigHelper;
 import svenhjol.charmony_api.enums.EventResult;
 import svenhjol.charmony_api.event.SugarDissolveEvent;
-import svenhjol.covalent.Covalent;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.function.BooleanSupplier;
 
-@Feature(mod = Covalent.MOD_ID, description = "Bumblezone integration.\n" +
-    "This allows water to be replaced with sugar water when a Charm sugar block is dissolved.")
-public class Bumblezone extends CharmonyFeature {
+public class Bumblezone extends CommonFeature {
     static final String MOD_ID = "the_bumblezone";
     static final ResourceLocation FLUID_ID = new ResourceLocation(MOD_ID, "sugar_water_block");
     static Block bumblezoneFluid = null;
+
+    @Override
+    public String description() {
+        return "This allows water to be replaced with sugar water when a Charm sugar block is dissolved.";
+    }
 
     @Override
     public List<BooleanSupplier> checks() {

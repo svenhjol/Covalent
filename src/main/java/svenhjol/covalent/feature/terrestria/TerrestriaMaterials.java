@@ -8,106 +8,11 @@ import svenhjol.charmony_api.iface.IVariantWoodMaterial;
 import java.util.function.Supplier;
 
 public class TerrestriaMaterials {
-    static class Rubber implements IVariantWoodMaterial {
-        public Supplier<BlockSetType> blockSetType;
-        public Supplier<WoodType> woodType;
-
-        @Override
-        public BlockSetType getBlockSetType() {
-            return blockSetType.get();
-        }
-
-        @Override
-        public WoodType getWoodType() {
-            return woodType.get();
-        }
-
-        @Override
-        public SoundType soundType() {
-            return SoundType.WOOD;
-        }
-
-        @Override
-        public String getSerializedName() {
-            return "rubber";
-        }
-    }
-
-    static class Sakura implements IVariantWoodMaterial {
-        public Supplier<BlockSetType> blockSetType;
-        public Supplier<WoodType> woodType;
-        @Override
-        public BlockSetType getBlockSetType() {
-            return blockSetType.get();
-        }
-
-        @Override
-        public WoodType getWoodType() {
-            return woodType.get();
-        }
-
-        @Override
-        public SoundType soundType() {
-            return SoundType.WOOD;
-        }
-
-        @Override
-        public String getSerializedName() {
-            return "sakura";
-        }
-    }
-
-    static class YuccaPalm implements IVariantWoodMaterial {
-        public Supplier<BlockSetType> blockSetType;
-        public Supplier<WoodType> woodType;
-        @Override
-        public BlockSetType getBlockSetType() {
-            return blockSetType.get();
-        }
-
-        @Override
-        public WoodType getWoodType() {
-            return woodType.get();
-        }
-
-        @Override
-        public SoundType soundType() {
-            return SoundType.WOOD;
-        }
-
-        @Override
-        public String getSerializedName() {
-            return "yucca_palm";
-        }
-    }
-
-    static class Willow implements IVariantWoodMaterial {
-        public Supplier<BlockSetType> blockSetType;
-        public Supplier<WoodType> woodType;
-        @Override
-        public BlockSetType getBlockSetType() {
-            return blockSetType.get();
-        }
-
-        @Override
-        public WoodType getWoodType() {
-            return woodType.get();
-        }
-
-        @Override
-        public SoundType soundType() {
-            return SoundType.WOOD;
-        }
-
-        @Override
-        public String getSerializedName() {
-            return "willow";
-        }
-    }
-
     static class Cypress implements IVariantWoodMaterial {
+        static final String ID = "terrestria_cypress";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
+
         @Override
         public BlockSetType getBlockSetType() {
             return blockSetType.get();
@@ -125,13 +30,15 @@ public class TerrestriaMaterials {
 
         @Override
         public String getSerializedName() {
-            return "cypress";
+            return ID;
         }
     }
 
     static class Hemlock implements IVariantWoodMaterial {
+        static final String ID = "terrestria_hemlock";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
+
         @Override
         public BlockSetType getBlockSetType() {
             return blockSetType.get();
@@ -149,37 +56,15 @@ public class TerrestriaMaterials {
 
         @Override
         public String getSerializedName() {
-            return "hemlock";
-        }
-    }
-
-    static class Redwood implements IVariantWoodMaterial {
-        public Supplier<BlockSetType> blockSetType;
-        public Supplier<WoodType> woodType;
-        @Override
-        public BlockSetType getBlockSetType() {
-            return blockSetType.get();
-        }
-
-        @Override
-        public WoodType getWoodType() {
-            return woodType.get();
-        }
-
-        @Override
-        public SoundType soundType() {
-            return SoundType.WOOD;
-        }
-
-        @Override
-        public String getSerializedName() {
-            return "redwood";
+            return ID;
         }
     }
 
     static class JapaneseMaple implements IVariantWoodMaterial {
+        static final String ID = "terrestria_japanese_maple";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
+
         @Override
         public BlockSetType getBlockSetType() {
             return blockSetType.get();
@@ -197,13 +82,15 @@ public class TerrestriaMaterials {
 
         @Override
         public String getSerializedName() {
-            return "japanese_maple";
+            return ID;
         }
     }
 
     static class RainbowEucalyptus implements IVariantWoodMaterial {
+        static final String ID = "terrestria_rainbow_eucalyptus";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
+
         @Override
         public BlockSetType getBlockSetType() {
             return blockSetType.get();
@@ -221,7 +108,137 @@ public class TerrestriaMaterials {
 
         @Override
         public String getSerializedName() {
-            return "rainbow_eucalyptus";
+            return ID;
+        }
+    }
+
+    static class Redwood implements IVariantWoodMaterial {
+        static final String ID = "terrestria_redwood";
+        public Supplier<BlockSetType> blockSetType;
+        public Supplier<WoodType> woodType;
+
+        @Override
+        public BlockSetType getBlockSetType() {
+            return blockSetType.get();
+        }
+
+        @Override
+        public WoodType getWoodType() {
+            return woodType.get();
+        }
+
+        @Override
+        public SoundType soundType() {
+            return SoundType.WOOD;
+        }
+
+        @Override
+        public String getSerializedName() {
+            return ID;
+        }
+    }
+
+    static class Rubber implements IVariantWoodMaterial {
+        static final String ID = "terrestria_rubber";
+        public Supplier<BlockSetType> blockSetType;
+        public Supplier<WoodType> woodType;
+
+        @Override
+        public BlockSetType getBlockSetType() {
+            return blockSetType.get();
+        }
+
+        @Override
+        public WoodType getWoodType() {
+            return woodType.get();
+        }
+
+        @Override
+        public SoundType soundType() {
+            return SoundType.WOOD;
+        }
+
+        @Override
+        public String getSerializedName() {
+            return ID;
+        }
+    }
+
+    static class Sakura implements IVariantWoodMaterial {
+        static final String ID = "terrestria_sakura";
+        public Supplier<BlockSetType> blockSetType;
+        public Supplier<WoodType> woodType;
+
+        @Override
+        public BlockSetType getBlockSetType() {
+            return blockSetType.get();
+        }
+
+        @Override
+        public WoodType getWoodType() {
+            return woodType.get();
+        }
+
+        @Override
+        public SoundType soundType() {
+            return SoundType.WOOD;
+        }
+
+        @Override
+        public String getSerializedName() {
+            return ID;
+        }
+    }
+
+    static class Willow implements IVariantWoodMaterial {
+        static final String ID = "terrestria_willow";
+        public Supplier<BlockSetType> blockSetType;
+        public Supplier<WoodType> woodType;
+
+        @Override
+        public BlockSetType getBlockSetType() {
+            return blockSetType.get();
+        }
+
+        @Override
+        public WoodType getWoodType() {
+            return woodType.get();
+        }
+
+        @Override
+        public SoundType soundType() {
+            return SoundType.WOOD;
+        }
+
+        @Override
+        public String getSerializedName() {
+            return ID;
+        }
+    }
+
+    static class YuccaPalm implements IVariantWoodMaterial {
+        static final String ID = "terrestria_yucca_palm";
+        public Supplier<BlockSetType> blockSetType;
+        public Supplier<WoodType> woodType;
+
+        @Override
+        public BlockSetType getBlockSetType() {
+            return blockSetType.get();
+        }
+
+        @Override
+        public WoodType getWoodType() {
+            return woodType.get();
+        }
+
+        @Override
+        public SoundType soundType() {
+            return SoundType.WOOD;
+        }
+
+        @Override
+        public String getSerializedName() {
+            return ID;
         }
     }
 }

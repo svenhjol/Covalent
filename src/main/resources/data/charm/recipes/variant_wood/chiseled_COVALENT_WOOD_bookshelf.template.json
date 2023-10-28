@@ -1,0 +1,24 @@
+{
+  "template":{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "key": {
+      "#": {
+        "item": "MOD:PLANKS"
+      },
+      "X": {
+        "item": "MOD:SLAB"
+      }
+    },
+    "pattern": [
+      "###",
+      "XXX",
+      "###"
+    ],
+    "result": {
+      "item": "charm:chiseled_COVALENT_WOOD_bookshelf"
+    },
+    "show_notification": true
+    },
+  "variants": "covalent_wood"
+}

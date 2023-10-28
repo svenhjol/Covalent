@@ -1,0 +1,10 @@
+{
+  "template": {
+    "parent": "block/cube_column",
+    "textures": {
+      "end": "MOD:block/PLANKS",
+      "side": "charm:block/COVALENT_WOOD_bookshelf"
+    }
+  },
+  "variants": "covalent_wood"
+}

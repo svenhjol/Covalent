@@ -1,11 +1,9 @@
 package svenhjol.covalent.feature.terrestria;
 
-import svenhjol.charmony.annotation.Feature;
-import svenhjol.charmony.base.CharmonyFeature;
+import svenhjol.charmony.common.CommonFeature;
 import svenhjol.charmony.helper.ConfigHelper;
 import svenhjol.charmony_api.CharmonyApi;
 import svenhjol.charmony_api.iface.*;
-import svenhjol.covalent.Covalent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +11,7 @@ import java.util.function.BooleanSupplier;
 
 import static svenhjol.covalent.feature.terrestria.TerrestriaMaterials.*;
 
-@Feature(mod = Covalent.MOD_ID, description = "Adds chests, barrels, bookshelves and ladders for Terrestria woods.")
-public class Terrestria extends CharmonyFeature implements
+public class Terrestria extends CommonFeature implements
         IVariantBarrelProvider,
         IVariantBookshelfProvider,
         IVariantChestProvider,
@@ -33,6 +30,11 @@ public class Terrestria extends CharmonyFeature implements
     static final List<IVariantMaterial> TYPES = new ArrayList<>();
 
     @Override
+    public String description() {
+        return "Adds chests, barrels, bookshelves and ladders for Terrestria woods.";
+    }
+
+    @Override
     public List<BooleanSupplier> checks() {
         return List.of(() -> ConfigHelper.isModLoaded("terrestria"));
     }
@@ -42,9 +44,9 @@ public class Terrestria extends CharmonyFeature implements
         // We don't register anything if the mod is missing.
         if (!isEnabled()) return;
 
-        var registry = Covalent.instance().registry();
+        var registry = mod().registry();
 
-         RUBBER.blockSetType = registry.blockSetType(RUBBER);
+        RUBBER.blockSetType = registry.blockSetType(RUBBER);
         RUBBER.woodType = registry.woodType(RUBBER.getSerializedName(), RUBBER);
 
         WILLOW.blockSetType = registry.blockSetType(WILLOW);

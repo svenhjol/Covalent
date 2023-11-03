@@ -41,8 +41,7 @@ public class Traverse extends CommonFeature implements
         FIR.blockSetType = registry.blockSetType(FIR);
         FIR.woodType = registry.woodType(FIR.getSerializedName(), FIR);
 
-
-        TYPES.addAll(List.of(FIR));
+        TYPES.add(FIR);
 
         CharmonyApi.registerProvider(this);
     }

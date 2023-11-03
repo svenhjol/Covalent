@@ -1,0 +1,11 @@
+{
+  "template": {
+    "parent": "block/cube_bottom_top",
+    "textures": {
+      "top": "charm:block/COVALENT_WOOD_barrel_top",
+      "side": "charm:block/COVALENT_WOOD_barrel_side",
+      "bottom": "charm:block/COVALENT_WOOD_barrel_bottom"
+    }
+  },
+  "variants": "covalent_wood"
+}

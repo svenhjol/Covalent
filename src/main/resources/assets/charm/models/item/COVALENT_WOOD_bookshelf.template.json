@@ -1,0 +1,6 @@
+{
+  "template": {
+    "parent": "charm:block/COVALENT_WOOD_bookshelf"
+  },
+  "variants": "covalent_wood"
+}

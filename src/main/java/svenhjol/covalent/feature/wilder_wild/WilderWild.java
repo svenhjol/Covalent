@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BooleanSupplier;
 
-import static svenhjol.covalent.feature.terrestria.WilderWildMaterials.*;
+import static svenhjol.covalent.feature.wilder_wild.WilderWildMaterials.*;
 
 public class WilderWild extends CommonFeature implements
         IVariantBarrelProvider,
@@ -20,12 +20,12 @@ public class WilderWild extends CommonFeature implements
 {   
     static final Baobab BAOBAB = new Baobab();
     static final Cypress CYPRESS = new Cypress();
-    static final Hemlock PALM = new Palm();
+    static final Palm PALM = new Palm();
     static final List<IVariantMaterial> TYPES = new ArrayList<>();
 
     @Override
     public String description() {
-        return "Adds chests, barrels, bookshelves and ladders for Terrestria woods.";
+        return "Adds chests, barrels, bookshelves and ladders for WilderWild woods.";
     }
 
     @Override

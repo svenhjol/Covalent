@@ -8,8 +8,8 @@ import svenhjol.charmony_api.iface.IVariantWoodMaterial;
 import java.util.function.Supplier;
 
 public class WilderWildMaterials {
-    static class Cypress implements IVariantWoodMaterial {
-        static final String ID = "wilder_wild_bapbab";
+    static class Baobab implements IVariantWoodMaterial {
+        static final String ID = "wilder_wild_baobab";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -34,7 +34,7 @@ public class WilderWildMaterials {
         }
     }
 
-    static class Hemlock implements IVariantWoodMaterial {
+    static class Cypress implements IVariantWoodMaterial {
         static final String ID = "wilder_wild_cypress";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
@@ -60,7 +60,7 @@ public class WilderWildMaterials {
         }
     }
 
-    static class JapaneseMaple implements IVariantWoodMaterial {
+    static class Palm implements IVariantWoodMaterial {
         static final String ID = "wilder_wild_palm";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
@@ -86,32 +86,5 @@ public class WilderWildMaterials {
         }
     }
 
-
-
-    static class Rubber implements IVariantWoodMaterial {
-        static final String ID = "terrestria_rubber";
-        public Supplier<BlockSetType> blockSetType;
-        public Supplier<WoodType> woodType;
-
-        @Override
-        public BlockSetType getBlockSetType() {
-            return blockSetType.get();
-        }
-
-        @Override
-        public WoodType getWoodType() {
-            return woodType.get();
-        }
-
-        @Override
-        public SoundType soundType() {
-            return SoundType.WOOD;
-        }
-
-        @Override
-        public String getSerializedName() {
-            return ID;
-        }
-    }
 
 }

@@ -1,4 +1,4 @@
-package svenhjol.covalent.feature.wilder_wild.;
+package svenhjol.covalent.feature.wilderwild;
 
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public class WilderWildMaterials {
     static class Baobab implements IVariantWoodMaterial {
-        static final String ID = "wilder_wild_baobab";
+        static final String ID = "wilderwild_baobab";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -35,7 +35,7 @@ public class WilderWildMaterials {
     }
 
     static class Cypress implements IVariantWoodMaterial {
-        static final String ID = "wilder_wild_cypress";
+        static final String ID = "wilderwild_cypress";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -61,7 +61,7 @@ public class WilderWildMaterials {
     }
 
     static class Palm implements IVariantWoodMaterial {
-        static final String ID = "wilder_wild_palm";
+        static final String ID = "wilderwild_palm";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -85,6 +85,6 @@ public class WilderWildMaterials {
             return ID;
         }
     }
-
+    
 
 }

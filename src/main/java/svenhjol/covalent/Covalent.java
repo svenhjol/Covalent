@@ -5,6 +5,8 @@ import svenhjol.charmony.common.CommonMod;
 import svenhjol.covalent.feature.bumblezone.Bumblezone;
 import svenhjol.covalent.feature.tags.Tags;
 import svenhjol.covalent.feature.terrestria.Terrestria;
+import svenhjol.covalent.feature.wilderwild.WilderWildMaterials;
+
 
 import java.util.List;
 

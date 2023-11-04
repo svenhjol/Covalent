@@ -1,4 +1,4 @@
-package svenhjol.covalent.feature.WilderWild.;
+package svenhjol.covalent.feature.wilderwild;
 
 import svenhjol.charmony.common.CommonFeature;
 import svenhjol.charmony.helper.ConfigHelper;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BooleanSupplier;
 
-import static svenhjol.covalent.feature.wilder_wild.WilderWildMaterials.*;
+import static svenhjol.covalent.feature.wilderwild.WilderWildMaterials.*;
 
 public class WilderWild extends CommonFeature implements
         IVariantBarrelProvider,
@@ -25,7 +25,7 @@ public class WilderWild extends CommonFeature implements
 
     @Override
     public String description() {
-        return "Adds chests, barrels, bookshelves and ladders for WilderWild woods.";
+        return "Adds chests, barrels, bookshelves and ladders for Wilder Wild woods.";
     }
 
     @Override

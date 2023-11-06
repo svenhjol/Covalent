@@ -5,7 +5,7 @@ import svenhjol.charmony.common.CommonMod;
 import svenhjol.covalent.feature.bumblezone.Bumblezone;
 import svenhjol.covalent.feature.tags.Tags;
 import svenhjol.covalent.feature.terrestria.Terrestria;
-import svenhjol.covalent.feature.wilderwild.WilderWildMaterials;
+import svenhjol.covalent.feature.wilderwild.WilderWild;
 
 
 import java.util.List;
@@ -23,7 +23,9 @@ public class Covalent extends CommonMod {
         return List.of(
             Bumblezone.class,
             Tags.class,
-            Terrestria.class
+            Terrestria.class,
+            WilderWild.class
+
         );
     }
 }

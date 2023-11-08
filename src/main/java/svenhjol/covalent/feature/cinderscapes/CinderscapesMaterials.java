@@ -19,13 +19,11 @@ public class CinderscapesMaterials {
         }
 
         @Override
-        public WoodType getWoodType() {
-            return woodType.get();
+        public WoodType getWoodType() {return woodType.get();
         }
 
         @Override
-        public SoundType soundType() {
-            return SoundType.WOOD;
+        public SoundType soundType() {return SoundType.WOOD;
         }
 
         @Override

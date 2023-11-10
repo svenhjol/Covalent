@@ -64,5 +64,26 @@
   "block.charm.terrestria_yucca_palm_chest": "Yucca Palm Chest",
   "block.charm.terrestria_yucca_palm_ladder": "Yucca Palm Ladder",
   "block.charm.chiseled_terrestria_yucca_palm_bookshelf": "Chiseled Yucca Palm Bookshelf",
-  "block.charm.trapped_terrestria_yucca_palm_chest": "Trapped Yucca Palm Chest"
+  "block.charm.trapped_terrestria_yucca_palm_chest": "Trapped Yucca Palm Chest",
+
+  "block.charm.wilderwild_baobab_barrel": "Baobab Barrel",
+  "block.charm.wilderwild_baobab_bookshelf": "Baobab Bookshelf",
+  "block.charm.wilderwild_baobab_chest": "Baobab Chest",
+  "block.charm.wilderwild_baobab_ladder": "Baobab Ladder",
+  "block.charm.chiseled_wilderwild_baobab_bookshelf": "Chiseled Baobab Bookshelf",
+  "block.charm.trapped_wilderwild_baobab_chest": "Trapped Baobab Chest",
+
+  "block.charm.wilderwild_cypress_barrel": "Cypress Barrel",
+  "block.charm.wilderwild_cypress_bookshelf": "Cypress Bookshelf",
+  "block.charm.wilderwild_cypress_chest": "Cypress Chest",
+  "block.charm.wilderwild_cypress_ladder": "Cypress Ladder",
+  "block.charm.chiseled_wilderwild_cypress_bookshelf": "Chiseled Cypress Bookshelf",
+  "block.charm.trapped_wilderwild_cypress_chest": "Trapped Cypress Chest",
+
+  "block.charm.wilderwild_palm_barrel": "Palm Barrel",
+  "block.charm.wilderwild_palm_bookshelf": "Palm Bookshelf",
+  "block.charm.wilderwild_palm_chest": "Palm Chest",
+  "block.charm.wilderwild_palm_ladder": "Palm Ladder",
+  "block.charm.chiseled_wilderwild_palm_bookshelf": "Chiseled Palm Bookshelf",
+  "block.charm.trapped_wilderwild_palm_chest": "Trapped Palm Chest"
 }

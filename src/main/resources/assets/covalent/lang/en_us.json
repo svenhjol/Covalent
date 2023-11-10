@@ -64,5 +64,19 @@
   "block.charm.terrestria_yucca_palm_chest": "Yucca Palm Chest",
   "block.charm.terrestria_yucca_palm_ladder": "Yucca Palm Ladder",
   "block.charm.chiseled_terrestria_yucca_palm_bookshelf": "Chiseled Yucca Palm Bookshelf",
-  "block.charm.trapped_terrestria_yucca_palm_chest": "Trapped Yucca Palm Chest"
+  "block.charm.trapped_terrestria_yucca_palm_chest": "Trapped Yucca Palm Chest",
+
+  "block.charm.cinderscapes_scorched_barrel": "Scorched Barrel",
+  "block.charm.cinderscapes_scorched_bookshelf": "Scorched Bookshelf",
+  "block.charm.cinderscapes_scorched_chest": "Scorched Chest",
+  "block.charm.cinderscapes_scorched_ladder": "Scorched Ladder",
+  "block.charm.chiseled_cinderscapes_scorched_bookshelf": "Chiseled Scorched Bookshelf",
+  "block.charm.trapped_cinderscapes_scorched_chest": "Trapped Scorched Chest",
+
+  "block.charm.cinderscapes_umbral_barrel": "Umbral Barrel",
+  "block.charm.cinderscapes_umbral_bookshelf": "Umbral Bookshelf",
+  "block.charm.cinderscapes_umbral_chest": "Umbral Chest",
+  "block.charm.cinderscapes_umbral_ladder": "Umbral Ladder",
+  "block.charm.chiseled_cinderscapes_umbral_bookshelf": "Chiseled Umbral Bookshelf",
+  "block.charm.trapped_cinderscapes_umbral_chest": "Trapped Umbral Chest"
 }

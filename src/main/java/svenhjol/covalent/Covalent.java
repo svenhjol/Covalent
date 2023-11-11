@@ -7,7 +7,6 @@ import svenhjol.covalent.feature.cinderscapes.Cinderscapes;
 import svenhjol.covalent.feature.tags.Tags;
 import svenhjol.covalent.feature.terrestria.Terrestria;
 import svenhjol.covalent.feature.traverse.Traverse;
-import svenhjol.covalent.feature.cinderscapes.Cinderscapes;
 
 import java.util.List;
 

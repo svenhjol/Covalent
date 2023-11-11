@@ -1,11 +1,13 @@
 package svenhjol.covalent.feature.tags;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagLoader;
 import svenhjol.charmony.common.CommonFeature;
 import svenhjol.charmony.helper.ApiHelper;
 import svenhjol.charmony.helper.ResourceLocationHelper;
 import svenhjol.charmony.helper.TextHelper;
+import svenhjol.charmony_api.event.ClientStartEvent;
 import svenhjol.charmony_api.iface.IConditionalTagProvider;
 
 import java.util.ArrayList;
@@ -26,6 +28,13 @@ public class Tags extends CommonFeature {
 
     @Override
     public void runWhenEnabled() {
+        ClientStartEvent.INSTANCE.handle(this::handleClientStart);
+    }
+
+    /**
+     * Calculate tags to remove on client start.
+     */
+    private void handleClientStart(Minecraft minecraft) {
         ApiHelper.consume(IConditionalTagProvider.class,
             provider -> provider.getTagConditions().forEach(filter -> {
                 if (filter.test()) return;

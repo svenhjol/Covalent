@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "charm:cinderscapes_scorched_barrel",
+    "charm:cinderscapes_umbral_barrel",
+    "charm:terrestria_cypress_barrel",
+    "charm:terrestria_hemlock_barrel",
+    "charm:terrestria_japanese_maple_barrel",
+    "charm:terrestria_rainbow_eucalyptus_barrel",
+    "charm:terrestria_redwood_barrel",
+    "charm:terrestria_rubber_barrel",
+    "charm:terrestria_sakura_barrel",
+    "charm:terrestria_willow_barrel",
+    "charm:terrestria_yucca_palm_barrel",
+    "charm:traverse_fir_barrel"
+  ]
+}

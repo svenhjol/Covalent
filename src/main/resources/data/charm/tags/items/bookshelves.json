@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "charm:cinderscapes_scorched_bookshelf",
+    "charm:cinderscapes_umbral_bookshelf",
+    "charm:terrestria_cypress_bookshelf",
+    "charm:terrestria_hemlock_bookshelf",
+    "charm:terrestria_japanese_maple_bookshelf",
+    "charm:terrestria_rainbow_eucalyptus_bookshelf",
+    "charm:terrestria_redwood_bookshelf",
+    "charm:terrestria_rubber_bookshelf",
+    "charm:terrestria_sakura_bookshelf",
+    "charm:terrestria_willow_bookshelf",
+    "charm:terrestria_yucca_palm_bookshelf",
+    "charm:traverse_fir_bookshelf"
+  ]
+}

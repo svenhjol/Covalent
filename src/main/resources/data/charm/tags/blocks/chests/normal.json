@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "charm:cinderscapes_scorched_chest",
+    "charm:cinderscapes_umbral_chest",
+    "charm:terrestria_cypress_chest",
+    "charm:terrestria_hemlock_chest",
+    "charm:terrestria_japanese_maple_chest",
+    "charm:terrestria_rainbow_eucalyptus_chest",
+    "charm:terrestria_redwood_chest",
+    "charm:terrestria_rubber_chest",
+    "charm:terrestria_sakura_chest",
+    "charm:terrestria_willow_chest",
+    "charm:terrestria_yucca_palm_chest",
+    "charm:traverse_fir_chest"
+  ]
+}

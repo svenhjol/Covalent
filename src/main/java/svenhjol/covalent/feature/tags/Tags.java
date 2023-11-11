@@ -60,9 +60,8 @@ public class Tags extends CommonFeature {
 
         for (var entry : entries) {
             if (!fuzzyRemoves.isEmpty() || !exactRemoves.isEmpty()) {
-                var id = entry.entry().toString();
-                var res = new ResourceLocation(id);
-                if (ResourceLocationHelper.isDisabledCharmonyFeature(res) || TextHelper.match(id, exactRemoves, fuzzyRemoves)) {
+                var id = new ResourceLocation(entry.entry().toString());
+                if (ResourceLocationHelper.isDisabledCharmonyFeature(id) || ResourceLocationHelper.match(id, exactRemoves, fuzzyRemoves)) {
                     continue;
                 }
             }

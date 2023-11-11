@@ -12,11 +12,11 @@ import java.util.function.BooleanSupplier;
 import static svenhjol.covalent.feature.cinderscapes.CinderscapesMaterials.*;
 
 public class Cinderscapes extends CommonFeature implements
-        IVariantBarrelProvider,
-        IVariantBookshelfProvider,
-        IVariantChestProvider,
-        IVariantChiseledBookshelfProvider,
-        IVariantLadderProvider
+    IVariantBarrelProvider,
+    IVariantBookshelfProvider,
+    IVariantChestProvider,
+    IVariantChiseledBookshelfProvider,
+    IVariantLadderProvider
 {
     static final Scorched SCORCHED = new Scorched();
     static final Umbral UMBRAL = new Umbral();

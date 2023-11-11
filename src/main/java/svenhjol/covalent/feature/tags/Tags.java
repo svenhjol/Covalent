@@ -6,7 +6,6 @@ import net.minecraft.tags.TagLoader;
 import svenhjol.charmony.common.CommonFeature;
 import svenhjol.charmony.helper.ApiHelper;
 import svenhjol.charmony.helper.ResourceLocationHelper;
-import svenhjol.charmony.helper.TextHelper;
 import svenhjol.charmony_api.event.ClientStartEvent;
 import svenhjol.charmony_api.iface.IConditionalTagProvider;
 
@@ -61,7 +60,7 @@ public class Tags extends CommonFeature {
         for (var entry : entries) {
             if (!fuzzyRemoves.isEmpty() || !exactRemoves.isEmpty()) {
                 var id = new ResourceLocation(entry.entry().toString());
-                if (ResourceLocationHelper.isDisabledCharmonyFeature(id) || ResourceLocationHelper.match(id, exactRemoves, fuzzyRemoves)) {
+                if (ResourceLocationHelper.match(id, exactRemoves, fuzzyRemoves)) {
                     continue;
                 }
             }

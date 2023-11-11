@@ -9,14 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BooleanSupplier;
 
-import static svenhjol.covalent.feature.traverse.TraverseMaterials.*;
+import static svenhjol.covalent.feature.traverse.TraverseMaterials.Fir;
 
 public class Traverse extends CommonFeature implements
-        IVariantBarrelProvider,
-        IVariantBookshelfProvider,
-        IVariantChestProvider,
-        IVariantChiseledBookshelfProvider,
-        IVariantLadderProvider
+    IVariantBarrelProvider,
+    IVariantBookshelfProvider,
+    IVariantChestProvider,
+    IVariantChiseledBookshelfProvider,
+    IVariantLadderProvider
 {
     static final Fir FIR = new Fir();
     static final List<IVariantMaterial> TYPES = new ArrayList<>();
@@ -33,7 +33,8 @@ public class Traverse extends CommonFeature implements
 
     @Override
     public void register() {
-        // We don't register anything if the mod is missing.
+        // Always register data provider so we can remove recipes, advancements and tags if the mod is not present.
+        CharmonyApi.registerProvider(new TraverseDataProvider());
         if (!isEnabled()) return;
 
         var registry = mod().registry();

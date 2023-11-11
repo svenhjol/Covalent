@@ -12,11 +12,11 @@ import java.util.function.BooleanSupplier;
 import static svenhjol.covalent.feature.terrestria.TerrestriaMaterials.*;
 
 public class Terrestria extends CommonFeature implements
-        IVariantBarrelProvider,
-        IVariantBookshelfProvider,
-        IVariantChestProvider,
-        IVariantChiseledBookshelfProvider,
-        IVariantLadderProvider
+    IVariantBarrelProvider,
+    IVariantBookshelfProvider,
+    IVariantChestProvider,
+    IVariantChiseledBookshelfProvider,
+    IVariantLadderProvider
 {
     static final Cypress CYPRESS = new Cypress();
     static final Hemlock HEMLOCK = new Hemlock();
@@ -41,7 +41,8 @@ public class Terrestria extends CommonFeature implements
 
     @Override
     public void register() {
-        // We don't register anything if the mod is missing.
+        // Always register data provider so we can remove recipes, advancements and tags if the mod is not present.
+        CharmonyApi.registerProvider(new TerrestriaDataProvider());
         if (!isEnabled()) return;
 
         var registry = mod().registry();

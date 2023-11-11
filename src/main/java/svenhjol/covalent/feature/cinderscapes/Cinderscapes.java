@@ -34,7 +34,8 @@ public class Cinderscapes extends CommonFeature implements
 
     @Override
     public void register() {
-        // We don't register anything if the mod is missing.
+        // Always register data provider so we can remove recipes, advancements and tags if the mod is not present.
+        CharmonyApi.registerProvider(new CinderscapesDataProvider());
         if (!isEnabled()) return;
 
         var registry = mod().registry();
@@ -44,7 +45,6 @@ public class Cinderscapes extends CommonFeature implements
 
         UMBRAL.blockSetType = registry.blockSetType(UMBRAL);
         UMBRAL.woodType = registry.woodType(UMBRAL.getSerializedName(), UMBRAL);
-
 
         TYPES.addAll(List.of(SCORCHED, UMBRAL));
 

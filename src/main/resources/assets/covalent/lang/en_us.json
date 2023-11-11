@@ -3,6 +3,20 @@
   "cloth.category.covalent.title": "Covalent",
   "cloth.category.covalent.feature_enabled": "%s enabled",
 
+  "block.charm.cinderscapes_scorched_barrel": "Scorched Barrel",
+  "block.charm.cinderscapes_scorched_bookshelf": "Scorched Bookshelf",
+  "block.charm.cinderscapes_scorched_chest": "Scorched Chest",
+  "block.charm.cinderscapes_scorched_ladder": "Scorched Ladder",
+  "block.charm.chiseled_cinderscapes_scorched_bookshelf": "Chiseled Scorched Bookshelf",
+  "block.charm.trapped_cinderscapes_scorched_chest": "Trapped Scorched Chest",
+
+  "block.charm.cinderscapes_umbral_barrel": "Umbral Barrel",
+  "block.charm.cinderscapes_umbral_bookshelf": "Umbral Bookshelf",
+  "block.charm.cinderscapes_umbral_chest": "Umbral Chest",
+  "block.charm.cinderscapes_umbral_ladder": "Umbral Ladder",
+  "block.charm.chiseled_cinderscapes_umbral_bookshelf": "Chiseled Umbral Bookshelf",
+  "block.charm.trapped_cinderscapes_umbral_chest": "Trapped Umbral Chest",
+
   "block.charm.terrestria_cypress_barrel": "Cypress Barrel",
   "block.charm.terrestria_cypress_bookshelf": "Cypress Bookshelf",
   "block.charm.terrestria_cypress_chest": "Cypress Chest",
@@ -66,17 +80,10 @@
   "block.charm.chiseled_terrestria_yucca_palm_bookshelf": "Chiseled Yucca Palm Bookshelf",
   "block.charm.trapped_terrestria_yucca_palm_chest": "Trapped Yucca Palm Chest",
 
-  "block.charm.cinderscapes_scorched_barrel": "Scorched Barrel",
-  "block.charm.cinderscapes_scorched_bookshelf": "Scorched Bookshelf",
-  "block.charm.cinderscapes_scorched_chest": "Scorched Chest",
-  "block.charm.cinderscapes_scorched_ladder": "Scorched Ladder",
-  "block.charm.chiseled_cinderscapes_scorched_bookshelf": "Chiseled Scorched Bookshelf",
-  "block.charm.trapped_cinderscapes_scorched_chest": "Trapped Scorched Chest",
-
-  "block.charm.cinderscapes_umbral_barrel": "Umbral Barrel",
-  "block.charm.cinderscapes_umbral_bookshelf": "Umbral Bookshelf",
-  "block.charm.cinderscapes_umbral_chest": "Umbral Chest",
-  "block.charm.cinderscapes_umbral_ladder": "Umbral Ladder",
-  "block.charm.chiseled_cinderscapes_umbral_bookshelf": "Chiseled Umbral Bookshelf",
-  "block.charm.trapped_cinderscapes_umbral_chest": "Trapped Umbral Chest"
+  "block.charm.traverse_fir_barrel": "Fir Barrel",
+  "block.charm.traverse_fir_bookshelf": "Fir Bookshelf",
+  "block.charm.traverse_fir_chest": "Fir Chest",
+  "block.charm.traverse_fir_ladder": "Fir Ladder",
+  "block.charm.chiseled_traverse_fir_bookshelf": "Chiseled Fir Bookshelf",
+  "block.charm.trapped_traverse_fir_chest": "Trapped Fir Chest"
 }

@@ -7,12 +7,10 @@ import svenhjol.charmony_api.iface.*;
 import svenhjol.covalent.Covalent;
 
 import java.util.List;
-import java.util.Map;
 
 public abstract class BaseDataProvider implements
     IConditionalRecipeProvider,
-    IConditionalAdvancementProvider,
-    IConditionalTagProvider
+    IConditionalAdvancementProvider
 {
     protected abstract Class<? extends CommonFeature> featureClass();
 
@@ -24,7 +22,7 @@ public abstract class BaseDataProvider implements
             new IConditionalAdvancement() {
                 @Override
                 public boolean test() {
-                    return loader().isEnabled(featureClass());
+                    return Covalent.isVariantWoodEnabled() && loader().isEnabled(featureClass());
                 }
 
                 @Override
@@ -43,40 +41,13 @@ public abstract class BaseDataProvider implements
             new IConditionalRecipe() {
                 @Override
                 public boolean test() {
-                    return loader().isEnabled(featureClass());
+                    return Covalent.isVariantWoodEnabled() && loader().isEnabled(featureClass());
                 }
 
                 @Override
                 public List<String> recipes() {
                     return List.of(
                         "variant_wood/*" + featurePrefix() + "_*"
-                    );
-                }
-            }
-        );
-    }
-
-    @Override
-    public List<IConditionalTag> getTagConditions() {
-        return List.of(
-            new IConditionalTag() {
-                @Override
-                public boolean test() {
-                    return loader().isEnabled(featureClass());
-                }
-
-                @Override
-                public Map<String, List<String>> resources() {
-                    var prefix = featurePrefix();
-
-                    return Map.of(
-                        "charm:tags/blocks/chests/normal", List.of("*" + prefix + "_*"),
-                        "charm:tags/blocks/chests/trapped", List.of("*" + prefix + "_*"),
-                        "charm:tags/blocks/chests/wooden", List.of("*" + prefix + "_*"),
-                        "charm:tags/blocks/barrels", List.of("*" + prefix + "_*"),
-                        "charm:tags/blocks/bookshelves", List.of("*" + prefix + "_*"),
-                        "charm:tags/blocks/chiseled_bookshelves", List.of("*" + prefix + "_*"),
-                        "charm:tags/blocks/ladders", List.of("*" + prefix + "_*")
                     );
                 }
             }

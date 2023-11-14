@@ -2,7 +2,7 @@
   "template": {
     "parent": "block/cube_column",
     "textures": {
-      "end": "MOD:block/PLANKS",
+      "end": "covalent:block/VARIANT_WOOD_bookshelf_end",
       "side": "covalent:block/VARIANT_WOOD_bookshelf"
     }
   },

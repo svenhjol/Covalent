@@ -1,8 +1,0 @@
-{
-  "template": {
-    "textures": {
-      "particle": "MOD:block/PLANKS"
-    }
-  },
-  "variants": "covalent_wood"
-}

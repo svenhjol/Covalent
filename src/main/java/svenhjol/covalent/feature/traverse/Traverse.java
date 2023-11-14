@@ -1,25 +1,17 @@
 package svenhjol.covalent.feature.traverse;
 
 import svenhjol.charmony.common.CommonFeature;
+import svenhjol.charmony.feature.variant_wood.VariantWood;
 import svenhjol.charmony.helper.ConfigHelper;
 import svenhjol.charmony_api.CharmonyApi;
-import svenhjol.charmony_api.iface.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BooleanSupplier;
 
 import static svenhjol.covalent.feature.traverse.TraverseMaterials.Fir;
 
-public class Traverse extends CommonFeature implements
-    IVariantBarrelProvider,
-    IVariantBookshelfProvider,
-    IVariantChestProvider,
-    IVariantChiseledBookshelfProvider,
-    IVariantLadderProvider
-{
+public class Traverse extends CommonFeature {
     static final Fir FIR = new Fir();
-    static final List<IVariantMaterial> TYPES = new ArrayList<>();
 
     @Override
     public String description() {
@@ -33,42 +25,13 @@ public class Traverse extends CommonFeature implements
 
     @Override
     public void register() {
-        // Always register data provider so we can remove recipes, advancements and tags if the mod is not present.
-        CharmonyApi.registerProvider(new TraverseDataProvider());
-        if (!isEnabled()) return;
-
         var registry = mod().registry();
 
         FIR.blockSetType = registry.blockSetType(FIR);
         FIR.woodType = registry.woodType(FIR.getSerializedName(), FIR);
-
-        TYPES.add(FIR);
+        VariantWood.registerWood(registry, FIR);
 
         CharmonyApi.registerProvider(this);
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantBarrels() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantBookshelves() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantChests() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantChiseledBookshelves() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantLadders() {
-        return TYPES;
+        CharmonyApi.registerProvider(new TraverseDataProvider());
     }
 }

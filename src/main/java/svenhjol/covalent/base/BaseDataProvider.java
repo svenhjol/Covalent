@@ -22,7 +22,7 @@ public abstract class BaseDataProvider implements
             new IConditionalAdvancement() {
                 @Override
                 public boolean test() {
-                    return Covalent.isVariantWoodEnabled() && loader().isEnabled(featureClass());
+                    return loader().isEnabled(featureClass());
                 }
 
                 @Override
@@ -41,7 +41,7 @@ public abstract class BaseDataProvider implements
             new IConditionalRecipe() {
                 @Override
                 public boolean test() {
-                    return Covalent.isVariantWoodEnabled() && loader().isEnabled(featureClass());
+                    return loader().isEnabled(featureClass());
                 }
 
                 @Override

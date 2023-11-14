@@ -1,26 +1,19 @@
 package svenhjol.covalent.feature.cinderscapes;
 
 import svenhjol.charmony.common.CommonFeature;
+import svenhjol.charmony.feature.variant_wood.VariantWood;
 import svenhjol.charmony.helper.ConfigHelper;
 import svenhjol.charmony_api.CharmonyApi;
-import svenhjol.charmony_api.iface.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BooleanSupplier;
 
-import static svenhjol.covalent.feature.cinderscapes.CinderscapesMaterials.*;
+import static svenhjol.covalent.feature.cinderscapes.CinderscapesMaterials.Scorched;
+import static svenhjol.covalent.feature.cinderscapes.CinderscapesMaterials.Umbral;
 
-public class Cinderscapes extends CommonFeature implements
-    IVariantBarrelProvider,
-    IVariantBookshelfProvider,
-    IVariantChestProvider,
-    IVariantChiseledBookshelfProvider,
-    IVariantLadderProvider
-{
+public class Cinderscapes extends CommonFeature {
     static final Scorched SCORCHED = new Scorched();
     static final Umbral UMBRAL = new Umbral();
-    static final List<IVariantMaterial> TYPES = new ArrayList<>();
 
     @Override
     public String description() {
@@ -34,45 +27,16 @@ public class Cinderscapes extends CommonFeature implements
 
     @Override
     public void register() {
-        // Always register data provider so we can remove recipes, advancements and tags if the mod is not present.
-        CharmonyApi.registerProvider(new CinderscapesDataProvider());
-        if (!isEnabled()) return;
-
         var registry = mod().registry();
 
         SCORCHED.blockSetType = registry.blockSetType(SCORCHED);
         SCORCHED.woodType = registry.woodType(SCORCHED.getSerializedName(), SCORCHED);
+        VariantWood.registerWood(registry, SCORCHED);
 
         UMBRAL.blockSetType = registry.blockSetType(UMBRAL);
         UMBRAL.woodType = registry.woodType(UMBRAL.getSerializedName(), UMBRAL);
+        VariantWood.registerWood(registry, UMBRAL);
 
-        TYPES.addAll(List.of(SCORCHED, UMBRAL));
-
-        CharmonyApi.registerProvider(this);
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantBarrels() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantBookshelves() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantChests() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantChiseledBookshelves() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantLadders() {
-        return TYPES;
+        CharmonyApi.registerProvider(new CinderscapesDataProvider());
     }
 }

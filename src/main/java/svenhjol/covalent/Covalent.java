@@ -1,8 +1,8 @@
 package svenhjol.covalent;
 
-import svenhjol.charmony.base.Mods;
 import svenhjol.charmony.common.CommonFeature;
 import svenhjol.charmony.common.CommonMod;
+import svenhjol.charmony.feature.variant_wood.VariantWood;
 import svenhjol.covalent.feature.bumblezone.Bumblezone;
 import svenhjol.covalent.feature.cinderscapes.Cinderscapes;
 import svenhjol.covalent.feature.terrestria.Terrestria;
@@ -12,6 +12,7 @@ import java.util.List;
 
 public class Covalent extends CommonMod {
     public static final String ID = "covalent";
+    public static final String CHARMONY_ID = "charmony";
     public static final String CHARM_ID = "charm";
 
     @Override
@@ -25,12 +26,8 @@ public class Covalent extends CommonMod {
             Bumblezone.class,
             Cinderscapes.class,
             Terrestria.class,
-            Traverse.class
+            Traverse.class,
+            VariantWood.class
         );
-    }
-
-    public static boolean isVariantWoodEnabled() {
-        return Mods.optionalCommon(Covalent.CHARM_ID).map(
-            charm -> charm.loader().isEnabled("VariantWood")).orElse(false);
     }
 }

@@ -6,7 +6,6 @@
   "refmap": "${refmap_file}",
   "plugin": "svenhjol.covalent.mixin.MixinConfigPlugin",
   "mixins": [
-    "tags.TagLoaderMixin"
   ],
   "client": [
   ],

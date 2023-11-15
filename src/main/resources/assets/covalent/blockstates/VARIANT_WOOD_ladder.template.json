@@ -1,0 +1,22 @@
+{
+  "template": {
+    "variants": {
+      "facing=east": {
+        "model": "covalent:block/VARIANT_WOOD_ladder",
+        "y": 90
+      },
+      "facing=north": {
+        "model": "covalent:block/VARIANT_WOOD_ladder"
+      },
+      "facing=south": {
+        "model": "covalent:block/VARIANT_WOOD_ladder",
+        "y": 180
+      },
+      "facing=west": {
+        "model": "covalent:block/VARIANT_WOOD_ladder",
+        "y": 270
+      }
+    }
+  },
+  "variants": "variant_wood"
+}

@@ -1,9 +1,0 @@
-{
-  "template": {
-    "parent": "minecraft:item/generated",
-    "textures": {
-      "layer0": "charm:block/COVALENT_WOOD_ladder"
-    }
-  },
-  "variants": "covalent_wood"
-}

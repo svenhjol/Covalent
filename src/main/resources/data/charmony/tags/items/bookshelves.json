@@ -3,6 +3,10 @@
   "values": [
     "covalent:cinderscapes_scorched_bookshelf",
     "covalent:cinderscapes_umbral_bookshelf",
+    "covalent:promenade_dark_amaranth_bookshelf",
+    "covalent:promenade_maple_bookshelf",
+    "covalent:promenade_palm_bookshelf",
+    "covalent:promenade_sakura_bookshelf",
     "covalent:terrestria_cypress_bookshelf",
     "covalent:terrestria_hemlock_bookshelf",
     "covalent:terrestria_japanese_maple_bookshelf",
@@ -12,6 +16,9 @@
     "covalent:terrestria_sakura_bookshelf",
     "covalent:terrestria_willow_bookshelf",
     "covalent:terrestria_yucca_palm_bookshelf",
-    "covalent:traverse_fir_bookshelf"
+    "covalent:traverse_fir_bookshelf",
+    "covalent:wilderwild_baobab_bookshelf",
+    "covalent:wilderwild_cypress_bookshelf",
+    "covalent:wilderwild_palm_bookshelf"
   ]
 }

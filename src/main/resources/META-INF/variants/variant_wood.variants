@@ -1,6 +1,10 @@
 MOD|VARIANT_WOOD|PLANKS|SLAB
 cinderscapes|cinderscapes_scorched|scorched_planks|scorched_slab
 cinderscapes|cinderscapes_umbral|umbral_planks|umbral_slab
+promenade|promenade_dark_amaranth|dark_amaranth_planks|dark_amaranth_slab
+promenade|promenade_maple|maple_planks|maple_slab
+promenade|promenade_palm|palm_planks|palm_slab
+promenade|promenade_sakura|sakura_planks|sakura_slab
 terrestria|terrestria_cypress|cypress_planks|cypress_slab
 terrestria|terrestria_hemlock|hemlock_planks|hemlock_slab
 terrestria|terrestria_japanese_maple|japanese_maple_planks|japanese_maple_slab

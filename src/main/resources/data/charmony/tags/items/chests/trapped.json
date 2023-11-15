@@ -3,6 +3,10 @@
   "values": [
     "covalent:trapped_cinderscapes_scorched_chest",
     "covalent:trapped_cinderscapes_umbral_chest",
+    "covalent:trapped_promenade_dark_amaranth_chest",
+    "covalent:trapped_promenade_maple_chest",
+    "covalent:trapped_promenade_palm_chest",
+    "covalent:trapped_promenade_sakura_chest",
     "covalent:trapped_terrestria_cypress_chest",
     "covalent:trapped_terrestria_hemlock_chest",
     "covalent:trapped_terrestria_japanese_maple_chest",
@@ -12,6 +16,9 @@
     "covalent:trapped_terrestria_sakura_chest",
     "covalent:trapped_terrestria_willow_chest",
     "covalent:trapped_terrestria_yucca_palm_chest",
-    "covalent:trapped_traverse_fir_chest"
+    "covalent:trapped_traverse_fir_chest",
+    "covalent:trapped_wilderwild_baobab_chest",
+    "covalent:trapped_wilderwild_cypress_chest",
+    "covalent:trapped_wilderwild_palm_chest"
   ]
 }

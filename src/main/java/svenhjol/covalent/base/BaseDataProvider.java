@@ -14,7 +14,7 @@ public abstract class BaseDataProvider implements
 {
     protected abstract Class<? extends CommonFeature> featureClass();
 
-    protected abstract String featurePrefix();
+    protected abstract String modId();
 
     @Override
     public List<IConditionalAdvancement> getAdvancementConditions() {
@@ -28,7 +28,7 @@ public abstract class BaseDataProvider implements
                 @Override
                 public List<String> advancements() {
                     return List.of(
-                        "variant_wood/*" + featurePrefix() + "_*"
+                        "variant_wood/*" + modId() + "_*"
                     );
                 }
             }
@@ -47,7 +47,7 @@ public abstract class BaseDataProvider implements
                 @Override
                 public List<String> recipes() {
                     return List.of(
-                        "variant_wood/*" + featurePrefix() + "_*"
+                        "variant_wood/*" + modId() + "_*"
                     );
                 }
             }

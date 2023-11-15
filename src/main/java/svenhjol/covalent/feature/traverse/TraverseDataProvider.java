@@ -15,7 +15,7 @@ public class TraverseDataProvider extends BaseDataProvider implements
     }
 
     @Override
-    protected String featurePrefix() {
+    protected String modId() {
         return "traverse";
     }
 }

@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public class CinderscapesMaterials {
     static class Scorched implements IVariantWoodMaterial {
-        static final String ID = "cinderscapes_scorched";
+        static final String ID = Cinderscapes.MOD_ID + "_scorched";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -19,11 +19,13 @@ public class CinderscapesMaterials {
         }
 
         @Override
-        public WoodType getWoodType() {return woodType.get();
+        public WoodType getWoodType() {
+            return woodType.get();
         }
 
         @Override
-        public SoundType soundType() {return SoundType.WOOD;
+        public SoundType soundType() {
+            return SoundType.WOOD;
         }
 
         @Override
@@ -33,7 +35,7 @@ public class CinderscapesMaterials {
     }
 
     static class Umbral implements IVariantWoodMaterial {
-        static final String ID = "cinderscapes_umbral";
+        static final String ID = Cinderscapes.MOD_ID + "_umbral";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 

@@ -1,7 +1,7 @@
 package svenhjol.covalent.feature.terrestria;
 
 import svenhjol.charmony.common.CommonFeature;
-import svenhjol.charmony.feature.variant_wood.VariantWood;
+import svenhjol.covalent.feature.variant_wood.VariantWood;
 import svenhjol.charmony.helper.ConfigHelper;
 import svenhjol.charmony_api.CharmonyApi;
 
@@ -11,6 +11,7 @@ import java.util.function.BooleanSupplier;
 import static svenhjol.covalent.feature.terrestria.TerrestriaMaterials.*;
 
 public class Terrestria extends CommonFeature {
+    public static final String MOD_ID = "terrestria";
     static final Cypress CYPRESS = new Cypress();
     static final Hemlock HEMLOCK = new Hemlock();
     static final JapaneseMaple JAPANESE_MAPLE = new JapaneseMaple();
@@ -28,7 +29,7 @@ public class Terrestria extends CommonFeature {
 
     @Override
     public List<BooleanSupplier> checks() {
-        return List.of(() -> ConfigHelper.isModLoaded("terrestria"));
+        return List.of(() -> ConfigHelper.isModLoaded(MOD_ID));
     }
 
     @Override
@@ -37,39 +38,40 @@ public class Terrestria extends CommonFeature {
 
         CYPRESS.blockSetType = registry.blockSetType(CYPRESS);
         CYPRESS.woodType = registry.woodType(CYPRESS.getSerializedName(), CYPRESS);
-        VariantWood.registerWood(registry, CYPRESS);
 
         HEMLOCK.blockSetType = registry.blockSetType(HEMLOCK);
         HEMLOCK.woodType = registry.woodType(HEMLOCK.getSerializedName(), HEMLOCK);
-        VariantWood.registerWood(registry, HEMLOCK);
 
         JAPANESE_MAPLE.blockSetType = registry.blockSetType(JAPANESE_MAPLE);
         JAPANESE_MAPLE.woodType = registry.woodType(JAPANESE_MAPLE.getSerializedName(), JAPANESE_MAPLE);
-        VariantWood.registerWood(registry, JAPANESE_MAPLE);
 
         RAINBOW_EUCALYPTUS.blockSetType = registry.blockSetType(RAINBOW_EUCALYPTUS);
         RAINBOW_EUCALYPTUS.woodType = registry.woodType(RAINBOW_EUCALYPTUS.getSerializedName(), RAINBOW_EUCALYPTUS);
-        VariantWood.registerWood(registry, RAINBOW_EUCALYPTUS);
 
         REDWOOD.blockSetType = registry.blockSetType(REDWOOD);
         REDWOOD.woodType = registry.woodType(REDWOOD.getSerializedName(), REDWOOD);
-        VariantWood.registerWood(registry, REDWOOD);
 
         RUBBER.blockSetType = registry.blockSetType(RUBBER);
         RUBBER.woodType = registry.woodType(RUBBER.getSerializedName(), RUBBER);
-        VariantWood.registerWood(registry, RUBBER);
 
         SAKURA.blockSetType = registry.blockSetType(SAKURA);
         SAKURA.woodType = registry.woodType(SAKURA.getSerializedName(), SAKURA);
-        VariantWood.registerWood(registry, SAKURA);
 
         WILLOW.blockSetType = registry.blockSetType(WILLOW);
         WILLOW.woodType = registry.woodType(WILLOW.getSerializedName(), WILLOW);
-        VariantWood.registerWood(registry, WILLOW);
 
         YUCCA_PALM.blockSetType = registry.blockSetType(YUCCA_PALM);
         YUCCA_PALM.woodType = registry.woodType(YUCCA_PALM.getSerializedName(), YUCCA_PALM);
-        VariantWood.registerWood(registry, YUCCA_PALM);
+
+        VariantWood.registerWood(CYPRESS);
+        VariantWood.registerWood(HEMLOCK);
+        VariantWood.registerWood(JAPANESE_MAPLE);
+        VariantWood.registerWood(RAINBOW_EUCALYPTUS);
+        VariantWood.registerWood(REDWOOD);
+        VariantWood.registerWood(RUBBER);
+        VariantWood.registerWood(SAKURA);
+        VariantWood.registerWood(WILLOW);
+        VariantWood.registerWood(YUCCA_PALM);
 
         CharmonyApi.registerProvider(new TerrestriaDataProvider());
     }

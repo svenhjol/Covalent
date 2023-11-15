@@ -15,7 +15,7 @@ public class CinderscapesDataProvider extends BaseDataProvider implements
     }
 
     @Override
-    protected String featurePrefix() {
-        return "cinderscapes";
+    protected String modId() {
+        return Cinderscapes.MOD_ID;
     }
 }

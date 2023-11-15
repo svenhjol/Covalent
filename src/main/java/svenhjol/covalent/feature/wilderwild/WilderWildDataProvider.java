@@ -4,7 +4,6 @@ import svenhjol.charmony.common.CommonFeature;
 import svenhjol.charmony_api.iface.IConditionalAdvancementProvider;
 import svenhjol.charmony_api.iface.IConditionalRecipeProvider;
 import svenhjol.covalent.base.BaseDataProvider;
-import svenhjol.covalent.feature.cinderscapes.Cinderscapes;
 
 public class WilderWildDataProvider extends BaseDataProvider implements
     IConditionalRecipeProvider,
@@ -16,7 +15,7 @@ public class WilderWildDataProvider extends BaseDataProvider implements
     }
 
     @Override
-    protected String featurePrefix() {
-        return "wilderwild";
+    protected String modId() {
+        return WilderWild.MOD_ID;
     }
 }

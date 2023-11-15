@@ -15,7 +15,7 @@ public class TerrestriaDataProvider extends BaseDataProvider implements
     }
 
     @Override
-    protected String featurePrefix() {
-        return "terrestria";
+    protected String modId() {
+        return Terrestria.MOD_ID;
     }
 }

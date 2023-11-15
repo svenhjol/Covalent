@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public class WilderWildMaterials {
     static class Baobab implements IVariantWoodMaterial {
-        static final String ID = "wilderwild_baobab";
+        static final String ID = WilderWild.MOD_ID + "_baobab";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -35,7 +35,7 @@ public class WilderWildMaterials {
     }
 
     static class Cypress implements IVariantWoodMaterial {
-        static final String ID = "wilderwild_cypress";
+        static final String ID = WilderWild.MOD_ID + "_cypress";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -61,7 +61,7 @@ public class WilderWildMaterials {
     }
 
     static class Palm implements IVariantWoodMaterial {
-        static final String ID = "wilderwild_palm";
+        static final String ID = WilderWild.MOD_ID + "_palm";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 

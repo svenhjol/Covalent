@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public class TraverseMaterials {
     static class Fir implements IVariantWoodMaterial {
-        static final String ID = "traverse_fir";
+        static final String ID = Traverse.MOD_ID + "_fir";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 

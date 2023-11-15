@@ -1,0 +1,6 @@
+{
+  "template": {
+    "parent": "covalent:block/VARIANT_WOOD_barrel"
+  },
+  "variants": "variant_wood"
+}

@@ -1,0 +1,24 @@
+{
+  "template": {
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "key": {
+      "#": {
+        "item": "MOD:PLANKS"
+      },
+      "X": {
+        "item": "minecraft:book"
+      }
+    },
+    "pattern": [
+      "###",
+      "XXX",
+      "###"
+    ],
+    "result": {
+      "item": "covalent:VARIANT_WOOD_bookshelf"
+    },
+    "show_notification": true
+  },
+  "variants": "variant_wood"
+}

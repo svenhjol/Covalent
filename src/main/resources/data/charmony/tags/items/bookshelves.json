@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "covalent:cinderscapes_scorched_bookshelf",
+    "covalent:cinderscapes_umbral_bookshelf",
+    "covalent:terrestria_cypress_bookshelf",
+    "covalent:terrestria_hemlock_bookshelf",
+    "covalent:terrestria_japanese_maple_bookshelf",
+    "covalent:terrestria_rainbow_eucalyptus_bookshelf",
+    "covalent:terrestria_redwood_bookshelf",
+    "covalent:terrestria_rubber_bookshelf",
+    "covalent:terrestria_sakura_bookshelf",
+    "covalent:terrestria_willow_bookshelf",
+    "covalent:terrestria_yucca_palm_bookshelf",
+    "covalent:traverse_fir_bookshelf"
+  ]
+}

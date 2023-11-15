@@ -1,0 +1,18 @@
+{
+  "template": {
+    "type": "minecraft:crafting_shapeless",
+    "category": "redstone",
+    "ingredients": [
+      {
+        "item": "covalent:VARIANT_WOOD_chest"
+      },
+      {
+        "item": "minecraft:tripwire_hook"
+      }
+    ],
+    "result": {
+      "item": "covalent:trapped_VARIANT_WOOD_chest"
+    }
+  },
+  "variants": "variant_wood"
+}

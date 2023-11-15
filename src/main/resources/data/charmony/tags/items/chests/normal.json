@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "covalent:cinderscapes_scorched_chest",
+    "covalent:cinderscapes_umbral_chest",
+    "covalent:terrestria_cypress_chest",
+    "covalent:terrestria_hemlock_chest",
+    "covalent:terrestria_japanese_maple_chest",
+    "covalent:terrestria_rainbow_eucalyptus_chest",
+    "covalent:terrestria_redwood_chest",
+    "covalent:terrestria_rubber_chest",
+    "covalent:terrestria_sakura_chest",
+    "covalent:terrestria_willow_chest",
+    "covalent:terrestria_yucca_palm_chest",
+    "covalent:traverse_fir_chest"
+  ]
+}

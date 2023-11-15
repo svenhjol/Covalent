@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "covalent:cinderscapes_scorched_ladder",
+    "covalent:cinderscapes_umbral_ladder",
+    "covalent:terrestria_cypress_ladder",
+    "covalent:terrestria_hemlock_ladder",
+    "covalent:terrestria_japanese_maple_ladder",
+    "covalent:terrestria_rainbow_eucalyptus_ladder",
+    "covalent:terrestria_redwood_ladder",
+    "covalent:terrestria_rubber_ladder",
+    "covalent:terrestria_sakura_ladder",
+    "covalent:terrestria_willow_ladder",
+    "covalent:terrestria_yucca_palm_ladder",
+    "covalent:traverse_fir_ladder"
+  ]
+}

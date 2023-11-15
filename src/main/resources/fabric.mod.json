@@ -28,6 +28,9 @@
     "minecraft": "${minecraft_version}",
     "java": ">=17"
   },
+  "mixins": [
+    "covalent.mixins.json"
+  ],
 
   "custom": {
     "modmenu": {

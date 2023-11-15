@@ -1,43 +1,35 @@
 package svenhjol.covalent.feature.promenade;
 
-import svenhjol.charmony.annotation.Feature;
-import svenhjol.charmony.base.CharmonyFeature;
+import svenhjol.charmony.common.CommonFeature;
 import svenhjol.charmony.helper.ConfigHelper;
 import svenhjol.charmony_api.CharmonyApi;
-import svenhjol.charmony_api.iface.*;
-import svenhjol.covalent.Covalent;
+import svenhjol.covalent.feature.variant_wood.VariantWood;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BooleanSupplier;
 
 import static svenhjol.covalent.feature.promenade.PromenadeMaterials.*;
 
-@Feature(mod = Covalent.MOD_ID, description = "Adds chests, barrels, bookshelves and ladders for Promenade woods.")
-public class Promenade extends CharmonyFeature implements
-    IVariantBarrelProvider,
-    IVariantBookshelfProvider,
-    IVariantChestProvider,
-    IVariantChiseledBookshelfProvider,
-    IVariantLadderProvider
-{
+public class Promenade extends CommonFeature {
+    public static final String MOD_ID = "promenade";
     static final DarkAmaranth DARK_AMARANTH = new DarkAmaranth();
     static final Maple MAPLE = new Maple();
     static final Palm PALM = new Palm();
     static final Sakura SAKURA = new Sakura();
-    static final List<IVariantMaterial> TYPES = new ArrayList<>();
+
+    @Override
+    public String description() {
+        return "Adds chests, barrels, bookshelves and ladders for Promenade woods.";
+    }
 
     @Override
     public List<BooleanSupplier> checks() {
-        return List.of(() -> ConfigHelper.isModLoaded("promenade"));
+        return List.of(() -> ConfigHelper.isModLoaded(MOD_ID));
     }
 
     @Override
     public void register() {
-        // We don't register anything if the mod is missing.
-        if (!isEnabled()) return;
-
-        var registry = Covalent.instance().registry();
+        var registry = mod().registry();
 
         DARK_AMARANTH.blockSetType = registry.blockSetType(DARK_AMARANTH);
         DARK_AMARANTH.woodType = registry.woodType(DARK_AMARANTH.getSerializedName(), DARK_AMARANTH);
@@ -51,33 +43,11 @@ public class Promenade extends CharmonyFeature implements
         SAKURA.blockSetType = registry.blockSetType(SAKURA);
         SAKURA.woodType = registry.woodType(SAKURA.getSerializedName(), SAKURA);
 
-        TYPES.addAll(List.of(DARK_AMARANTH, MAPLE, PALM, SAKURA));
+        VariantWood.registerWood(DARK_AMARANTH);
+        VariantWood.registerWood(MAPLE);
+        VariantWood.registerWood(PALM);
+        VariantWood.registerWood(SAKURA);
 
-        CharmonyApi.registerProvider(this);
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantBarrels() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantBookshelves() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantChests() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantChiseledBookshelves() {
-        return TYPES;
-    }
-
-    @Override
-    public List<IVariantMaterial> getVariantLadders() {
-        return TYPES;
+        CharmonyApi.registerProvider(new PromenadeDataProvider());
     }
 }

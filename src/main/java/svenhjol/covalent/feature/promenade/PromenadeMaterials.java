@@ -9,6 +9,7 @@ import java.util.function.Supplier;
 
 public class PromenadeMaterials {
     static class DarkAmaranth implements IVariantWoodMaterial {
+        static final String ID = Promenade.MOD_ID + "_dark_amaranth";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -29,13 +30,15 @@ public class PromenadeMaterials {
 
         @Override
         public String getSerializedName() {
-            return "dark_amaranth";
+            return ID;
         }
     }
 
     static class Maple implements IVariantWoodMaterial {
+        static final String ID = Promenade.MOD_ID + "_maple";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
+
         @Override
         public BlockSetType getBlockSetType() {
             return blockSetType.get();
@@ -53,13 +56,15 @@ public class PromenadeMaterials {
 
         @Override
         public String getSerializedName() {
-            return "maple";
+            return ID;
         }
     }
 
     static class Palm implements IVariantWoodMaterial {
+        static final String ID = Promenade.MOD_ID + "_palm";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
+
         @Override
         public BlockSetType getBlockSetType() {
             return blockSetType.get();
@@ -77,13 +82,15 @@ public class PromenadeMaterials {
 
         @Override
         public String getSerializedName() {
-            return "palm";
+            return ID;
         }
     }
 
     static class Sakura implements IVariantWoodMaterial {
+        static final String ID = Promenade.MOD_ID + "_sakura";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
+
         @Override
         public BlockSetType getBlockSetType() {
             return blockSetType.get();
@@ -101,7 +108,7 @@ public class PromenadeMaterials {
 
         @Override
         public String getSerializedName() {
-            return "sakura";
+            return ID;
         }
     }
 }

@@ -9,6 +9,7 @@ import svenhjol.covalent.feature.terrestria.Terrestria;
 import svenhjol.covalent.feature.traverse.Traverse;
 import svenhjol.covalent.feature.variant_wood.VariantWood;
 import svenhjol.covalent.feature.wilderwild.WilderWild;
+import svenhjol.covalent.feature.newworld.NewWorld;
 
 import java.util.List;
 
@@ -31,7 +32,8 @@ public class Covalent extends CommonMod {
             Terrestria.class,
             Traverse.class,
             VariantWood.class,
-            WilderWild.class
+            WilderWild.class,
+            NewWorld.class
         );
     }
 }

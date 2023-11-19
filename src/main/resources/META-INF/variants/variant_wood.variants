@@ -1,6 +1,7 @@
 MOD|VARIANT_WOOD|PLANKS|SLAB
 cinderscapes|cinderscapes_scorched|scorched_planks|scorched_slab
 cinderscapes|cinderscapes_umbral|umbral_planks|umbral_slab
+newworld|newworld_fir|fir_planks|fir_slab
 promenade|promenade_dark_amaranth|dark_amaranth_planks|dark_amaranth_slab
 promenade|promenade_maple|maple_planks|maple_slab
 promenade|promenade_palm|palm_planks|palm_slab
@@ -18,4 +19,3 @@ traverse|traverse_fir|fir_planks|fir_slab
 wilderwild|wilderwild_baobab|baobab_planks|baobab_slab
 wilderwild|wilderwild_cypress|cypress_planks|cypress_slab
 wilderwild|wilderwild_palm|palm_planks|palm_slab
-newworld|newworld_fir|fir_planks|fir_slab

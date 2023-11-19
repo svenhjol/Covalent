@@ -134,5 +134,12 @@
   "block.covalent.wilderwild_palm_chest": "Palm Chest",
   "block.covalent.wilderwild_palm_ladder": "Palm Ladder",
   "block.covalent.chiseled_wilderwild_palm_bookshelf": "Chiseled Palm Bookshelf",
-  "block.covalent.trapped_wilderwild_palm_chest": "Trapped Palm Chest"
+  "block.covalent.trapped_wilderwild_palm_chest": "Trapped Palm Chest",
+
+  "block.covalent.newworld_fir_barrel": "Fir Barrel",
+  "block.covalent.newworld_fir_bookshelf": "Fir Bookshelf",
+  "block.covalent.newworld_fir_chest": "Fir Chest",
+  "block.covalent.newworld_fir_ladder": "Fir Ladder",
+  "block.covalent.chiseled_newworld_fir_bookshelf": "Chiseled Fir Bookshelf",
+  "block.covalent.trapped_newworld_fir_chest": "Trapped Fir Chest"
 }

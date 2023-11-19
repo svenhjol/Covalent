@@ -1,4 +1,9 @@
 MOD|VARIANT_WOOD|PLANKS|SLAB
+blockus|blockus_bamboo|bamboo_plamks|bamboo_slab
+blockus|blockus_charred|charred_planks|charred_slab
+blockus|blockus_legacy|legacy_planks|legacy_slab
+blockus|blockus_raw_bamboo|raw_bamboo_planks|raw_bamboo_slab
+blockus|blockus_white_oak|white_oak_planks|white_oak_slab
 cinderscapes|cinderscapes_scorched|scorched_planks|scorched_slab
 cinderscapes|cinderscapes_umbral|umbral_planks|umbral_slab
 promenade|promenade_dark_amaranth|dark_amaranth_planks|dark_amaranth_slab

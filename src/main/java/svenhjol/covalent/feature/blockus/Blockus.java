@@ -12,7 +12,6 @@ import static svenhjol.covalent.feature.blockus.BlockusMaterials.*;
 
 public class Blockus extends CommonFeature {
     public static final String MOD_ID = "blockus";
-    static final Bamboo BAMBOO = new Bamboo();
     static final Charred CHARRED = new Charred();
     static final Legacy LEGACY = new Legacy();
     static final RawBamboo RAW_BAMBOO = new RawBamboo();
@@ -32,9 +31,6 @@ public class Blockus extends CommonFeature {
     public void register() {
         var registry = mod().registry();
 
-        BAMBOO.blockSetType = registry.blockSetType(BAMBOO);
-        BAMBOO.woodType = registry.woodType(BAMBOO.getSerializedName(), BAMBOO);
-
         CHARRED.blockSetType = registry.blockSetType(CHARRED);
         CHARRED.woodType = registry.woodType(CHARRED.getSerializedName(), CHARRED);
 
@@ -47,7 +43,6 @@ public class Blockus extends CommonFeature {
         WHITE_OAK.blockSetType = registry.blockSetType(WHITE_OAK);
         WHITE_OAK.woodType = registry.woodType(WHITE_OAK.getSerializedName(), WHITE_OAK);
 
-        VariantWood.registerWood(BAMBOO);
         VariantWood.registerWood(CHARRED);
         VariantWood.registerWood(LEGACY);
         VariantWood.registerWood(RAW_BAMBOO);

@@ -2,6 +2,7 @@ package svenhjol.covalent;
 
 import svenhjol.charmony.common.CommonFeature;
 import svenhjol.charmony.common.CommonMod;
+import svenhjol.covalent.feature.blockus.Blockus;
 import svenhjol.covalent.feature.bumblezone.Bumblezone;
 import svenhjol.covalent.feature.cinderscapes.Cinderscapes;
 import svenhjol.covalent.feature.promenade.Promenade;
@@ -25,6 +26,7 @@ public class Covalent extends CommonMod {
     @Override
     public List<Class<? extends CommonFeature>> features() {
         return List.of(
+            Blockus.class,
             Bumblezone.class,
             Cinderscapes.class,
             Promenade.class,

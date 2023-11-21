@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "covalent:chiseled_blockus_charred_bookshelf",
+    "covalent:chiseled_blockus_legacy_bookshelf",
+    "covalent:chiseled_blockus_raw_bamboo_bookshelf",
+    "covalent:chiseled_blockus_white_oak_bookshelf",
     "covalent:chiseled_cinderscapes_scorched_bookshelf",
     "covalent:chiseled_cinderscapes_umbral_bookshelf",
     "covalent:chiseled_promenade_dark_amaranth_bookshelf",

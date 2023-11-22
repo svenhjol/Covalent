@@ -1,6 +1,0 @@
-{
-  "template": {
-    "parent": "charm:block/chiseled_COVALENT_WOOD_bookshelf_inventory"
-  },
-  "variants": "covalent_wood"
-}

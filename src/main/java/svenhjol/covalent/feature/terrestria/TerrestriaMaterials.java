@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public class TerrestriaMaterials {
     static class Cypress implements IVariantWoodMaterial {
-        static final String ID = "terrestria_cypress";
+        static final String ID = Terrestria.MOD_ID + "_cypress";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -35,7 +35,7 @@ public class TerrestriaMaterials {
     }
 
     static class Hemlock implements IVariantWoodMaterial {
-        static final String ID = "terrestria_hemlock";
+        static final String ID = Terrestria.MOD_ID + "_hemlock";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -61,7 +61,7 @@ public class TerrestriaMaterials {
     }
 
     static class JapaneseMaple implements IVariantWoodMaterial {
-        static final String ID = "terrestria_japanese_maple";
+        static final String ID = Terrestria.MOD_ID + "_japanese_maple";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -87,7 +87,7 @@ public class TerrestriaMaterials {
     }
 
     static class RainbowEucalyptus implements IVariantWoodMaterial {
-        static final String ID = "terrestria_rainbow_eucalyptus";
+        static final String ID = Terrestria.MOD_ID + "_rainbow_eucalyptus";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -113,7 +113,7 @@ public class TerrestriaMaterials {
     }
 
     static class Redwood implements IVariantWoodMaterial {
-        static final String ID = "terrestria_redwood";
+        static final String ID = Terrestria.MOD_ID + "_redwood";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -139,7 +139,7 @@ public class TerrestriaMaterials {
     }
 
     static class Rubber implements IVariantWoodMaterial {
-        static final String ID = "terrestria_rubber";
+        static final String ID = Terrestria.MOD_ID + "_rubber";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -165,7 +165,7 @@ public class TerrestriaMaterials {
     }
 
     static class Sakura implements IVariantWoodMaterial {
-        static final String ID = "terrestria_sakura";
+        static final String ID = Terrestria.MOD_ID + "_sakura";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -191,7 +191,7 @@ public class TerrestriaMaterials {
     }
 
     static class Willow implements IVariantWoodMaterial {
-        static final String ID = "terrestria_willow";
+        static final String ID = Terrestria.MOD_ID + "_willow";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 
@@ -217,7 +217,7 @@ public class TerrestriaMaterials {
     }
 
     static class YuccaPalm implements IVariantWoodMaterial {
-        static final String ID = "terrestria_yucca_palm";
+        static final String ID = Terrestria.MOD_ID + "_yucca_palm";
         public Supplier<BlockSetType> blockSetType;
         public Supplier<WoodType> woodType;
 

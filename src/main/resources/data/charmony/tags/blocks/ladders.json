@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "covalent:blockus_charred_ladder",
+    "covalent:blockus_legacy_ladder",
+    "covalent:blockus_raw_bamboo_ladder",
+    "covalent:blockus_white_oak_ladder",
     "covalent:cinderscapes_scorched_ladder",
     "covalent:cinderscapes_umbral_ladder",
     "covalent:promenade_dark_amaranth_ladder",

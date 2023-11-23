@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "covalent:blockus_charred_barrel",
+    "covalent:blockus_legacy_barrel",
+    "covalent:blockus_raw_bamboo_barrel",
+    "covalent:blockus_white_oak_barrel",
     "covalent:cinderscapes_scorched_barrel",
     "covalent:cinderscapes_umbral_barrel",
     "covalent:promenade_dark_amaranth_barrel",

@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "covalent:blockus_charred_chest",
+    "covalent:blockus_legacy_chest",
+    "covalent:blockus_raw_bamboo_chest",
+    "covalent:blockus_white_oak_chest",
     "covalent:cinderscapes_scorched_chest",
     "covalent:cinderscapes_umbral_chest",
     "covalent:promenade_dark_amaranth_chest",
